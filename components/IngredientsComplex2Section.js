@@ -12,11 +12,12 @@ const IngredientsComplex2Section = () => {
       {/* Image and Flaxseed Heading */}
       <div className="mt-6">
         <Image
-          src="/linseed-complex.png"
+          src="https://cdn05.zipify.com/CVBX6Tx3TV8kItD6pA3Sr5aKC7w=/fit-in/1940x0/e68a8eb9e59c4034bca02a9b4762bd4b/flax-seeds-vitc-vitd.png"
           alt="Linseed, Vitamin C, and D"
           width={600}
           height={300}
           className="mx-auto"
+          unoptimized
         />
         <h3 className="text-xl md:text-2xl font-bold text-[#54032d] mt-4">
           Flaxseeds (Linseed)
@@ -42,16 +43,18 @@ const IngredientsComplex2Section = () => {
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-6">
           <Image
-            src="/linseed-study-1.png"
+            src="https://cdn05.zipify.com/rnTUGn0yBWlxMiHdZu7rl6P2xfw=/fit-in/1940x0/170f1655d4ce4ef295180573058aeb99/skin-sensitivity-flaxseeds.png"
             alt="Flaxseed Study Graph 1"
             width={400}
             height={300}
+            unoptimized
           />
           <Image
-            src="/linseed-study-2.png"
+            src="https://cdn05.zipify.com/4Mz_KvjeNW5MifGcjvjoreoyWMI=/fit-in/1940x0/f2900a8e18d3424fbfca1146473a73f8/skin-hydration-flaxseed.png"
             alt="Flaxseed Study Graph 2"
             width={400}
             height={300}
+            unoptimized
           />
         </div>
 
