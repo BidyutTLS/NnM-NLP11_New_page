@@ -6,7 +6,7 @@ import Header from "@/components/Header.js";
 import Footer from "@/components/Footer.js";
 import HairTypeSecretSection from "@/components/HairTypeSecretSection.js";
 import NourishmentHighlightSection from "@/components/NourishmentHighlightSection.js";
-import TrustHighlightSection from "@/components/TrustHighlightSection.tsx";
+import TrustHighlightSection from "@/components/TrustHighlightSection.js";
 import ExpertRecommendationSection from "@/components/ExpertRecommendationSection.js";
 import ClinicalStudySection from "@/components/ClinicalStudySection.js";
 import IngredientsComplex3Section from "@/components/IngredientsComplex3Section.js";
