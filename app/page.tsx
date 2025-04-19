@@ -4,7 +4,6 @@ import React from "react";
 
 import Header from "@/components/Header.js";
 import Footer from "@/components/Footer.js";
-import HeroSection from "@/components/HeroSection.js";
 import HairTypeSecretSection from "@/components/HairTypeSecretSection.js";
 import NourishmentHighlightSection from "@/components/NourishmentHighlightSection.js";
 import TrustHighlightSection from "@/components/TrustHighlightSection.tsx";
@@ -25,7 +24,6 @@ const NailNManePage = () => {
   return (
     <main className="font-merriweather bg-[#f9f9f9] text-[#2c2c2c]">
       <Header />
-      <HeroSection />
       <HairTypeSecretSection />
       <NourishmentHighlightSection />
       <TrustHighlightSection />
