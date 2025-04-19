@@ -56,16 +56,7 @@ const TextReviews = () => {
               <p className="font-semibold text-sm">{review.name}</p>
               <p className="text-sm text-gray-600">{review.age}</p>
               <p className="text-sm italic text-[#1a1a1a] mt-1">
-                <span className="inline-block align-middle">
-                  <Image
-                    src="/verified-icon.png"
-                    alt="Verified"
-                    width={16}
-                    height={16}
-                    className="inline-block mr-1"
-                  />
-                </span>
-                Verified Consumer
+                ✅ <span className="text-[#5b0830]">Verified Consumer</span>
               </p>
             </div>
           </div>
@@ -75,15 +66,15 @@ const TextReviews = () => {
       <div className="flex justify-center items-center gap-10 mt-12">
         {[
           {
-            src: "/badge-30day.png",
+            src: "https://cdn05.zipify.com/vqRaT6FhpEnoC_KqfyyydXOygu4=/fit-in/1940x0/64de9cb2626f42d6b8234d7a2d50359a/30-days-money-back-gaurantee.png",
             alt: "30 Day Guarantee",
           },
           {
-            src: "/badge-freeshipping.png",
+            src: "https://cdn05.zipify.com/1-dypAIcn8ejHLp0az3lpfDrXZM=/fit-in/1940x0/9fbd14abb9434d4da1d60c6448c098ab/free-shipping.png",
             alt: "Free Shipping",
           },
           {
-            src: "/badge-clinical.png",
+            src: "https://cdn05.zipify.com/NfVDyYpTX6rY6pv72uFxsWwSU2s=/0x17:262x282/fit-in/1940x0/b5567416bd95423dbaa932984119d582/clinically-tested.png",
             alt: "Clinically Tested",
           },
         ].map((badge, index) => (
@@ -93,6 +84,7 @@ const TextReviews = () => {
             alt={badge.alt}
             width={100}
             height={100}
+            unoptimized
           />
         ))}
       </div>
