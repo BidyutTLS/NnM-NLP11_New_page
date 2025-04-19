@@ -11,10 +11,11 @@ const NailsBenefitsSection = () => {
         <div className="flex-shrink-0">
           <div className="relative w-40 h-40 mx-auto">
             <Image
-              src="/nail-icon-ring.png"
+              src="https://cdn05.zipify.com/LbrW5CO9MYhZ6z50hhHmd1JsFGk=/fit-in/1940x0/e05671364a9b4cf2bac47c09517f49d6/nail-benefits.png"
               alt="Nail icon"
               fill
               className="object-contain"
+              unoptimized
             />
           </div>
         </div>
