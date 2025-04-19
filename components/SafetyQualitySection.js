@@ -2,12 +2,30 @@ import React from "react";
 import Image from "next/image";
 
 const badges = [
-  { src: "/clinically-tested.png", alt: "Clinically Tested" },
-  { src: "/gmp-certified.png", alt: "GMP Facility" },
-  { src: "/heavy-metal-tested.png", alt: "Heavy Metal Tested" },
-  { src: "/pesticide-tested.png", alt: "Pesticide Tested" },
-  { src: "/third-party-tested.png", alt: "3rd Party Tested" },
-  { src: "/us-fda.png", alt: "US FDA Registered" },
+  {
+    src: "https://cdn05.zipify.com/lIpjZYeFUFGmdMDJpeCJgEdI408=/fit-in/1940x0/3849c6c0a98747b698d3bf5b9225f748/clinically-tested.png",
+    alt: "Clinically Tested",
+  },
+  {
+    src: "https://cdn05.zipify.com/JXGW5pXObm_2p5J-bFI0HQ-6rlU=/fit-in/1940x0/765b327df86f4d2eb7d92dedf14ab7d8/gmp.png",
+    alt: "GMP Facility",
+  },
+  {
+    src: "https://cdn05.zipify.com/PnOHCjgIVvIx4Ps4c50PHN98k0Q=/fit-in/1940x0/182e350bf1cd47e48e3592bea96aa60e/heavy-metal-tested.png",
+    alt: "Heavy Metal Tested",
+  },
+  {
+    src: "https://cdn05.zipify.com/b85XhG8jSC44LNnM8VNOt3CPi1g=/fit-in/1940x0/751fcea4deca42f8a1c39cca7bcf716a/pesticide-testing.png",
+    alt: "Pesticide Tested",
+  },
+  {
+    src: "https://cdn05.zipify.com/pA-vCRVg09fu-VG0sKQBXAVtiVE=/fit-in/1940x0/c82c482697e74f49a562ef39d32350e0/third-party-testing.png",
+    alt: "3rd Party Tested",
+  },
+  {
+    src: "https://cdn05.zipify.com/Pz49G5VkxRtAD1G099nxNoNLU8E=/fit-in/1940x0/97bd837499fa4114b77004dd7107c968/us-fda-registered-facility.png",
+    alt: "US FDA Registered",
+  },
 ];
 
 const SafetyQualitySection = () => {
@@ -35,6 +53,7 @@ const SafetyQualitySection = () => {
             width={100}
             height={100}
             className="w-[90px] h-auto"
+            unoptimized
           />
         ))}
       </div>
