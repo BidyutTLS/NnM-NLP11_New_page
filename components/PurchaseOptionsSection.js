@@ -120,12 +120,14 @@ const PurchaseOptionsSection = () => {
               </div>
               <div className="px-4 mt-3">
                 <Image
-                  src="/badge-safecheckout.png"
-                  alt="Safe Checkout"
+                 src="https://cdn05.zipify.com/sEJUgl7T3jObY9ixNLtl9Rghn6o=/fit-in/1940x0/e1575aff211a4aa7b38b2a46f1c42122/guaranteed-safe-checkout.png"
+                 alt="Safe Checkout"
                   width={250}
                   height={60}
                   className="mx-auto"
+                  unoptimized
                 />
+
               </div>
             </div>
           </div>
