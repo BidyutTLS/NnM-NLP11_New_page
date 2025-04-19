@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 
-const ComparisonTableSection: React.FC = () => {
+const ComparisonTableSection= () => {
   return (
     <section className="text-center py-10 px-4 bg-[#f9f9f9]">
       <h2 className="text-3xl md:text-4xl font-bold text-[#54032d] mb-3">
