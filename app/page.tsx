@@ -4,6 +4,7 @@ import React from "react";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WhatIsAyurvedaSection from "@/components/WhatIsAyurvedaSection";
 import HairTypeSecretSection from "@/components/HairTypeSecretSection";
 import NourishmentHighlightSection from "@/components/NourishmentHighlightSection";
 import TrustHighlightSection from "@/components/TrustHighlightSection";
