@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const ClinicalStudySection: React.FC = () => {
+const ClinicalStudySection = () => {
   return (
     <section className="bg-[#f7f7f7] py-12 px-4 text-center">
       <h2 className="text-3xl md:text-5xl font-extrabold text-[#54032d] mb-2 uppercase tracking-wider">
