@@ -19,10 +19,11 @@ const IngredientsComplexOne = () => {
 
       <div className="mt-10 flex justify-center">
         <Image
-          src="/ashwagandha.png"
+          src="https://cdn05.zipify.com/FaaCBa3g2ykB7xytL2ngKrbi8xA=/fit-in/1940x0/26ff6ed5708e41d59595a47dc54fd53d/tulsi-ashwagandha-bhringraj.png"
           alt="Ashwagandha"
           width={400}
           height={300}
+          unoptimized
         />
       </div>
 
@@ -41,9 +42,27 @@ const IngredientsComplexOne = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-          <Image src="/density-chart.png" alt="Hair Density Chart" width={300} height={200} />
-          <Image src="/growth-chart.png" alt="Hair Growth Chart" width={300} height={200} />
-          <Image src="/thickness-chart.png" alt="Hair Thickness Chart" width={300} height={200} />
+          <Image
+            src="https://cdn05.zipify.com/BPkoqAxo04fsoIemwCf5uuhEatE=/fit-in/1940x0/ba00b70772c54e1bafeb403d715dad71/hair-density-ashwagandha.png"
+            alt="Hair Density Chart"
+            width={300}
+            height={200}
+            unoptimized
+          />
+          <Image
+            src="https://cdn05.zipify.com/fBtnj-0qmnT9hU6JAKvcLimfVaE=/fit-in/1940x0/61b72fc0605240e89d69e71475dc5686/hair-growth-ashwagandha.png"
+            alt="Hair Growth Chart"
+            width={300}
+            height={200}
+            unoptimized
+          />
+          <Image
+            src="https://cdn05.zipify.com/tmzXSua7YGVd3rhTdIAr__GKhyE=/fit-in/1940x0/bf3a40f30e5b45a3b1106fca667f1e15/hair-thickness-ashwagandha.png"
+            alt="Hair Thickness Chart"
+            width={300}
+            height={200}
+            unoptimized
+          />
         </div>
 
         <p className="mt-4 text-sm italic text-white bg-[#54032d] py-1 px-2">
