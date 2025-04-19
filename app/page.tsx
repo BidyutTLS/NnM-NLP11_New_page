@@ -25,6 +25,7 @@ const NailNManePage = () => {
   return (
     <main className="font-merriweather bg-[#f9f9f9] text-[#2c2c2c]">
       <Header />
+      <WhatIsAyurvedaSection />
       <HairTypeSecretSection />
       <NourishmentHighlightSection />
       <TrustHighlightSection />
