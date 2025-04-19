@@ -18,11 +18,12 @@ const RiskFreeTrialSection = () => {
           15% OFF
         </div>
         <Image
-          src="/bottle-group.png"
+          src="https://cdn05.zipify.com/RqVoS3KOk4slUwXf3RB28UyLUW4=/fit-in/1940x0/abd72a8076d04e0f9f8f597c768d429a/nail-n-mane-with-discount1.png"
           alt="Nail n Mane Bottles"
           width={280}
           height={280}
           className="mx-auto"
+          unoptimized
         />
       </div>
 
