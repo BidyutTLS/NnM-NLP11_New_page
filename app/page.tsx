@@ -4,6 +4,8 @@ import React from "react";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ClinicalResultsSection from "@/components/ClinicalResultsSection";
+import EmotionalIntroSection from "@/components/EmotionalIntroSection";
 import WhatIsAyurvedaSection from "@/components/WhatIsAyurvedaSection";
 import HairTypeSecretSection from "@/components/HairTypeSecretSection";
 import NourishmentHighlightSection from "@/components/NourishmentHighlightSection";
@@ -25,6 +27,8 @@ const NailNManePage = () => {
   return (
     <main className="font-merriweather bg-[#f9f9f9] text-[#2c2c2c]">
       <Header />
+      <ClinicalResultsSection />
+      <EmotionalIntroSection />
       <WhatIsAyurvedaSection />
       <HairTypeSecretSection />
       <NourishmentHighlightSection />
