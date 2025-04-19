@@ -1,3 +1,4 @@
+// app/components/BiotinInfoSection.tsx
 import Image from 'next/image';
 
 export default function BiotinInfoSection() {
@@ -12,10 +13,11 @@ export default function BiotinInfoSection() {
         {/* Biotin Molecule Image */}
         <div className="my-6">
           <Image
-            src="/images/biotin-structure.png" // Replace with actual path
+            src="https://cdn05.zipify.com/8Z_LdE2HOBWILyVGuxq-RmH8r9I=/fit-in/1940x0/25f2729ef3d44004b0a9de74f3459b59/biotin-structure.png"
             alt="Biotin Molecule Structure"
             width={240}
             height={100}
+            unoptimized
             className="mx-auto"
           />
         </div>
@@ -51,13 +53,24 @@ export default function BiotinInfoSection() {
         {/* Root Causes Image */}
         <div className="my-6">
           <Image
-            src="/images/root-causes-diagram.png" // Replace with actual path
+            src="https://cdn05.zipify.com/LhqDXQAfGG5zhKFUXviRZD9qZyE=/fit-in/1940x0/278262c435ec47eb9ad7e8eb3d7f1c14/factors-for-hair-loss.png"
             alt="Root causes affecting hair: stress, aging, hormonal changes, nutrition, environment, lifestyle"
             width={640}
             height={300}
+            unoptimized
             className="mx-auto"
           />
         </div>
 
         {/* Why Biotin Can't Do It Alone */}
-        <h3 className="mt-10 text-xl font-bold
+        <h3 className="mt-10 text-xl font-bold text-purple-800 uppercase">
+          WHY BIOTIN CAN’T DO IT ALONE
+        </h3>
+        <p className="mt-2 text-lg leading-relaxed">
+          Because hair health depends on more than one micronutrient and also on adaptogens, antioxidants,
+          collagen support, and more—exactly what Nail n Mane provides in one 10‑second‑a‑day capsule.
+        </p>
+      </div>
+    </section>
+  );
+}
