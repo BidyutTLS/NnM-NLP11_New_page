@@ -1,6 +1,4 @@
-// components/NailNManeProductSection.js
-
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function NailNManeProductSection() {
   return (
@@ -14,11 +12,12 @@ export default function NailNManeProductSection() {
 
         <div className="flex justify-center mt-6">
           <Image
-            src="/images/nailnmane-bottles.png" // Replace with your actual path
+            src="https://cdn05.zipify.com/qXz83jIWyTaru0YMJWbd8gvNyB0=/fit-in/1940x0/1fdd7bccca5e423c8f2e53c9036197e2/nail-n-mane-introduction_1-1-1.gif"
             alt="Nail n Mane Bottles"
             width={400}
             height={300}
             className="rounded-md"
+            unoptimized
           />
         </div>
 
@@ -40,7 +39,6 @@ export default function NailNManeProductSection() {
 
         {/* Bonus Benefits + CTA */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start text-left text-white">
-
           <div>
             <h3 className="font-bold text-lg">BONUS BENEFITS:</h3>
             <ul className="mt-3 space-y-2">
@@ -68,19 +66,43 @@ export default function NailNManeProductSection() {
         {/* Trust Badges */}
         <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center text-sm">
           <div className="flex flex-col items-center">
-            <Image src="/icons/no-binders.png" alt="No Binders" width={60} height={60} />
+            <Image
+              src="https://cdn05.zipify.com/b3JKMbKy_6Lle6N63Kte90yD8iw=/fit-in/1940x0/4efa85d1870c4ac9a2ee5a95bd903b48/no-binders-icon.png"
+              alt="No Binders"
+              width={60}
+              height={60}
+              unoptimized
+            />
             <p className="mt-2">No Binders</p>
           </div>
           <div className="flex flex-col items-center">
-            <Image src="/icons/no-preservatives.png" alt="No Preservatives" width={60} height={60} />
+            <Image
+              src="https://cdn05.zipify.com/dM8JCvSFZiFFd2B-A_LvCd67uMg=/fit-in/1940x0/8d1ad0aca48947368747b26f0ff12594/no-preservatives-icon.png"
+              alt="No Preservatives"
+              width={60}
+              height={60}
+              unoptimized
+            />
             <p className="mt-2">No Preservatives</p>
           </div>
           <div className="flex flex-col items-center">
-            <Image src="/icons/non-gmo.png" alt="Non-GMO" width={60} height={60} />
+            <Image
+              src="https://cdn05.zipify.com/USKheMAubw9EMI9Xt56evx7BoVU=/fit-in/1940x0/a2cadf5a408747a0a4e77a74a1fdd09e/non-gmo-icon.png"
+              alt="Non-GMO"
+              width={60}
+              height={60}
+              unoptimized
+            />
             <p className="mt-2">NON-GMO</p>
           </div>
           <div className="flex flex-col items-center">
-            <Image src="/icons/gluten-free.png" alt="Gluten Free" width={60} height={60} />
+            <Image
+              src="https://cdn05.zipify.com/rMdNFIJJvugo1TYABJqdoYMO8nQ=/fit-in/1940x0/7f1037b2478849d280ae6e03d7bcccdd/gluten-free.png"
+              alt="Gluten Free"
+              width={60}
+              height={60}
+              unoptimized
+            />
             <p className="mt-2">Gluten Free</p>
           </div>
         </div>
