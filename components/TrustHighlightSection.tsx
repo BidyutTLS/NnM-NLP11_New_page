@@ -1,20 +1,19 @@
 import React from 'react';
+import Image from 'next/image';
 
 const TrustHighlightSection = () => {
   return (
     <section className="bg-[#f7f7f7] py-10 px-4">
       <div className="max-w-5xl mx-auto border border-[#4f002b] p-6 md:p-10 text-center">
-        {/* Magazine and Inside Issue images */}
-        <div className="flex flex-col md:flex-row items-center justify-center mb-6 gap-6">
-          <img
-            src="/images/natural-practitioner-magazine.png"
-            alt="Natural Practitioner Magazine Cover"
-            className="w-44 md:w-60"
-          />
-          <img
-            src="/images/nailnmane-inside-issue.png"
-            alt="Nail n Mane Inside Issue"
-            className="w-52 md:w-72"
+        {/* Combined Magazine + Inside Spread Image */}
+        <div className="flex justify-center mb-6">
+          <Image
+            src="https://cdn05.zipify.com/IqHZ5PTGoTgMU3iRM8TlI52BTGg=/fit-in/1940x0/804c06a15ec04168ad805303cc079449/np-feature.jpeg"
+            alt="Nail n Mane featured in Natural Practitioner Magazine"
+            width={500}
+            height={300}
+            className="rounded-md"
+            unoptimized
           />
         </div>
 
