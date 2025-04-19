@@ -1,12 +1,29 @@
+import "./globals.css";
+import { DM_Serif_Display, Merriweather } from "next/font/google";
+import type { Metadata } from "next"; // ✅ Required for type safety
+
+const dmSerif = DM_Serif_Display({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-dm-serif",
+  display: "swap",
+});
+
+const merriweather = Merriweather({
+  subsets: ["latin"],
+  weight: ["300", "400", "700"],
+  variable: "--font-merriweather",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Nail n Mane | Clinically Tested Ayurvedic Supplement",
   description:
     "Stronger, thicker, shinier hair and longer nails in just 4–12 weeks. 100% drug-free. Clinically tested. Trusted by thousands.",
-  metadataBase: new URL("https://yourdomain.com"), // ✅ replace with your live domain
+  metadataBase: new URL("https://nailnmane.vercel.app"), // ✅ Update this
   openGraph: {
     title: "Nail n Mane by The Ayurveda Experience",
-    description:
-      "Clinically tested Ayurvedic formula for thicker hair and stronger nails.",
+    description: "Clinically tested Ayurvedic formula for thicker hair and stronger nails.",
     url: "/",
     siteName: "Nail n Mane",
     images: [
@@ -27,6 +44,14 @@ export const metadata: Metadata = {
     images: ["/og-image.jpg"],
   },
   alternates: {
-    canonical: "https://yourdomain.com", // ✅ again, update domain
+    canonical: "https://nailnmane.vercel.app", // ✅ Update this
   },
 };
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en" className={`${dmSerif.variable} ${merriweather.variable}`}>
+      <body className="bg-[#f9f9f9] text-[#2c2c2c]">{children}</body>
+    </html>
+  );
+}
