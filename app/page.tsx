@@ -1,22 +1,25 @@
+'use client';
+
 import React from "react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import HeroSection from "@/components/HeroSection";
-import HairTypeSecretSection from "@/components/HairTypeSecretSection";
-import NourishmentHighlightSection from "@/components/NourishmentHighlightSection";
-import TrustHighlightSection from "@/components/TrustHighlightSection";
-import ExpertRecommendationSection from "@/components/ExpertRecommendationSection";
-import ClinicalStudySection from "@/components/ClinicalStudySection";
-import IngredientsComplex3Section from "@/components/IngredientsComplex3Section";
-import HowToConsumeSection from "@/components/HowToConsumeSection";
-import TextReviewsSection from "@/components/TextReviewsSection";
-import PurchaseOptionsSection from "@/components/PurchaseOptionsSection";
-import BangForBuckComparisonSection from "@/components/BangForBuckComparisonSection";
-import NailBenefitsSection from "@/components/NailBenefitsSection";
-import UrgencyBuyNowSection from "@/components/UrgencyBuyNowSection";
-import SafetyAssuranceSection from "@/components/SafetyAssuranceSection";
-import FaqSection from "@/components/FaqSection";
-import ReferencesSection from "@/components/ReferencesSection";
+
+import Header from "@/components/Header.js";
+import Footer from "@/components/Footer.js";
+import HeroSection from "@/components/HeroSection.js";
+import HairTypeSecretSection from "@/components/HairTypeSecretSection.js";
+import NourishmentHighlightSection from "@/components/NourishmentHighlightSection.js";
+import TrustHighlightSection from "@/components/TrustHighlightSection.tsx";
+import ExpertRecommendationSection from "@/components/ExpertRecommendationSection.js";
+import ClinicalStudySection from "@/components/ClinicalStudySection.js";
+import IngredientsComplex3Section from "@/components/IngredientsComplex3Section.js";
+import HowToConsumeSection from "@/components/HowToConsumeSection.js";
+import TextReviews from "@/components/TextReviews.js";
+import PurchaseOptionsSection from "@/components/PurchaseOptionsSection.js";
+import ComparisonTableSection from "@/components/ComparisonTableSection.js";
+import NailsBenefitsSection from "@/components/NailsBenefitsSection.js";
+import SmartDealSection from "@/components/SmartDealSection.js";
+import SafetyQualitySection from "@/components/SafetyQualitySection.js";
+import FAQSection from "@/components/FAQSection.js";
+import ReferencesSection from "@/components/ReferencesSection.js";
 
 const NailNManePage = () => {
   return (
@@ -30,13 +33,13 @@ const NailNManePage = () => {
       <ClinicalStudySection />
       <IngredientsComplex3Section />
       <HowToConsumeSection />
-      <TextReviewsSection />
+      <TextReviews />
       <PurchaseOptionsSection />
-      <BangForBuckComparisonSection />
-      <NailBenefitsSection />
-      <UrgencyBuyNowSection />
-      <SafetyAssuranceSection />
-      <FaqSection />
+      <ComparisonTableSection />
+      <NailsBenefitsSection />
+      <SmartDealSection />
+      <SafetyQualitySection />
+      <FAQSection />
       <ReferencesSection />
       <Footer />
     </main>
