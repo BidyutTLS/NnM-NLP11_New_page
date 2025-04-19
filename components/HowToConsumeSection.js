@@ -9,19 +9,30 @@ const HowToConsumeSection = () => {
       </h2>
       <div className="flex justify-center mb-6">
         <Image
-          src="/how-to-consume.png"
-          alt="How to Consume"
+          src="https://cdn05.zipify.com/MSowaFmAJ__8d8QirsMhfIUAo00=/fit-in/1940x0/c7d424f327d3460397bec2b2898db99a/consuming-nail-n-mane-desktop.jpeg"
+          alt="How to Consume Nail n Mane"
           width={600}
           height={350}
           className="rounded shadow-md"
+          unoptimized
         />
       </div>
       <div className="max-w-4xl mx-auto text-lg leading-relaxed">
         <p className="mb-4">
-          Just take one <span className="bg-[#54032d] text-white px-1 font-bold">easy-to-swallow</span> tablet with your favorite beverage after a meal – it’s that SIMPLE!
+          Just take one{" "}
+          <span className="bg-[#54032d] text-white px-1 font-bold">
+            easy-to-swallow
+          </span>{" "}
+          tablet with your favorite beverage after a meal – it’s that SIMPLE!
         </p>
         <p className="mb-4">
-          Unlike most hard-to-swallow pills with an unpleasant aftertaste, this <strong>easy-to-take pill has no aftertaste</strong>. It blends seamlessly into your daily routine, delivering a boost of botanicals for <strong>stronger, thicker and healthier hair</strong>—helping you <strong>feel rejuvenated and more confident than you’ve felt in years.</strong>
+          Unlike most hard-to-swallow pills with an unpleasant aftertaste, this{" "}
+          <strong>easy-to-take pill has no aftertaste</strong>. It blends
+          seamlessly into your daily routine, delivering a boost of botanicals
+          for <strong>stronger, thicker and healthier hair</strong>—helping you{" "}
+          <strong>
+            feel rejuvenated and more confident than you’ve felt in years.
+          </strong>
         </p>
         <p className="font-bold text-[#1a1a1a]">
           Feel like you’ve turned back the clock by 20 years.
@@ -33,17 +44,21 @@ const HowToConsumeSection = () => {
           Here’s a quick RECAP...
         </h3>
         <p className="text-lg mb-4">
-          ...of what makes our hair supplement the ultimate recipe for reducing hair thinning and promoting healthy growth:
+          ...of what makes our hair supplement the ultimate recipe for reducing
+          hair thinning and promoting healthy growth:
         </p>
         <ul className="text-left text-lg space-y-3">
           <li>
-            ✅ <strong>CLINICALLY TESTED</strong> on 36 real women for real benefits on hair
+            ✅ <strong>CLINICALLY TESTED</strong> on 36 real women for real
+            benefits on hair
           </li>
           <li>
-            ✅ Perfect blend of <strong>AYURVEDIC HERBS</strong> and <strong>MODERN SCIENCE</strong> for optimal results
+            ✅ Perfect blend of <strong>AYURVEDIC HERBS</strong> and{" "}
+            <strong>MODERN SCIENCE</strong> for optimal results
           </li>
           <li>
-            ✅ <strong>TRUSTED</strong> by more than <strong>8000 women</strong> just like <strong>YOU</strong>
+            ✅ <strong>TRUSTED</strong> by more than{" "}
+            <strong>8000 women</strong> just like <strong>YOU</strong>
           </li>
         </ul>
       </div>
