@@ -5,14 +5,15 @@ import Image from 'next/image';
 export default function WhatIsAyurvedaSection() {
   return (
     <section className="bg-[#262700] text-white px-6 py-20 relative overflow-hidden">
-      {/* Top graphic row */}
-      <div className="flex justify-center gap-4 mb-10 flex-wrap">
-        <Image src="/images/hand-left.png" alt="Left hand" width={50} height={100} />
-        <Image src="/images/herb1.png" alt="Herb 1" width={40} height={40} />
-        <Image src="/images/flower.png" alt="Flower" width={60} height={60} />
-        <Image src="/images/fruit1.png" alt="Fruit" width={40} height={40} />
-        <Image src="/images/herb2.png" alt="Herb 2" width={50} height={50} />
-        <Image src="/images/hand-right.png" alt="Right hand" width={50} height={100} />
+      {/* Top Illustration */}
+      <div className="flex justify-center mb-10">
+        <Image
+          src="https://cdn05.zipify.com/qbV52tJHxmRz_T_ibni9kvcEUyE=/fit-in/1940x0/b7f1de2b49fa4f2ba24465341f1ddbc0/upper-illustration-for-ayurveda-section.png"
+          alt="Top Ayurveda Illustration"
+          width={600}
+          height={100}
+          unoptimized
+        />
       </div>
 
       {/* Content */}
@@ -36,14 +37,15 @@ export default function WhatIsAyurvedaSection() {
         </p>
       </div>
 
-      {/* Bottom graphic row */}
-      <div className="flex justify-center gap-4 mt-12 flex-wrap">
-        <Image src="/images/hand-left.png" alt="Left hand" width={50} height={100} />
-        <Image src="/images/herb1.png" alt="Herb 1" width={40} height={40} />
-        <Image src="/images/flower.png" alt="Flower" width={60} height={60} />
-        <Image src="/images/fruit1.png" alt="Fruit" width={40} height={40} />
-        <Image src="/images/herb2.png" alt="Herb 2" width={50} height={50} />
-        <Image src="/images/hand-right.png" alt="Right hand" width={50} height={100} />
+      {/* Bottom Illustration */}
+      <div className="flex justify-center mt-12">
+        <Image
+          src="https://cdn05.zipify.com/uerDOXaA8zgwjtlFfyeha1YXRd4=/fit-in/1940x0/32bab5acda894cf2a374eaccd7c1942d/illustration-for-ayurveda-section.png"
+          alt="Bottom Ayurveda Illustration"
+          width={600}
+          height={100}
+          unoptimized
+        />
       </div>
     </section>
   );
