@@ -1,6 +1,8 @@
 import "./globals.css";
 import { DM_Serif_Display, Merriweather } from "next/font/google";
-import type { Metadata } from "next"; // ✅ Required for type safety
+import type { Metadata } from "next"; 
+import "../styles/globals.css"; // or "@/styles/globals.css"
+
 
 const dmSerif = DM_Serif_Display({
   subsets: ["latin"],
