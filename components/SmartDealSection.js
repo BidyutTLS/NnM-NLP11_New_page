@@ -25,11 +25,12 @@ const SmartDealSection = () => {
       <div className="flex flex-col md:flex-row items-center justify-center mt-6 max-w-4xl mx-auto gap-6">
         <div className="w-[120px]">
           <Image
-            src="/super-saver.png"
+            src="https://cdn05.zipify.com/RqVoS3KOk4slUwXf3RB28UyLUW4=/fit-in/1940x0/abd72a8076d04e0f9f8f597c768d429a/nail-n-mane-with-discount1.png"
             alt="15% Off Pack"
             width={150}
             height={150}
             className="mx-auto"
+            unoptimized
           />
         </div>
         <div className="text-left text-base space-y-3 max-w-xl">
