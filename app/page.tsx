@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import ClinicalResultsSection from "@/components/ClinicalResultsSection";
 import EmotionalIntroSection from "@/components/EmotionalIntroSection";
 import WhatIsAyurvedaSection from "@/components/WhatIsAyurvedaSection";
+import NailNManeProductSection from "@/components/NailNManeProductSection";
 import HairTypeSecretSection from "@/components/HairTypeSecretSection";
 import NourishmentHighlightSection from "@/components/NourishmentHighlightSection";
 import TrustHighlightSection from "@/components/TrustHighlightSection";
@@ -30,6 +31,7 @@ const NailNManePage = () => {
       <ClinicalResultsSection />
       <EmotionalIntroSection />
       <WhatIsAyurvedaSection />
+      <NailNManeProductSection />
       <HairTypeSecretSection />
       <NourishmentHighlightSection />
       <TrustHighlightSection />
