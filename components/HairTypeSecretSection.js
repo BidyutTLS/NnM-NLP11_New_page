@@ -1,6 +1,25 @@
 import React from "react";
 
 export default function HairTypeSecretSection() {
+  const follicleTypes = [
+    {
+      name: "Straight",
+      src: "https://cdn05.zipify.com/i44KYkN7dTwMfHVfDmgiUZoMxqU=/fit-in/1940x0/d6f5bc7f105c4051bc1a2d6590192a90/straight.png",
+    },
+    {
+      name: "Wavy",
+      src: "https://cdn05.zipify.com/6H6pYSRYzeCDXrHRoT650vN2b7g=/fit-in/1940x0/9ecdf7b2ccb742798a5629d007b4de17/wavy.png",
+    },
+    {
+      name: "Curly",
+      src: "https://cdn05.zipify.com/Gr-1RyS_oflkTmhoa0Aai94DkZw=/fit-in/1940x0/70daac0f81a4420da261abdbc66d9a64/curly.png",
+    },
+    {
+      name: "Coily",
+      src: "https://cdn05.zipify.com/uJ0n5ctBRfQ8HtQfrcmEVYgvpDM=/fit-in/1940x0/ac42f09ef4f8422285780502a8e4c312/coily.png",
+    },
+  ];
+
   return (
     <section className="bg-[#f9f9f9] text-[#33001b] py-12 px-4 md:px-16">
       <div className="max-w-screen-xl mx-auto text-center mb-8">
@@ -25,15 +44,14 @@ export default function HairTypeSecretSection() {
         </ul>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
-          {[
-            { name: "Straight", src: "/images/straight.png" },
-            { name: "Wavy", src: "/images/wavy.png" },
-            { name: "Curly", src: "/images/curly.png" },
-            { name: "Coily", src: "/images/coily.png" },
-          ].map(({ name, src }) => (
+          {follicleTypes.map(({ name, src }) => (
             <div key={name} className="bg-white shadow rounded overflow-hidden text-center">
               <div className="bg-[#5a002d] text-white font-bold py-1">{name}</div>
-              <img src={src} alt={`${name} hair follicle`} className="w-full h-auto" />
+              <img
+                src={src}
+                alt={`${name} hair follicle`}
+                className="w-full h-auto"
+              />
             </div>
           ))}
         </div>
