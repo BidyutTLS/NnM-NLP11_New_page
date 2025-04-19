@@ -18,8 +18,8 @@ const BenefitsTimeline = () => {
 
         <div className="mt-10 flex flex-col md:flex-row items-center justify-center">
           <img
-            src="/images/blonde-woman.png"
-            alt="Woman with healthy hair"
+            src="https://cdn05.zipify.com/lr_VHhkCqqIpmC8KOgdlFqMXvo0=/fit-in/1940x0/5c9189622c6846e4bdc629e21fb5657c/nail-n-mane-weekwise-effects.png"
+            alt="Week-wise effects of Nail n Mane"
             className="w-[280px] md:w-[320px] mb-6 md:mb-0"
           />
 
