@@ -55,10 +55,11 @@ const ClinicalStudySection = () => {
         <div>
           <p className="text-lg font-bold text-[#54032d] mb-1">WEEK 0</p>
           <Image
-            src="/clinical-thickness-before.png"
+            src="https://cdn05.zipify.com/loqXv-U5vK-V1--lzHGs29D4NcI=/fit-in/1940x0/884af14c14bb4773816a0ec5049650e8/average-hair-thickness-24-micron.png"
             alt="Week 0 – Hair thickness"
             width={300}
             height={300}
+            unoptimized
           />
           <p className="mt-2 text-sm font-semibold">
             Average Hair Thickness 24 µm
@@ -67,10 +68,11 @@ const ClinicalStudySection = () => {
         <div>
           <p className="text-lg font-bold text-[#54032d] mb-1">WEEK 12</p>
           <Image
-            src="/clinical-thickness-after.png"
+            src="https://cdn05.zipify.com/FHWrovg69S8MTjRv50NC3xDlE3o=/fit-in/1940x0/48b386afe3914db181dcb22eef614b2f/average-hair-thickness-38-micron.png"
             alt="Week 12 – Hair thickness"
             width={300}
             height={300}
+            unoptimized
           />
           <p className="mt-2 text-sm font-semibold">
             Average Hair Thickness 38 µm
