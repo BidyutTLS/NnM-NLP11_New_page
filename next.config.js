@@ -6,6 +6,7 @@ const nextConfig = {
       "fonts.gstatic.com",
       "cdn.jsdelivr.net",
       "cdn.theayurvedaexperience.com",
+      "cdn05.zipify.com",        
     ],
   },
   experimental: {
