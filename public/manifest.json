@@ -1,0 +1,21 @@
+{
+  "name": "Nail n Mane",
+  "short_name": "NailnMane",
+  "description": "Clinically tested Ayurvedic supplement for stronger, thicker hair and nails.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f9f9f9",
+  "theme_color": "#54032d",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
