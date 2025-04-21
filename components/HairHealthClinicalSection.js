@@ -13,7 +13,7 @@ export default function HairHealthClinicalSection() {
         </h2>
         <p>
           Our scientists curated potent Ayurvedic herbs like
-          <span className="bg-[#3d3e1f] text-white px-1 mx-1 font-bold">Ashwagandha</span>,
+          <span className="bg-[#3d3e1f] text-white px-1 mx-1 font-bold">Ashwagandha</span>, 
           <span className="bg-[#3d3e1f] text-white px-1 font-bold">Tulsi</span>, and
           <span className="bg-[#3d3e1f] text-white px-1 font-bold">Amla</span> —
           best known for promoting hair growth — to create a restorative blend.
@@ -22,7 +22,7 @@ export default function HairHealthClinicalSection() {
         <p className="font-bold">But we didn’t stop there!</p>
         <p>
           We combined these time-tested herbs with other clinically proven ingredients like
-          <span className="bg-[#3d3e1f] text-white px-1 mx-1 font-bold">Biotin</span>,
+          <span className="bg-[#3d3e1f] text-white px-1 mx-1 font-bold">Biotin</span>, 
           <span className="bg-[#3d3e1f] text-white px-1 font-bold">Zinc</span>, and
           <span className="bg-[#3d3e1f] text-white px-1 font-bold">essential Vitamins</span>
           to create a game-changing hair solution that fits right into your busy lifestyle —
