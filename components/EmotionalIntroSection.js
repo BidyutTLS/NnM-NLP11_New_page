@@ -6,7 +6,7 @@ export default function EmotionalIntroSection() {
       <div className="max-w-4xl mx-auto text-center space-y-6">
 
         {/* Gold Banner */}
-        <div className="bg-yellow-500 text-[#4b2d0d] font-bold text-lg px-4 py-2 inline-block">
+        <div className="bg-gold text-[#4b2d0d] font-bold text-lg px-4 py-2 inline-block">
           In <span className="uppercase">JUST 2 MINUTES</span>...
         </div>
 
@@ -19,10 +19,10 @@ export default function EmotionalIntroSection() {
         <p className="font-merriweather text-lg italic">But first…</p>
 
         {/* Main Headline */}
-        <h2 className="text-2xl md:text-3xl font-bold text-yellow-500 font-dmserif">
+        <h2 className="text-2xl md:text-3xl font-bold text-gold font-dmserif">
           Let’s talk about what really matters –
         </h2>
-        <h3 className="text-xl md:text-2xl italic text-yellow-400 font-dmserif">
+        <h3 className="text-xl md:text-2xl italic text-gold font-dmserif">
           Your Hair and How It Affects You!
         </h3>
 
@@ -32,7 +32,7 @@ export default function EmotionalIntroSection() {
         </p>
         <p className="text-white font-merriweather text-lg leading-relaxed">
           No matter what <strong>your hair type is</strong>, if you have
-          <span className="bg-yellow-500 text-[#4b2d0d] font-bold px-1 mx-1">THINNING HAIR</span>,
+          <span className="bg-gold text-[#4b2d0d] font-bold px-1 mx-1">THINNING HAIR</span>,
           it can be devastating to your self-esteem.
         </p>
 
