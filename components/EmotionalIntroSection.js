@@ -29,8 +29,7 @@ export default function EmotionalIntroSection() {
         {/* Body Paragraphs */}
         <p className="text-white font-merriweather text-lg leading-relaxed">
           For women, hair isn’t just about style – it’s a huge part of your <strong>confidence, identity, and femininity</strong>.
-        </p>
-        <p className="text-white font-merriweather text-lg leading-relaxed">
+          <br />
           No matter what <strong>your hair type is</strong>, if you have
           <span className="bg-gold text-[#4b2d0d] font-bold px-1 mx-1">THINNING HAIR</span>,
           it can be devastating to your self-esteem.
