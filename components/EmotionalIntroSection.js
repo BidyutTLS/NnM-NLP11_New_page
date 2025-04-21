@@ -22,7 +22,7 @@ export default function EmotionalIntroSection() {
         <h2 className="text-2xl md:text-3xl font-bold text-gold font-inter">
           Let’s talk about what really matters –
         </h2>
-        <h3 className="text-xl md:text-2xl italic text-gold font-dmserif">
+        <h3 className="text-xl md:text-2xl italic bold text-gold font-dmserif">
           Your Hair and How It Affects You!
         </h3>
 
