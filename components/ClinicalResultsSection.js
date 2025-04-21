@@ -9,7 +9,7 @@ export default function ClinicalResultsSection() {
         lg:bg-[url('/images/hair-results-right.jpg')]
       `}
     >
-      <div className="relative z-10 max-w-4xl mx-auto px-4 py-12 md:py-16 lg:py-20 text-center">
+      <div className="relative z-10 max-w-4xl mx-auto px-4 py-12 md:py-12 lg:py-16 text-center">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-snug mb-8">
           Discover the Breakthrough Results of a <br />
           <span className="font-bold">Recent Clinical Study</span>
