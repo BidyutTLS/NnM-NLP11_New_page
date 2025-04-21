@@ -34,7 +34,7 @@ export default function HairHealthClinicalSection() {
           <h3 className="text-xl md:text-2xl font-bold font-inter text-[#660c4f]">
             And then, we CLINICALLY TESTED it...
           </h3>
-          <span className="text-[#000000]">
+          <div className="text-[#000000]">
           <p>
             ...on <span className="font-bold">36 real women.</span> After
             <span className="font-bold"> JUST 4-12 weeks</span>, they reported results that speak volumes!
@@ -64,7 +64,7 @@ export default function HairHealthClinicalSection() {
             Plus, we put it through a comprehensive <span className="font-bold">safety study</span>, reporting <span className="font-bold">NO SIDE EFFECTS</span>!
           </p>
         </div>
-        </span>
+        </div>
   
         {/* Call-to-action */}
         <p className="text-blue-800 font-bold text-xl mt-8">
