@@ -1,5 +1,5 @@
 import "./globals.css";
-import { DM_Serif_Display, Merriweather } from "next/font/google";
+import { DM_Serif_Display, Merriweather, Inter } from "next/font/google";
 import type { Metadata } from "next"; 
 import "../styles/globals.css"; // or "@/styles/globals.css"
 
@@ -15,6 +15,13 @@ const merriweather = Merriweather({
   subsets: ["latin"],
   weight: ["300", "400", "700"],
   variable: "--font-merriweather",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "700"],
+  variable: "--font-inter",
   display: "swap",
 });
 
