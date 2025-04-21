@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         dmserif: ["var(--font-dm-serif)"],
         merriweather: ["var(--font-merriweather)"],
+        inter: ["var(--font-inter)"],
       },
       colors: {
         primary: "#54032d",
