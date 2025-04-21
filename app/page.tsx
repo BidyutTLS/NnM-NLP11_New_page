@@ -7,7 +7,9 @@ import Footer from "@/components/Footer";
 import ClinicalResultsSection from "@/components/ClinicalResultsSection";
 import EmotionalIntroSection from "@/components/EmotionalIntroSection";
 import WhatIsAyurvedaSection from "@/components/WhatIsAyurvedaSection";
+import HairHealthClinicalSection from "@/components/HairHealthClinicalSection";
 import NailNManeProductSection from "@/components/NailNManeProductSection";
+import PractitionerRecommendationSection from "@/components/PractitionerRecommendationSection";
 import HairTypeSecretSection from "@/components/HairTypeSecretSection";
 import NourishmentHighlightSection from "@/components/NourishmentHighlightSection";
 import TrustHighlightSection from "@/components/TrustHighlightSection";
@@ -31,7 +33,9 @@ const NailNManePage = () => {
       <ClinicalResultsSection />
       <EmotionalIntroSection />
       <WhatIsAyurvedaSection />
+      <HairHealthClinicalSection />
       <NailNManeProductSection />
+      <PractitionerRecommendationSection />
       <HairTypeSecretSection />
       <NourishmentHighlightSection />
       <TrustHighlightSection />
