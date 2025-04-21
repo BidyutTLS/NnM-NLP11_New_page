@@ -19,10 +19,10 @@ export default function EmotionalIntroSection() {
         <p className="font-merriweather text-lg italic">But first…</p>
 
         {/* Main Headline */}
-        <h2 className="text-2xl md:text-3xl font-bold text-gold font-dmserif">
+        <h2 className="text-2xl md:text-3xl font-bold text-gold font-inter">
           Let’s talk about what really matters –
         </h2>
-        <h3 className="text-xl md:text-2xl italic text-gold font-inter">
+        <h3 className="text-xl md:text-2xl italic text-gold font-dmserif">
           Your Hair and How It Affects You!
         </h3>
 
