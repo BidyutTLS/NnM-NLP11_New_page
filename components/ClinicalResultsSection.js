@@ -26,7 +26,7 @@ export default function ClinicalResultsSection() {
             <span className="text-3xl md:text-4xl font-extrabold">44.7%</span> Faster Hair Growth
           </p>
           <p className="italic text-base md:text-lg mt-2">And So Much More*</p>
-          <p className="text-xl md:text-2xl italic text-yellow-400 mt-4 font-semibold">
+          <p className="text-xl md:text-2xl italic text-gold mt-4 font-semibold">
             For All Hair Types
           </p>
         </div>
