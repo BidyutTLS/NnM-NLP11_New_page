@@ -11,6 +11,7 @@ export default function HairHealthClinicalSection() {
         <h2 className="text-2xl md:text-3xl font-inter font-bold text-[#660c4f]">
           Makings of a 100% Drug-free Hair Health Solution
         </h2>
+    <div text-[#000000]>
         <p>
           Our scientists curated potent Ayurvedic herbs like
           <span className="bg-[#3d3e1f] text-white px-1 mx-1 font-bold">Ashwagandha</span>, 
@@ -28,7 +29,8 @@ export default function HairHealthClinicalSection() {
           to create a game-changing hair solution that fits right into your busy lifestyle —
           taking <span className="font-bold">just 10 seconds a day!</span>
         </p>
-
+    </div>
+  
         {/* Clinical Study Box */}
         <div className="border border-[#660c4f] p-6 mt-10 space-y-6">
           <h3 className="text-xl md:text-2xl font-bold font-inter text-[#660c4f]">
