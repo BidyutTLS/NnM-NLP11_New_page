@@ -15,7 +15,7 @@ export default function ClinicalResultsSection() {
           <span className="font-bold">Recent Clinical Study</span>
         </h2>
 
-        <div className="border border-yellow-500 p-4 bg-[#6e1e2f]/70 rounded-md text-white w-full max-w-md md:max-w-lg lg:max-w-2xl mx-auto">
+        <div className="border border-gold p-4 bg-[#6e1e2f]/70 rounded-md text-white w-full max-w-md md:max-w-lg lg:max-w-2xl mx-auto">
           <p className="text-xl md:text-2xl font-bold mb-4">
             <span className="text-3xl md:text-4xl font-extrabold">46.3%</span> Thicker Hair,
           </p>
