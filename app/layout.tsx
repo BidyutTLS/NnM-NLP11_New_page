@@ -59,7 +59,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${dmSerif.variable} ${merriweather.variable}`}>
+    <html lang="en" className={`${dmSerif.variable} ${merriweather.variable} ${inter.variable}`}>
       <body className="bg-[#f9f9f9] text-[#2c2c2c]">{children}</body>
     </html>
   );
