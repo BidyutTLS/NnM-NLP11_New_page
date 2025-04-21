@@ -3,10 +3,11 @@
 export default function ClinicalResultsSection() {
   return (
     <section
-      className="relative bg-cover bg-center bg-no-repeat text-white"
-      style={{
-        backgroundImage: "url('/images/first-fold-bg1-mobile.jpg')", // path relative to public/
-      }}
+      className={`
+        relative bg-cover bg-center bg-no-repeat text-white
+        bg-[url('/images/first-fold-bg1-mobile.jpg')]
+        lg:bg-[url('/images/hair-results-right.jpg')]
+      `}
     >
       <div className="relative z-10 max-w-4xl mx-auto px-4 py-20 text-center">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-snug mb-8">
