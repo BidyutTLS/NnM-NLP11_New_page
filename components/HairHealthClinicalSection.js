@@ -69,7 +69,7 @@ export default function HairHealthClinicalSection() {
         </div>
   
         {/* Call-to-action */}
-        <p className="text-blue-800 font-bold text-xl mt-8">
+        <p className="text-blue-800 font-inter font-bold text-xl mt-8">
           Can’t wait to know what this secret solution is?
         </p>
       </div>
