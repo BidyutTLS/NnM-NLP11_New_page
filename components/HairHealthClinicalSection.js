@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function HairHealthClinicalSection() {
   return (
-    <section className="bg-[#f9f9f9] text-[#3b003b] px-4 py-20 font-merriweather">
+    <section className="bg-[#f9f9f9] text-[#3b003b] text-lg px-4 py-20 font-merriweather">
       <div className="max-w-5xl mx-auto text-center space-y-6">
 
         {/* Header */}
