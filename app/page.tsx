@@ -17,6 +17,7 @@ import NourishmentHighlightSection from "@/components/NourishmentHighlightSectio
 import TrustHighlightSection from "@/components/TrustHighlightSection";
 import ExpertRecommendationSection from "@/components/ExpertRecommendationSection";
 import ClinicalStudySection from "@/components/ClinicalStudySection";
+import BiotinInfoSection from "@/components/BiotinInfoSection";
 import IngredientsComplex3Section from "@/components/IngredientsComplex3Section";
 import HowToConsumeSection from "@/components/HowToConsumeSection";
 import TextReviews from "@/components/TextReviews";
@@ -45,6 +46,7 @@ const NailNManePage = () => {
       <TrustHighlightSection />
       <ExpertRecommendationSection />
       <ClinicalStudySection />
+      <BiotinInfoSection />
       <IngredientsComplex3Section />
       <HowToConsumeSection />
       <TextReviews />
