@@ -1,21 +1,13 @@
 // components/ClinicalResultsSection.js
 
-import Image from 'next/image';
-
 export default function ClinicalResultsSection() {
   return (
     <section className="relative bg-[#6e1e2f] text-white overflow-hidden">
-      {/* Background Image on Right for Large Screens */}
-      <div className="hidden lg:block absolute right-0 top-0 h-full w-1/2 z-0">
-        <Image
-          src="/images/hair-results-right.jpg" // Replace with your actual image
-          alt="Woman with long shiny hair"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
-          priority
-        />
-      </div>
+      {/* Desktop Background Image */}
+      <div className="hidden lg:block absolute right-0 top-0 h-full w-1/2 z-0 bg-[url('/images/hair-results-right.jpg')] bg-cover bg-center" />
+
+      {/* Mobile Background Image */}
+      <div className="lg:hidden absolute inset-0 z-0 bg-[url('/images/first-fold-bg1-mobile.jpg')] bg-cover bg-center opacity-20" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 py-20 lg:flex lg:items-center">
         {/* Left Column Text */}
@@ -41,17 +33,6 @@ export default function ClinicalResultsSection() {
               For All Hair Types
             </p>
           </div>
-        </div>
-
-        {/* Right Image for Small Screens */}
-        <div className="lg:hidden mt-10">
-          <Image
-            src="/images/hair-results-right.jpg" // Replace with your actual image path
-            alt="Woman with long shiny hair"
-            width={400}
-            height={400}
-            className="mx-auto rounded-md"
-          />
         </div>
       </div>
     </section>
