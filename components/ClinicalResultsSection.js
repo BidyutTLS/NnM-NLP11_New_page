@@ -2,16 +2,16 @@
 
 export default function ClinicalResultsSection() {
   return (
-    <section className="relative bg-[#6e1e2f] text-white overflow-hidden">
-      {/* Desktop Background Image */}
-      <div className="hidden lg:block absolute right-0 top-0 h-full w-1/2 z-0 bg-[url('/images/hair-results-right.jpg')] bg-cover bg-center" />
+    <section
+      className="relative bg-[#6e1e2f] text-white overflow-hidden bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/images/first-fold-bg1-mobile.jpg')",
+      }}
+    >
 
-      {/* Mobile Background Image */}
-      <div className="lg:hidden absolute inset-0 z-0 bg-[url('/images/first-fold-bg1-mobile.jpg')] bg-cover bg-center opacity-20" />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-4 py-20 lg:flex lg:items-center">
-        {/* Left Column Text */}
-        <div className="lg:w-1/2 text-center lg:text-left">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 py-20">
+        <div className="text-center lg:text-left max-w-2xl mx-auto lg:mx-0">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-snug">
             Discover the Breakthrough Results of a <br />
             <span className="font-bold">Recent Clinical Study</span>
