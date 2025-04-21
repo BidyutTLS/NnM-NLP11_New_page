@@ -53,14 +53,14 @@ export default function HairHealthClinicalSection() {
                 <div className="w-24 h-24 rounded-full border-[12px] border-[#660c4f] flex items-center justify-center text-xl font-bold text-blue-800">
                   {stat.percent}
                 </div>
-                <p className="mt-4 text-sm md:text-base">
+                <p className="mt-4 text-lg md:text-base">
                   <span className="font-bold">{stat.percent}</span> {stat.label}
                 </p>
               </div>
             ))}
           </div>
 
-          <p className="text-sm mt-6">
+          <p className="text-lg mt-6">
             Plus, we put it through a comprehensive <span className="font-bold">safety study</span>, reporting <span className="font-bold">NO SIDE EFFECTS</span>!
           </p>
         </div>
