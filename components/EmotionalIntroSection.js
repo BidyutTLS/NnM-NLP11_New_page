@@ -16,7 +16,7 @@ export default function EmotionalIntroSection() {
         </p>
 
         {/* Transition Line */}
-        <p className="font-merriweather text-lg italic">But first…</p>
+        <p className="font-merriweather text-lg italic">But first… <br />
 
         {/* Main Headline */}
         <h2 className="text-2xl md:text-3xl font-bold text-gold font-inter">
@@ -25,6 +25,7 @@ export default function EmotionalIntroSection() {
         <h3 className="text-xl md:text-2xl italic bold text-gold font-dmserif">
           Your Hair and How It Affects You!
         </h3>
+          </p>
 
         {/* Body Paragraphs */}
         <p className="text-white font-merriweather text-lg leading-relaxed">
