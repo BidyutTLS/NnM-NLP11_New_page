@@ -3,7 +3,7 @@
 import React from "react";
 
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Footer from "@/components/Footer"; 
 import ClinicalResultsSection from "@/components/ClinicalResultsSection";
 import EmotionalIntroSection from "@/components/EmotionalIntroSection";
 import WhatIsAyurvedaSection from "@/components/WhatIsAyurvedaSection";
