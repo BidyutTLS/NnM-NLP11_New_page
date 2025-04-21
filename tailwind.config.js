@@ -12,7 +12,7 @@ module.exports = {
       },
       colors: {
         primary: "#54032d",
-        gold: "#e4bb45",
+        gold: "#daaa4a",
         beige: "#f9f9f9",
       },
     },
