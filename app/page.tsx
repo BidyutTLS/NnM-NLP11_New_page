@@ -22,6 +22,7 @@ import IngredientsComplexOne from "@/components/IngredientsComplexOne";
 import IngredientsComplex2Section from "@/components/IngredientsComplex2Section";
 import IngredientsComplex3Section from "@/components/IngredientsComplex3Section";
 import ExpertRecommendationSection2 from "@/components/ExpertRecommendationSection2";
+import RiskFreeTrialSection from "@/components/RiskFreeTrialSection";
 import HowToConsumeSection from "@/components/HowToConsumeSection";
 import TextReviews from "@/components/TextReviews";
 import PurchaseOptionsSection from "@/components/PurchaseOptionsSection";
@@ -54,6 +55,7 @@ const NailNManePage = () => {
       <IngredientsComplex2Section />
       <IngredientsComplex3Section />
       <ExpertRecommendationSection2 />
+      <RiskFreeTrialSection />
       <HowToConsumeSection />
       <TextReviews />
       <PurchaseOptionsSection />
