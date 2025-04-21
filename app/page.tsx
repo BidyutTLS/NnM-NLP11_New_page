@@ -11,6 +11,7 @@ import HairHealthClinicalSection from "@/components/HairHealthClinicalSection";
 import NailNManeProductSection from "@/components/NailNManeProductSection";
 import PractitionerRecommendationSection from "@/components/PractitionerRecommendationSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import BenefitsTimeline from "@/components/BenefitsTimeline";
 import HairTypeSecretSection from "@/components/HairTypeSecretSection";
 import NourishmentHighlightSection from "@/components/NourishmentHighlightSection";
 import TrustHighlightSection from "@/components/TrustHighlightSection";
@@ -38,6 +39,7 @@ const NailNManePage = () => {
       <NailNManeProductSection />
       <PractitionerRecommendationSection />
       <TestimonialsSection />
+      <BenefitsTimeline />
       <HairTypeSecretSection />
       <NourishmentHighlightSection />
       <TrustHighlightSection />
