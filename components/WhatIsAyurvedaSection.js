@@ -18,13 +18,13 @@ export default function WhatIsAyurvedaSection() {
 
       {/* Content */}
       <div className="max-w-3xl mx-auto text-center space-y-8">
-        <h2 className="text-2xl md:text-3xl font-dmserif font-bold">What is Ayurveda?</h2>
+        <h2 className="text-2xl md:text-3xl font-inter font-bold">What is Ayurveda?</h2>
         <p className="font-merriweather text-lg leading-relaxed">
           It’s the <span className="text-yellow-500 font-semibold">“Science of Living”</span>,
           a holistic approach to overall health and well-being that has stood strong for many millennia.
         </p>
 
-        <h2 className="text-2xl md:text-3xl font-dmserif font-bold">Why trust Ayurveda?</h2>
+        <h2 className="text-2xl md:text-3xl font-inter font-bold">Why trust Ayurveda?</h2>
         <p className="font-merriweather text-lg leading-relaxed">
           Think of an ancient science that’s <span className="text-yellow-500 font-semibold">THRIVED FOR 5000 YEARS</span>. 
           When something lasts that long and continues to be 
