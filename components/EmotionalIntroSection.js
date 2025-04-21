@@ -6,7 +6,7 @@ export default function EmotionalIntroSection() {
       <div className="max-w-4xl mx-auto text-center space-y-6">
 
         {/* Gold Banner */}
-        <div className="bg-gold text-[#4b2d0d] font-bold text-lg px-4 py-2 inline-block">
+        <div className="bg-gold text-[#4b2d0d] font-bold text-lg px-4 py-1 w-full">
           In <span className="uppercase">JUST 2 MINUTES</span>...
         </div>
 
