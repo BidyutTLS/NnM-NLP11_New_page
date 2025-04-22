@@ -6,7 +6,7 @@ const testimonials = [
   {
     name: "Lisa S.",
     age: 52,
-    location: "US",
+    location: "🇺🇸",
     title: "This hair/nail supplement really brings results",
     text: `I used this supplement for 8 weeks, and it truly brought me nice results. I took it once a day, before bed, and it has no taste. My hair definitely feel/looks fuller especially on top and as for my nails, it is important to note that I had removed my press on nails and so they were a mess, and while I had growth, the damage has to grow completely out, before my nails are strong enough to not break off. I definitely recommend this supplement, it’s the first to really help.`,
     images: ["/images/lisa-before.jpg", "/images/lisa-after.jpg"],
@@ -14,7 +14,7 @@ const testimonials = [
   {
     name: "Traci M.",
     age: 44,
-    location: "US",
+    location: "🇺🇸",
     title: "Amazing Growth!",
     text: `My experience with this nail/hair supplement has exceeded my expectations! I have been a nail biter since childhood and my nails are the longest and strongest they have ever been! I have been taking this for 8 weeks and I can't believe the growth and so fast!! My hair has grown so much stronger at the scalp! You take this once a day with or without a meal. It has no taste or aftertaste and simple to swallow. Highly recommend!!`,
     images: ["/images/traci-before.jpg", "/images/traci-after.jpg"],
@@ -22,7 +22,7 @@ const testimonials = [
   {
     name: "Elizabeth D.",
     age: 46,
-    location: "US",
+    location: "🇺🇸",
     title: "Incredible results!",
     text: `This supplement works!! Wow. I have never experienced hair growth like I have since taking these supplements. I am so happy to finally have new hairs growing again. My nails also got stronger which was completely unexpected. My nails are incredibly thin and NEVER grow. After using these supplements, my nails had grown but the biggest improvement was how strong my nails had become. I have taken other supplements before but have never continued using them because they either leave a bad taste in my mouth or upset my stomach but I experienced none of that after taking these. I am honestly so impressed. These are a must have for me.`,
     images: ["/images/elizabeth-before.jpg", "/images/elizabeth-after.jpg"],
@@ -35,7 +35,7 @@ export default function TestimonialsSection() {
       <div className="max-w-6xl mx-auto text-center">
 
         {/* Section Heading */}
-        <h2 className="text-2xl md:text-3xl  text-[#590632] font-bold mb-2">
+        <h2 className="text-2xl md:text-3xl  text-[#590632] font-inter font-bold mb-2">
           <span className="bg-gold italic px-2 font-dmserif">8000+ Women</span>{' '}
           Have Already Tried Nail n Mane and Swear by it!
         </h2>
@@ -84,7 +84,7 @@ export default function TestimonialsSection() {
           <button className="bg-[#590632] text-white px-8 py-3 rounded-lg text-lg font-inter font-bold shadow-md hover:opacity-90">
             Order NOW & Start Seeing results in Just 4 Weeks
           </button>
-          <p className="mt-2 text-sm text-gray-700">30-Day Money-Back Guarantee | FREE Shipping</p>
+          <p className="mt-2 font-inter text-sm text-gray-700">30-Day Money-Back Guarantee | FREE Shipping</p>
         </div>
       </div>
     </section>
