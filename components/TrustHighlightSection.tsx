@@ -19,18 +19,18 @@ const TrustHighlightSection = () => {
 
         {/* Heading */}
         <h2 className="text-2xl md:text-3xl font-semibold text-[#4f002b] mb-4">
-          Why Trust <span className="font-bold">Nail n Mane</span>?
+          Why Trust <span className="font-bold font-inter">Nail n Mane</span>?
         </h2>
 
         {/* Description */}
         <p className="text-lg text-[#1d1d1d] max-w-3xl mx-auto leading-relaxed">
           Our rigorous testing and commitment to quality have earned <strong>Nail n Mane</strong> a spotlight feature in the
           September 2024 issue of{' '}
-          <span className="bg-[#4f002b] text-white px-1 font-bold">
+          <span className="bg-[#4f002b] text-white px-1 font-inter font-bold">
             NATIONAL PRACTITIONER MAGAZINE
           </span>{' '}
           – the premier medical publication for Natural Health Practitioners across the country and{' '}
-          <span className="bg-[#4f002b] text-white px-1 font-bold">
+          <span className="bg-[#4f002b] text-white px-1 font-inter font-bold">
             trusted by 15000+ Practitioners.
           </span>
         </p>
