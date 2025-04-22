@@ -31,7 +31,7 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="bg-[#f9f9f9] px-4 py-16 font-merriweather text-[#5b0830]">
+    <section className="bg-[#f9f9f9] px-4 py-16 font-merriweather text-lg text-[#000000]">
       <div className="max-w-6xl mx-auto text-center">
 
         {/* Section Heading */}
