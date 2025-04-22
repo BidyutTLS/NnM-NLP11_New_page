@@ -4,9 +4,9 @@ import Image from "next/image";
 const ExpertRecommendationSection = () => {
   return (
     <section className="bg-[#f9f9f9] py-12 px-4 text-center">
-      <h2 className="text-2xl md:text-4xl font-inter font-bold text-[#54032d] max-w-4xl mx-auto">
+      <h2 className="text-2xl md:text-3xl font-inter font-bold text-[#54032d] max-w-4xl mx-auto">
         Ayurvedic Healthcare Practitioner Shanel Miller
-        <span className="bg-[#e2b857] italic font-serif text-lg md:text-xl ml-2 mr-1">
+        <span className="bg-[#e2b857] italic font-dmserif ml-2 mr-1">
           Recommends
         </span>
         Nail n Mane
