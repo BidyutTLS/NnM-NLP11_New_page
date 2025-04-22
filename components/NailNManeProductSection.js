@@ -50,7 +50,7 @@ export default function NailNManeProductSection() {
           </div>
 
           <div className="text-right md:text-left font-inter ">
-            <p className="uppercase text-sm font-bold">
+            <p className="uppercase text-sm lg:text-center font-bold">
               Start seeing visible results in as little as
             </p>
             <p className="text-gold text-2xl lg:text-center font-inter font-extrabold mt-1">4-12 weeks!</p>
