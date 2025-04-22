@@ -3,8 +3,8 @@ import React from 'react';
 
 const ClinicalStudySection = () => {
   return (
-    <section className="bg-[#f7f7f7] py-12 px-4 text-center">
-      <h2 className="text-3xl md:text-5xl font-extrabold text-[#54032d] mb-2 uppercase tracking-wider">
+    <section className="bg-[#f7f7f7] py-12 px-4 text-lg text-center">
+      <h2 className="text-3xl md:text-3xl font-inter font-extrabold text-[#54032d] mb-2 uppercase tracking-wider">
         Clinical Study
       </h2>
       <p className="text-lg md:text-xl text-[#1d1d1d]">
@@ -33,7 +33,7 @@ const ClinicalStudySection = () => {
           />
         </div>
         <div>
-          <p className="text-lg font-bold text-[#54032d] mb-1">WEEK 12</p>
+          <p className="text-lg text-left font-bold text-[#54032d] mb-1">WEEK 12</p>
           <Image
             src="https://cdn05.zipify.com/zHPYt579wfu7a_NPXhtVMZ2-fD4=/fit-in/1940x0/f669061a51764f9ca87576b0dd3389a9/after-12-weeks-2.gif"
             alt="Week 12 – Hair top view"
