@@ -25,8 +25,8 @@ export default function PractitionerRecommendationSection() {
               className="rounded-md"
               unoptimized
             />
-            <div className="bg-black text-gold text-center mt-4 py-2 px-4 w-full font-bold text-sm leading-tight border border-gold">
-              SHANEL MILLER<br />
+            <div className="bg-black text-gold text-center mt-4 py-2 px-4 w-full font-inter font-bold text-sm leading-tight border border-gold">
+              <span className=" font-inter"> SHANEL MILLER </span> <br />
               <span className="block font-normal text-white">CERTIFIED AYURVEDIC PRACTITIONER</span>
             </div>
           </div>
@@ -42,7 +42,7 @@ export default function PractitionerRecommendationSection() {
               unoptimized
             />
             <div className="bg-black text-gold text-center mt-4 py-2 px-4 w-full font-bold text-sm leading-tight border border-gold">
-              JENNIFER MAKLAN<br />
+              <span className=" font-inter"> JENNIFER MAKLAN </span> <br />
               <span className="block font-normal text-white">CERTIFIED AYURVEDIC PRACTITIONER</span>
             </div>
           </div>
