@@ -49,7 +49,7 @@ export default function NailNManeProductSection() {
             </ul>
           </div>
 
-          <div className="text-right md:text-left font-inter ">
+          <div className="text-left md:text-left font-inter ">
             <p className="uppercase text-sm lg:text-center font-bold">
               Start seeing visible results in as little as
             </p>
