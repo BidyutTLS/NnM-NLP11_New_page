@@ -5,10 +5,12 @@ export default function NailNManeProductSection() {
     <section className="bg-[#5b0830] text-white text-lg px-4 py-20 font-merriweather">
       <div className="max-w-4xl mx-auto text-center space-y-6">
 
-        {/* Title and Image */}
-        <p className="text-white text-base">We call it</p>
-        <h2 className="text-4xl font-bold font-inter py-8">Nail n Mane</h2>
-        <p className="italic text-gold font-dmserif font-bold text-2xl">built using Natural Actives</p>
+        <div className="space-y-1">
+          <p className="text-white text-base">We call it</p>
+          <h2 className="text-4xl font-bold font-inter">Nail n Mane</h2>
+          <p className="italic text-gold font-dmserif font-bold text-2xl">built using Natural Actives</p>
+        </div>
+
 
         <div className="flex justify-center mt-6">
           <Image
