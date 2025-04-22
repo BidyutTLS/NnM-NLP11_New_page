@@ -49,17 +49,17 @@ export default function NailNManeProductSection() {
             </ul>
           </div>
 
-          <div className="text-right md:text-left">
+          <div className="text-right md:text-left font-inter ">
             <p className="uppercase text-sm font-bold">
               Start seeing visible results in as little as
             </p>
-            <p className="text-gold text-2xl font-inter font-extrabold mt-1">4-12 weeks!</p>
+            <p className="text-gold text-2xl lg:text-center font-inter font-extrabold mt-1">4-12 weeks!</p>
           </div>
         </div>
 
         {/* CTA Button */}
         <div className="mt-6">
-          <button className="bg-gold text-[#4b2d0d] font-bold py-3 px-6 rounded-lg">
+          <button className="bg-gold text-[#4b2d0d] font-bold font-inter py-3 px-6 rounded-lg">
             Treat Yourself to Healthier Hair. Order NOW
           </button>
           <p className="text-sm mt-2">30-Day Money-Back Guarantee | FREE Shipping</p>
