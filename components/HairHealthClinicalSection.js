@@ -45,18 +45,18 @@ export default function HairHealthClinicalSection() {
           <p>Here’s what they experienced:</p>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 font-inter justify-items-center">
             {[
               { percent: '100%', label: 'experienced reduced hair fall' },
               { percent: '97%', label: 'reported longer hair' },
               { percent: '97%', label: 'noted thicker and denser hair' },
             ].map((stat, idx) => (
               <div key={idx} className="flex flex-col items-center">
-                <div className="w-24 h-24 rounded-full border-[12px] border-[#660c4f] flex items-center justify-center text-xl font-bold text-blue-800">
+                <div className="w-24 h-24 rounded-full border-[16px] border-[#590732] flex items-center justify-center text-xl font-bold text-blue-800">
                   {stat.percent}
                 </div>
                 <p className="mt-4 text-lg md:text-base">
-                  <span className="font-bold">{stat.percent}</span> {stat.label}
+                  <span className="font-bold font-inter">{stat.percent}</span> {stat.label}
                 </p>
               </div>
             ))}
