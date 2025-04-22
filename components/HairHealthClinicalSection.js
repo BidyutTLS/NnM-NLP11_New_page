@@ -45,7 +45,7 @@ export default function HairHealthClinicalSection() {
           <p>Here’s what they experienced:</p>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 font-inter justify-items-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-lg font-inter justify-items-center">
             {[
               { percent: '100%', label: 'experienced reduced hair fall' },
               { percent: '97%', label: 'reported longer hair' },
