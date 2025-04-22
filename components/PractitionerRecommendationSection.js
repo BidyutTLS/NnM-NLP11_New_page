@@ -8,7 +8,7 @@ export default function PractitionerRecommendationSection() {
         {/* Header */}
         <h2 className="text-2xl md:text-3xl font-bold">
           Nail n Mane is{' '}
-          <span className="bg-yellow-400 italic px-2 font-dmserif">Recommended</span>{' '}
+          <span className="bg-gold italic px-2 font-dmserif">Recommended</span>{' '}
           by Natural Health Practitioners
         </h2>
 
@@ -25,7 +25,7 @@ export default function PractitionerRecommendationSection() {
               className="rounded-md"
               unoptimized
             />
-            <div className="bg-black text-yellow-400 text-center mt-4 py-2 px-4 w-full font-bold text-sm leading-tight border border-yellow-500">
+            <div className="bg-black text-gold text-center mt-4 py-2 px-4 w-full font-bold text-sm leading-tight border border-gold">
               SHANEL MILLER<br />
               <span className="block font-normal text-white">CERTIFIED AYURVEDIC PRACTITIONER</span>
             </div>
@@ -41,7 +41,7 @@ export default function PractitionerRecommendationSection() {
               className="rounded-md"
               unoptimized
             />
-            <div className="bg-black text-yellow-400 text-center mt-4 py-2 px-4 w-full font-bold text-sm leading-tight border border-yellow-500">
+            <div className="bg-black text-gold text-center mt-4 py-2 px-4 w-full font-bold text-sm leading-tight border border-gold">
               JENNIFER MAKLAN<br />
               <span className="block font-normal text-white">CERTIFIED AYURVEDIC PRACTITIONER</span>
             </div>
