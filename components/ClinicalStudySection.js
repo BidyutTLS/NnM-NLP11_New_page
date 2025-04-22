@@ -23,7 +23,7 @@ const ClinicalStudySection = () => {
       {/* Top Before/After Comparison */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 items-start justify-center max-w-4xl mx-auto">
         <div>
-          <p className="text-lg text-right font-bold text-[#54032d] mb-1">WEEK 0</p>
+          <p className="text-lg text-centre font-bold text-[#54032d] mb-1">WEEK 0</p>
           <Image
             src="https://cdn05.zipify.com/CKF1wzLa5PEfRbzRCt3vbvWCnSs=/fit-in/1940x0/d0f243eede514faf8a41864f7ff9d9d1/before-2.gif"
             alt="Week 0 – Hair top view"
@@ -33,7 +33,7 @@ const ClinicalStudySection = () => {
           />
         </div>
         <div>
-          <p className="text-lg text-left font-bold text-[#54032d] mb-1">WEEK 12</p>
+          <p className="text-lg text-centre font-bold text-[#54032d] mb-1">WEEK 12</p>
           <Image
             src="https://cdn05.zipify.com/zHPYt579wfu7a_NPXhtVMZ2-fD4=/fit-in/1940x0/f669061a51764f9ca87576b0dd3389a9/after-12-weeks-2.gif"
             alt="Week 12 – Hair top view"
@@ -53,7 +53,7 @@ const ClinicalStudySection = () => {
       {/* Hair Thickness Comparison */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 max-w-4xl mx-auto">
         <div>
-          <p className="font-inter text-lg text-right font-bold text-[#54032d] mb-1">WEEK 0</p>
+          <p className="font-inter text-lg text-centre font-bold text-[#54032d] mb-1">WEEK 0</p>
           <Image
             src="https://cdn05.zipify.com/loqXv-U5vK-V1--lzHGs29D4NcI=/fit-in/1940x0/884af14c14bb4773816a0ec5049650e8/average-hair-thickness-24-micron.png"
             alt="Week 0 – Hair thickness"
@@ -66,7 +66,7 @@ const ClinicalStudySection = () => {
           </p>
         </div>
         <div>
-          <p className="font-inter text-lg text-left font-bold text-[#54032d] mb-1">WEEK 12</p>
+          <p className="font-inter text-lg text-centre font-bold text-[#54032d] mb-1">WEEK 12</p>
           <Image
             src="https://cdn05.zipify.com/FHWrovg69S8MTjRv50NC3xDlE3o=/fit-in/1940x0/48b386afe3914db181dcb22eef614b2f/average-hair-thickness-38-micron.png"
             alt="Week 12 – Hair thickness"
