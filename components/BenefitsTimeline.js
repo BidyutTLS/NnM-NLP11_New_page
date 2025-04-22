@@ -30,7 +30,7 @@ const BenefitsTimeline = () => {
 
         {/* Highlight Block */}
         <div className="bg-[#e7bb59] text-[#580F29] mt-0 px-6 py-12 rounded-md">
-          <p className="text-lg mb-6 font-merriweather">
+          <p className="text-lg text-[#1a1a1a] mb-6 font-merriweather">
             In simple words, here’s what’s coming your way:
           </p>
 
@@ -41,9 +41,9 @@ const BenefitsTimeline = () => {
             <p>More Voluminous Hair</p>
           </div>
 
-          <p className="text-lg font-merriweather mt-8">
-            All from just one <span className="font-bold">EASY-TO-SWALLOW</span> pill a day.<br />
-            <span className="font-bold">NO AFTERTASTE</span>—just pure results.
+          <p className="text-lg text-[#1a1a1a] font-merriweather mt-8">
+            All from just one <span className="font-bold font-inter text-[#580F29] ">EASY-TO-SWALLOW</span> pill a day.<br />
+            <span className="font-bold font-inter text-[#580F29] ">NO AFTERTASTE</span>—just pure results.
           </p>
 
           <p className="mt-4 font-merriweather text-lg">
