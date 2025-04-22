@@ -13,18 +13,16 @@ const NourishmentHighlightSection = () => {
           <strong>RIGHT nutrients to stay strong and healthy</strong>.
         </p>
 
-        <p>Think your healthy diet has got you covered?</p>
-
-        <p>
+        <p>Think your healthy diet has got you covered?
           The truth is that even a healthy diet is typically missing the right
           amounts of phytonutrients necessary for hair growth.
         </p>
 
-        <p>That’s where our restorative blend comes in!</p>
-
-        <p className="font-semibold">
+        <p>That’s where our restorative blend comes in! <br />
+          <strong>
           Its right mix of ayurvedic herbs and nutrients provides the nutritive
           balance that your hair craves.
+          </strong>
         </p>
 
         <p>
