@@ -9,7 +9,7 @@ const testimonials = [
     location: "US",
     title: "This hair/nail supplement really brings results",
     text: `I used this supplement for 8 weeks, and it truly brought me nice results. I took it once a day, before bed, and it has no taste. My hair definitely feel/looks fuller especially on top and as for my nails, it is important to note that I had removed my press on nails and so they were a mess, and while I had growth, the damage has to grow completely out, before my nails are strong enough to not break off. I definitely recommend this supplement, it’s the first to really help.`,
-    images: ["/images/lisa-before.png", "/images/lisa-after.png"],
+    images: ["/images/lisa-before.jpg", "/images/lisa-after.png"],
   },
   {
     name: "Traci M.",
