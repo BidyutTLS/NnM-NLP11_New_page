@@ -29,24 +29,24 @@ const BenefitsTimeline = () => {
         </div>
 
         {/* Highlight Block */}
-        <div className="bg-[#e7bb59] text-[#580F29] mt-16 px-6 py-12 rounded-md">
+        <div className="bg-[#e7bb59] text-[#580F29] mt-0 px-6 py-12 rounded-md">
           <p className="text-lg mb-6 font-merriweather">
             In simple words, here’s what’s coming your way:
           </p>
 
-          <div className="text-2xl font-dmserif italic space-y-2">
+          <div className="text-2xl font-dmserif text-bold italic space-y-2">
             <p>Thicker</p>
             <p>Healthier</p>
             <p>Fuller and</p>
             <p>More Voluminous Hair</p>
           </div>
 
-          <p className="text-sm font-merriweather mt-8">
+          <p className="text-lg font-merriweather mt-8">
             All from just one <span className="font-bold">EASY-TO-SWALLOW</span> pill a day.<br />
             <span className="font-bold">NO AFTERTASTE</span>—just pure results.
           </p>
 
-          <p className="mt-4 font-merriweather text-sm">
+          <p className="mt-4 font-merriweather text-lg">
             Start seeing visible hair growth in JUST 4–12 weeks*
           </p>
 
