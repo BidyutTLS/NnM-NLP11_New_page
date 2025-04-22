@@ -31,7 +31,7 @@ const ClinicalStudySection = () => {
             alt="Week 0 – Hair top view"
             width={300}
             height={300}
-            classname="mx-auto"
+            className="mx-auto"
             unoptimized
           />
         </div>
@@ -42,7 +42,7 @@ const ClinicalStudySection = () => {
             alt="Week 12 – Hair top view"
             width={300}
             height={300}
-            classname="mx-auto"
+            className="mx-auto"
             unoptimized
           />
         </div>
@@ -62,7 +62,7 @@ const ClinicalStudySection = () => {
             alt="Week 0 – Hair thickness"
             width={300}
             height={300}
-            classname="mx-auto"
+            className="mx-auto"
             unoptimized
           />
           <p className="mt-2 text-sm font-semibold">
@@ -76,7 +76,7 @@ const ClinicalStudySection = () => {
             alt="Week 12 – Hair thickness"
             width={300}
             height={300}
-            classname="mx-auto"
+            className="mx-auto"
             unoptimized
           />
           <p className="mt-2 text-sm font-semibold">
