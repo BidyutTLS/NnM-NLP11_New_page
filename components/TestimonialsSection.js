@@ -36,7 +36,7 @@ export default function TestimonialsSection() {
 
         {/* Section Heading */}
         <h2 className="text-2xl md:text-3xl font-bold mb-2">
-          <span className="bg-yellow-400 italic px-2 font-dmserif">8000+ Women</span>{' '}
+          <span className="bg-gold italic px-2 font-dmserif">8000+ Women</span>{' '}
           Have Already Tried Nail n Mane and Swear by it!
         </h2>
         <p className="text-lg text-[#1a1a1a] font-normal mt-1">Here’s what they’re saying…</p>
@@ -47,7 +47,7 @@ export default function TestimonialsSection() {
             <div key={idx} className="bg-white shadow-md rounded-lg border border-gray-300 p-6 flex flex-col items-center text-left">
               
               {/* Stars */}
-              <div className="text-yellow-400 text-lg mb-1">★★★★★</div>
+              <div className="text-gold text-lg mb-1">★★★★★</div>
               <h3 className="text-md font-bold italic mb-4 text-center">{t.title}</h3>
 
               {/* Images */}
