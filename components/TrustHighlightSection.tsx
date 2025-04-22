@@ -18,8 +18,8 @@ const TrustHighlightSection = () => {
         </div>
 
         {/* Heading */}
-        <h2 className="text-2xl md:text-3xl font-semibold text-[#4f002b] mb-4">
-          Why Trust <span className="font-bold font-inter">Nail n Mane</span>?
+        <h2 className="text-2xl md:text-3xl font-inter font-semibold text-[#4f002b] mb-4">
+          Why Trust <span className="font-bold">Nail n Mane</span>?
         </h2>
 
         {/* Description */}
