@@ -5,7 +5,7 @@ const NourishmentHighlightSection = () => {
     <section className="bg-[#f9f9f9] text-center px-6 py-12 text-[#1f1f1f]">
       <p className="text-lg mb-2">Now, here’s the thing:</p>
       <p className="text-lg mb-4">Every hair type has one primary need –</p>
-      <h2 className="text-2xl md:text-3xl font-bold text-blue-700 mb-6">Nourishment!</h2>
+      <h2 className="text-2xl md:text-3xl font-inter font-bold text-blue-700 mb-6">Nourishment!</h2>
 
       <div className="max-w-3xl mx-auto text-base md:text-lg leading-relaxed space-y-4">
         <p>
