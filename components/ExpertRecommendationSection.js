@@ -4,7 +4,7 @@ import Image from "next/image";
 const ExpertRecommendationSection = () => {
   return (
     <section className="bg-[#f9f9f9] py-12 px-4 text-center">
-      <h2 className="text-2xl md:text-4xl font-bold text-[#54032d] max-w-4xl mx-auto">
+      <h2 className="text-2xl md:text-4xl font-inter font-bold text-[#54032d] max-w-4xl mx-auto">
         Ayurvedic Healthcare Practitioner Shanel Miller
         <span className="bg-[#e2b857] italic font-serif text-lg md:text-xl ml-2 mr-1">
           Recommends
@@ -28,7 +28,15 @@ const ExpertRecommendationSection = () => {
 
       <div className="relative max-w-4xl mx-auto mt-8">
         <span className="absolute -left-4 top-0 text-5xl text-[#54032d] font-serif">“</span>
-
+            
+         <div className="flex justify-center mt-6 text-yellow-500 text-2xl">
+            {Array(5)
+              .fill("★")
+              .map((star, i) => (
+                <span key={i}>{star}</span>
+              ))}
+          </div>
+  
         <div className="text-left text-base md:text-lg italic text-gray-800 px-4 md:px-8">
           <p>
             In my clinical Ayurvedic practice, I’ve seen how appearance impacts well-being and
@@ -45,13 +53,7 @@ const ExpertRecommendationSection = () => {
         <span className="absolute -right-4 bottom-0 text-5xl text-[#54032d] font-serif">”</span>
       </div>
 
-      <div className="flex justify-center mt-6 text-yellow-500 text-2xl">
-        {Array(5)
-          .fill("★")
-          .map((star, i) => (
-            <span key={i}>{star}</span>
-          ))}
-      </div>
+     
     </section>
   );
 };
