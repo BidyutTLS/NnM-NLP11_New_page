@@ -8,7 +8,7 @@ export default function HairHealthClinicalSection() {
       <div className="max-w-5xl mx-auto text-center space-y-6">
 
         {/* Header */}
-        <h2 className="text-2xl md:text-3xl font-inter font-bold text-[#660c4f]">
+        <h2 className="text-2xl md:text-3xl font-inter font-bold text-[#590632]">
           Makings of a 100% Drug-free Hair Health Solution
         </h2>
     <div className="text-[#000000]">
@@ -33,7 +33,7 @@ export default function HairHealthClinicalSection() {
   
         {/* Clinical Study Box */}
         <div className="border border-[#660c4f] p-6 mt-10 space-y-6">
-          <h3 className="text-xl md:text-2xl font-bold font-inter text-[#660c4f]">
+          <h3 className="text-xl md:text-2xl font-bold font-inter text-[#590632]">
             And then, we CLINICALLY TESTED it...
           </h3>
           <div className="text-[#000000]">
