@@ -34,7 +34,7 @@ const BenefitsTimeline = () => {
             In simple words, here’s what’s coming your way:
           </p>
 
-          <div className="text-2xl font-dmserif text-bold italic space-y-2">
+          <div className="text-2xl font-dmserif font-bold italic space-y-2">
             <p>Thicker</p>
             <p>Healthier</p>
             <p>Fuller and</p>
@@ -46,11 +46,11 @@ const BenefitsTimeline = () => {
             <span className="font-bold font-inter text-[#580F29] ">NO AFTERTASTE</span>—just pure results.
           </p>
 
-          <p className="mt-4 font-merriweather text-lg">
+          <p className="mt-4 font-merriweather text-[#1a1a1a] text-lg">
             Start seeing visible hair growth in JUST 4–12 weeks*
           </p>
 
-          <p className="text-xs italic mt-2">
+          <p className="text-base text-[#1a1a1a] italic mt-2">
             *For a complete list of all 10+ AMAZING benefits, read our FAQ section at the end.
           </p>
         </div>
