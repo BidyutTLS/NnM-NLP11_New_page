@@ -43,14 +43,14 @@ export default function HairTypeSecretSection() {
               <img
                 src={src}
                 alt={`${name} hair follicle`}
-                className="w-full h-auto"
+                className="mx-auto h-auto w-full max-w-[180px] sm:max-w-[200px] md:max-w-[220px]"
               />
             </div>
           ))}
         </div>
 
         {/* Source */}
-        <p className="text-sm italic mt-6 text-left text-[#5a002d]">
+        <p className="text-sm italic mt-6 text-left ">
           Source: <span className="italic">Study<sup>[1]</sup> published on Experimental Dermatology from Wiley’s Online Library</span>
         </p>
       </div>
