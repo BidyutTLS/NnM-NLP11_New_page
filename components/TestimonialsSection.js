@@ -65,7 +65,7 @@ export default function TestimonialsSection() {
               </div>
 
               {/* Quote */}
-              <p className="text-sm italic text-[#590632] mb-4">{t.text}</p>
+              <p className="text-lg italic text-[#590632] mb-4">{t.text}</p>
 
               {/* Footer */}
               <div className="mt-auto w-full">
