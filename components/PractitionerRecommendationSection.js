@@ -25,7 +25,7 @@ export default function PractitionerRecommendationSection() {
               className="rounded-md"
               unoptimized
             />
-            <div className="bg-black text-gold text-center mt-2 py-2 px-4 w-full font-inter font-bold text-sm leading-tight border border-gold">
+            <div className="bg-black text-gold text-center mt-2 py-2 px-4 w-full font-inter font-bold text-lg leading-tight border border-gold">
               <span className=" font-inter"> SHANEL MILLER </span> <br />
               <span className="block font-normal text-white">CERTIFIED AYURVEDIC PRACTITIONER</span>
             </div>
