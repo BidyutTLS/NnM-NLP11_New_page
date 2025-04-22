@@ -26,11 +26,11 @@ const TrustHighlightSection = () => {
         <p className="text-lg text-[#1d1d1d] max-w-3xl mx-auto leading-relaxed">
           Our rigorous testing and commitment to quality have earned <strong>Nail n Mane</strong> a spotlight feature in the
           September 2024 issue of{' '}
-          <span className="bg-[#4f002b] text-white px-1 font-inter font-bold">
+          <span className="bg-[#4f002b] text-white px-1 font-inter font-medium">
             NATIONAL PRACTITIONER MAGAZINE
           </span>{' '}
           – the premier medical publication for Natural Health Practitioners across the country and{' '}
-          <span className="bg-[#4f002b] text-white px-1 font-inter font-bold">
+          <span className="bg-[#4f002b] text-white px-1 font-inter font-medium">
             trusted by 15000+ Practitioners.
           </span>
         </p>
