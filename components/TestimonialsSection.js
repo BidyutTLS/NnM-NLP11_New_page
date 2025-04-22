@@ -35,7 +35,7 @@ export default function TestimonialsSection() {
       <div className="max-w-6xl mx-auto text-center">
 
         {/* Section Heading */}
-        <h2 className="text-2xl md:text-3xl font-bold mb-2">
+        <h2 className="text-2xl md:text-3xl  text-[#590632] font-bold mb-2">
           <span className="bg-gold italic px-2 font-dmserif">8000+ Women</span>{' '}
           Have Already Tried Nail n Mane and Swear by it!
         </h2>
@@ -65,7 +65,7 @@ export default function TestimonialsSection() {
               </div>
 
               {/* Quote */}
-              <p className="text-sm italic text-[#222] mb-4">{t.text}</p>
+              <p className="text-sm italic text-[#590632] mb-4">{t.text}</p>
 
               {/* Footer */}
               <div className="mt-auto w-full">
