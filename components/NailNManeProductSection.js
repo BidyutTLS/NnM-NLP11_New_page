@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function NailNManeProductSection() {
   return (
-    <section className="bg-[#5b0830] text-white px-4 py-20 font-merriweather">
+    <section className="bg-[#5b0830] text-white text-lg px-4 py-20 font-merriweather">
       <div className="max-w-4xl mx-auto text-center space-y-6">
 
         {/* Title and Image */}
         <p className="text-white text-base">We call it</p>
         <h2 className="text-4xl font-bold font-inter">Nail n Mane</h2>
-        <p className="italic text-gold font-dmserif font-bold text-lg">built using Natural Actives</p>
+        <p className="italic text-gold font-dmserif font-bold text-2xl">built using Natural Actives</p>
 
         <div className="flex justify-center mt-6">
           <Image
@@ -24,7 +24,7 @@ export default function NailNManeProductSection() {
         {/* Benefit Copy */}
         <p className="text-lg">
           This isn’t just any random product... it’s proven to deliver results
-          <span className="bg-gold text-[#4b2d0d] px-2 ml-2 font-inter font-bold">FOR REAL:</span>
+          <span className="bg-gold text-[#590632] px-2 ml-2 font-inter font-bold">FOR REAL:</span>
         </p>
 
         <ul className="text-left text-lg space-y-2 mt-4 max-w-xl mx-auto">
