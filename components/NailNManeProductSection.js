@@ -7,7 +7,7 @@ export default function NailNManeProductSection() {
 
         {/* Title and Image */}
         <p className="text-white text-base">We call it</p>
-        <h2 className="text-4xl font-bold font-inter">Nail n Mane</h2>
+        <h2 className="text-4xl font-bold font-inter py-8">Nail n Mane</h2>
         <p className="italic text-gold font-dmserif font-bold text-2xl">built using Natural Actives</p>
 
         <div className="flex justify-center mt-6">
