@@ -21,7 +21,7 @@ export default function HairTypeSecretSection() {
   ];
 
   return (
-    <section className="bg-[#f9f9f9] text-[#33001b] py-12 px-4 md:px-16">
+    <section className="bg-[#f9f9f9] text-[#1a1a1a] text-lg py-12 px-4 md:px-16">
       <div className="max-w-screen-xl mx-auto text-center mb-8">
         <div className="bg-[#5a002d] text-white py-3 px-4 text-lg font-medium rounded-t">
           Now that you know what <strong>Nail n Mane</strong> can do for your hair and nails, it’s time to reveal what we promised...
@@ -36,17 +36,10 @@ export default function HairTypeSecretSection() {
           It’s simpler than you think! Did you know that your hair type—whether straight, wavy, or curly—depends on the shape of your hair follicle?
         </p>
 
-        <ul className="text-left max-w-3xl mx-auto text-base font-medium">
-          <li className="mb-2">➡️ <strong>Straight hair</strong> comes from a <strong>round follicle</strong></li>
-          <li className="mb-2">➡️ <strong>Wavy hair</strong> comes from an <strong>oval follicle</strong></li>
-          <li className="mb-2">➡️ <strong>Curly hair</strong> comes from an <strong>elliptical follicle</strong></li>
-          <li className="mb-2">➡️ <strong>Coily hair</strong> comes from an <strong>oblong follicle</strong></li>
-        </ul>
-
+        {/* Image Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
           {follicleTypes.map(({ name, src }) => (
             <div key={name} className="bg-white shadow rounded overflow-hidden text-center">
-              <div className="bg-[#5a002d] text-white font-bold py-1">{name}</div>
               <img
                 src={src}
                 alt={`${name} hair follicle`}
@@ -56,6 +49,7 @@ export default function HairTypeSecretSection() {
           ))}
         </div>
 
+        {/* Source */}
         <p className="text-sm italic mt-6 text-left text-[#5a002d]">
           Source: <span className="italic">Study<sup>[1]</sup> published on Experimental Dermatology from Wiley’s Online Library</span>
         </p>
