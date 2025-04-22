@@ -17,13 +17,13 @@ const ClinicalStudySection = () => {
       <p className="mt-6 max-w-3xl mx-auto text-lg">
         Wondering what you are looking at? A noticeable
         <span className="font-bold text-[#54032d] ml-1">
-          31% reduction in hair thinning
+          31% reduction in hair thinning 
         </span>
         from baseline in 12 weeks!
       </p>
 
       {/* Before/After Comparison */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 items-start justify-center max-w-4xl mx-auto text-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 items-start justify-center max-w-4xl mx-auto font-inter text-center">
         <div>
           <p className="text-lg font-bold text-[#54032d] mb-1">WEEK 0</p>
           <Image
@@ -52,7 +52,7 @@ const ClinicalStudySection = () => {
         <span className="italic">(Week 0 vs Week 12)</span>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 max-w-4xl mx-auto text-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 max-w-4xl mx-auto nt-inter font-inter text-center">
         <div>
           <p className="font-inter text-lg font-bold text-[#54032d] mb-1">WEEK 0</p>
           <Image
@@ -85,7 +85,7 @@ const ClinicalStudySection = () => {
       <div className="mt-10">
         <p className="text-lg md:text-xl">
           You’re looking at
-          <span className="font-bold text-[#54032d] ml-1">58% THICKER HAIR</span> in JUST 12 weeks!
+          <span className="font-bold text-[#54032d] font-inter ml-1">58% THICKER HAIR</span> in JUST 12 weeks!
         </p>
         <p className="mt-4 text-base md:text-lg">
           Ready to see this kind of natural transformation in your own hair?
