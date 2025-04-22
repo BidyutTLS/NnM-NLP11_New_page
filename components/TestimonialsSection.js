@@ -70,7 +70,7 @@ export default function TestimonialsSection() {
               {/* Footer */}
               <div className="mt-auto w-full">
                 <p className="font-bold">{t.name}</p>
-                <p className="text-sm text-gray-700 mb-2">{t.age}, {t.location}</p>
+                <p className="text-lg text-gray-700 mb-2">{t.age}, {t.location}</p>
                 <div className="flex items-center gap-2 text-green-700 text-sm font-semibold">
                   ✅ <span className="italic text-[#5b0830]">Verified Consumer</span>
                 </div>
@@ -81,7 +81,7 @@ export default function TestimonialsSection() {
 
         {/* CTA Button */}
         <div className="mt-10">
-          <button className="bg-[#5b0830] text-white px-8 py-3 rounded-full text-lg font-bold shadow-md hover:opacity-90">
+          <button className="bg-[#590632] text-white px-8 py-3 rounded-full text-lg font-inter font-bold shadow-md hover:opacity-90">
             Order NOW & Start Seeing results in Just 4 Weeks
           </button>
           <p className="mt-2 text-sm text-gray-700">30-Day Money-Back Guarantee | FREE Shipping</p>
