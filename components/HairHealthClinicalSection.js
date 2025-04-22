@@ -43,7 +43,7 @@ export default function HairHealthClinicalSection() {
           </p>
 
           <p>Here’s what they experienced:</p>
-
+          <br />
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-lg font-inter justify-items-center">
             {[
