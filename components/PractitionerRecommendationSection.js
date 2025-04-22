@@ -13,7 +13,7 @@ export default function PractitionerRecommendationSection() {
         </h2>
 
         {/* Practitioner Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mt-12 justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 mt-12 justify-items-center">
 
           {/* Practitioner 1 */}
           <div className="flex flex-col items-center">
