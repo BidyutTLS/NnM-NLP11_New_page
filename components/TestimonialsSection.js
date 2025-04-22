@@ -48,7 +48,7 @@ export default function TestimonialsSection() {
               
               {/* Stars */}
               <div className="text-gold text-lg mb-1">★★★★★</div>
-              <h3 className="text-md font-bold italic mb-4 text-center">{t.title}</h3>
+              <h3 className="text-md font-bold  text-[#590632] italic mb-4 text-center">{t.title}</h3>
 
               {/* Images */}
               <div className="flex gap-2 mb-4">
@@ -65,7 +65,7 @@ export default function TestimonialsSection() {
               </div>
 
               {/* Quote */}
-              <p className="text-lg italic text-[#590632] mb-4">{t.text}</p>
+              <p className="text-lg italic text-[#1a1a1a] mb-4">{t.text}</p>
 
               {/* Footer */}
               <div className="mt-auto w-full">
