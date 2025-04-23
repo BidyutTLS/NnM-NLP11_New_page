@@ -14,7 +14,7 @@ const ComparisonTableSection= () => {
       </p>
       <p className="text-lg md:text-xl text-gray-800 max-w-4xl mx-auto mt-4">
         Check out the table below to see how we stack up against a leading hair product and why{" "}
-        <span className="bg-gold font-semibold">Nail n Mane is a smarter, more affordable choice</span>{" "}
+        <span className="bg-gold text-[#590632] font-inter font-semibold">Nail n Mane is a smarter, more affordable choice</span>{" "}
         for getting that gorgeous, healthy hair that you deserve.
       </p>
 
