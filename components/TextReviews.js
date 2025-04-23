@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const TextReviews = () => {
   return (
-    <section className="bg-[#f9f9f9] py-12 px-4 text-center">
-      <h2 className="text-3xl md:text-5xl font-bold text-[#54032d] mb-10">
+    <section className="bg-[#f9f9f9] py-12 px-4 text-lg text-center">
+      <h2 className="text-2xl md:text-3xl font-bold text-[#590632] mb-10">
         Real Women, Remarkable Results
       </h2>
 
@@ -41,17 +41,17 @@ const TextReviews = () => {
         ].map((review, index) => (
           <div
             key={index}
-            className="border border-[#54032d] p-6 bg-white relative"
+            className="border border-[#590632] p-6 bg-white relative"
           >
             <div className="text-[#ffb400] text-lg mb-2">★★★★★</div>
-            <h3 className="italic font-semibold mb-4 text-lg text-[#54032d]">
+            <h3 className="italic font-semibold mb-4 text-lg text-[#590632]">
               {review.title}
             </h3>
-            <div className="text-[#54032d] text-4xl absolute left-2 top-2">“</div>
+            <div className="text-[#590632] text-4xl absolute left-2 top-2">“</div>
             <p className="text-gray-800 text-base italic leading-relaxed">
               {review.content}
             </p>
-            <div className="text-[#54032d] text-4xl absolute right-2 bottom-2">”</div>
+            <div className="text-[#590632] text-4xl absolute right-2 bottom-2">”</div>
             <div className="mt-6 text-left">
               <p className="font-semibold text-sm">{review.name}</p>
               <p className="text-sm text-gray-600">{review.age}</p>
