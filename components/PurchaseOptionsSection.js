@@ -69,12 +69,22 @@ const PurchaseOptionsSection = () => {
               {pack.discount || <span className="invisible">placeholder</span>}
             </div>
             <Carousel
-              showThumbs={true}
-              showStatus={false}
-              infiniteLoop
-              emulateTouch
-              className="h-[340px]"
-            >
+                showThumbs={true}
+                showStatus={false}
+                infiniteLoop
+                emulateTouch
+                className="h-[340px]"
+                renderThumbs={() =>
+                  pack.images.map((src, i) => (
+                    <img
+                      key={i}
+                      src={src}
+                      alt={`Thumbnail ${i + 1}`}
+                      className="h-16 w-16 object-contain"
+                    />
+                  ))
+                }
+              >
               {pack.images.map((src, i) => (
                 <div key={i} className="bg-white">
                   <Image
@@ -86,7 +96,8 @@ const PurchaseOptionsSection = () => {
                   />
                 </div>
               ))}
-            </Carousel>
+          </Carousel>
+
             <div className="py-4 text-[#54032d]">
               <p className="whitespace-pre-line font-medium">{pack.packLabel}</p>
               <p className="text-3xl font-bold mt-2">{pack.price}</p>
