@@ -60,10 +60,10 @@ const IngredientsComplex2Section = () => {
       <div className="max-w-4xl mx-auto mt-10 text-lg">
         <p>
           These ingredients work together in harmony to pass on therapeutic benefits, helping your hair become
-          <span className="bg-gold font-bold px-1 mx-1">stronger, thicker, and healthier in 4-12 weeks!</span>
+          <span className="bg-gold font-bold text-[#590632] px-1 mx-1">stronger, thicker, and healthier in 4-12 weeks!</span>
         </p>
-        <p className="mt-4 font-semibold">
-          This transformative journey goes beyond just daily hair fall -- <span className="text-[#590632] text-semibold"> it’s your path to regaining your hair, confidence, and femininity</span>.
+        <p className="mt-4 ">
+          This transformative journey goes beyond just daily hair fall -- <span className="font-semibold"> it’s your path to regaining your hair, confidence, and femininity</span>.
         </p>
         <p className="mt-6">Begin your transformative journey now!</p>
 
