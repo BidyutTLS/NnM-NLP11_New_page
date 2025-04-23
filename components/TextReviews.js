@@ -44,7 +44,7 @@ const TextReviews = () => {
             className="border border-[#590632] p-6 bg-white relative"
           >
             <div className="text-[#ffb400] text-lg mb-2">★★★★★</div>
-            <h3 className="italic font-semibold mb-4 text-lg text-[#590632]">
+            <h3 className="italic font-semibold mb-4 text-xl text-[#590632]">
               {review.title}
             </h3>
             <div className="text-[#590632] text-4xl absolute left-2 top-2">“</div>
