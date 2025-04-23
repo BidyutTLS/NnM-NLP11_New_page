@@ -142,11 +142,9 @@ const PurchaseOptionsSection = () => {
               </div>
 
               {/* CTA Button */}
-              <a href="#purchase-options">
-                <button className="bg-gold text-[#4b2d0d] font-bold font-inter py-3 px-6 rounded-lg">
-                  Treat Yourself to Healthier Hair. Order NOW
+                <button className="bg-green-600 text-white font-bold font-inter py-3 px-6 rounded-lg">
+                  Add to Cart
                 </button>
-              </a>
 
 
               {/* Trust Badges */}
