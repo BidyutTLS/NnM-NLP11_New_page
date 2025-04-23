@@ -77,7 +77,7 @@ const IngredientsComplex2Section = () => {
         </div>
       </div>
 
-      <div className="border border-[#590632] text-sm text-left p-4 mt-10 max-w-4xl mx-auto">
+      <div className="border border-[#590632] text-lg text-left p-4 mt-10 max-w-4xl mx-auto">
         <h4 className="text-center font-bold text-[#590632] mb-2">
           COMPLETE LIST OF INGREDIENTS:
         </h4>
