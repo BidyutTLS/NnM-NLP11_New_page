@@ -65,7 +65,7 @@ const IngredientsComplexOne = () => {
           />
         </div>
 
-        <p className="mt-2 text-sm italic text-white bg-[#54032d] px-2">
+        <p className="mt-2 text-sm italic text-white bg-[#54032d] py-1 px-2">
           Source: Effects of Withania somnifera root extract serum application Study published on ScienceDirect
         </p>
       </div>
