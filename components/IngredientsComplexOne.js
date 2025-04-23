@@ -4,8 +4,8 @@ import Image from "next/image";
 const IngredientsComplexOne = () => {
   return (
     <section className="bg-[#f9f9f9] py-12 px-4 text-center">
-      <h2 className="text-2xl md:text-4xl font-bold text-[#54032d] max-w-5xl mx-auto">
-        That’s where our <span className="bg-[#5c6b2a] italic font-serif text-white px-2">Triple Action</span> solution comes in…
+      <h2 className="text-2xl md:text-2xl font-inter font-bold text-[#54032d] max-w-5xl mx-auto">
+        That’s where our <span className="bg-[#5c6b2a] italic font-dmserif text-white px-2">Triple Action</span> solution comes in…
       </h2>
 
       <p className="mt-4 text-lg max-w-3xl mx-auto">
@@ -27,7 +27,7 @@ const IngredientsComplexOne = () => {
         />
       </div>
 
-      <p className="mt-6 text-xl font-bold text-[#54032d]">
+      <p className="mt-6 text-xl font-inter font-bold text-[#54032d]">
         Indian Winter Cherry (Ashwagandha)
       </p>
       <p className="text-base max-w-2xl mx-auto">
@@ -65,20 +65,20 @@ const IngredientsComplexOne = () => {
           />
         </div>
 
-        <p className="mt-4 text-sm italic text-white bg-[#54032d] py-1 px-2">
+        <p className="mt-2 text-sm italic text-white bg-[#54032d] px-2">
           Source: Effects of Withania somnifera root extract serum application Study published on ScienceDirect
         </p>
       </div>
 
       <div className="mt-10">
-        <h3 className="text-xl font-bold text-[#54032d]">Holy Basil (Tulsi)</h3>
+        <h3 className="text-xl font-inter font-bold text-[#54032d]">Holy Basil (Tulsi)</h3>
         <p className="max-w-2xl mx-auto">
           Another adaptogenic herb, Tulsi is known to <span className="font-semibold">regulate cortisol</span> and
           <span className="font-semibold"> reduce anxiety</span>. Its protein and fiber rich elements strengthen hair follicles and
           <span className="font-semibold"> improve scalp health</span>.
         </p>
 
-        <h3 className="text-xl font-bold text-[#54032d] mt-6">False Daisy (Bhringraj)</h3>
+        <h3 className="text-xl font-inter font-bold text-[#54032d] mt-6">False Daisy (Bhringraj)</h3>
         <p className="max-w-2xl mx-auto">
           Filled with the goodness of vitamins and minerals, Bhringraj is known to <span className="font-semibold">reduce hair thinning</span>. It helps increase
           hair density, lock in hair moisture, and maintain <span className="font-semibold">healthier, denser, moisturized hair</span>.
