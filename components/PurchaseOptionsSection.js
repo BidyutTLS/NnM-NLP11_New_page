@@ -65,9 +65,8 @@ const PurchaseOptionsSection = () => {
           <div key={index} className="bg-white rounded shadow-md overflow-hidden">
             <div className="bg-[#3b5998] text-white py-3 text-xl font-bold">
               {pack.name}
-            </div>
-            <div className="bg-[#e4bb45] text-[#54032d] font-bold text-lg py-1">
-              {pack.discount}
+            <div className="bg-[#e4bb45] text-[#54032d] font-bold text-lg py-1 h-[40px] flex items-center justify-center">
+              {pack.discount || <span className="invisible">placeholder</span>}
             </div>
             <Carousel
               showThumbs={true}
@@ -113,7 +112,7 @@ const PurchaseOptionsSection = () => {
               <button className="bg-green-600 text-white font-bold py-2 px-6 mt-4 w-3xl">
                 ADD TO CART
               </button>
-              <div className="mt-4 text-left text-sm text-[#54032d] px-4">
+              <div className="mt-4 text-left text-sm text-black px-4">
                 <p>✅ 100% SATISFACTION</p>
                 <p>🔄 30 DAYS MONEY BACK GUARANTEE</p>
                 <p>🚚 FREE DELIVERY</p>
