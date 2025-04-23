@@ -13,12 +13,12 @@ const packs = [
     originalPrice: "$75.00",
     duration: "for 9 months",
     images: [
-      "/super-saver.png",
-      "/carousel-1.png",
-      "/carousel-2.png",
-      "/carousel-3.png",
-      "/carousel-4.png",
-      "/carousel-5.png"
+      "/super-saver.jpg",
+      "/carousel-1.jpg",
+      "/carousel-2.jpg",
+      "/carousel-3.jpg",
+      "/carousel-4.jpg",
+      "/carousel-5.jpg"
     ],
   },
   {
@@ -30,12 +30,12 @@ const packs = [
     originalPrice: "$50.00",
     duration: "for 6 months",
     images: [
-      "/popular-choice.png",
-      "/carousel-1.png",
-      "/carousel-2.png",
-      "/carousel-3.png",
-      "/carousel-4.png",
-      "/carousel-5.png"
+      "/popular-choice.jpg",
+      "/carousel-1.jpg",
+      "/carousel-2.jpg",
+      "/carousel-3.jpg",
+      "/carousel-4.jpg",
+      "/carousel-5.jpg"
     ],
   },
   {
@@ -47,12 +47,12 @@ const packs = [
     originalPrice: "",
     duration: "for 3 months",
     images: [
-      "/sampler-pack.png",
-      "/carousel-1.png",
-      "/carousel-2.png",
-      "/carousel-3.png",
-      "/carousel-4.png",
-      "/carousel-5.png"
+      "/sampler-pack.jpg",
+      "/carousel-1.jpg",
+      "/carousel-2.jpg",
+      "/carousel-3.jpg",
+      "/carousel-4.jpg",
+      "/carousel-5.jpg"
     ],
   },
 ];
@@ -120,7 +120,7 @@ const PurchaseOptionsSection = () => {
               </div>
               <div className="px-4 mt-3">
                 <Image
-                 src="https://cdn05.zipify.com/sEJUgl7T3jObY9ixNLtl9Rghn6o=/fit-in/1940x0/e1575aff211a4aa7b38b2a46f1c42122/guaranteed-safe-checkout.png"
+                 src="https://cdn05.zipify.com/sEJUgl7T3jObY9ixNLtl9Rghn6o=/fit-in/1940x0/e1575aff211a4aa7b38b2a46f1c42122/guaranteed-safe-checkout.jpg"
                  alt="Safe Checkout"
                   width={250}
                   height={60}
