@@ -4,7 +4,7 @@ import Image from "next/image";
 const TextReviews = () => {
   return (
     <section className="bg-[#f9f9f9] py-12 px-4 text-lg text-center">
-      <h2 className="text-2xl md:text-3xl font-bold text-[#590632] mb-10">
+      <h2 className="text-2xl md:text-3xl font-inter font-bold text-[#590632] mb-10">
         Real Women, Remarkable Results
       </h2>
 
