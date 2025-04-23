@@ -9,7 +9,7 @@ const RiskFreeTrialSection = () => {
         Try it, Love it, or Get a Full Refund
       </h2>
       <p className="text-xl md:text-2xl font-inter font-bold text-[#590632] mt-2">
-        Our Risk-free <span className="bg-[#ead27a] italic font-dmserif px-1">100% Money Back Guarantee</span> Has You Covered!
+        Our Risk-free <span className="bg-gold italic font-dmserif px-1">100% Money Back Guarantee</span> Has You Covered!
       </p>
 
       {/* Image with Discount Badge */}
