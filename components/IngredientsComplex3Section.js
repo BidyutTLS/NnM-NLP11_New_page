@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const IngredientsComplex2Section = () => {
   return (
-    <section className="bg-[#f7f7f7] text-[#a1a1a1] text-lg px-4 py-12 text-center font-merriweather">
+    <section className="bg-[#f7f7f7] text-[#1a1a1a] text-lg px-4 py-12 text-center font-merriweather">
       <div className="bg-[#590632] text-white font-semibold py-2 px-4 max-w-4xl mx-auto">
         Amla, Biotin and Zinc to promote growth and volume.
       </div>
@@ -37,7 +37,7 @@ const IngredientsComplex2Section = () => {
             className="mx-auto my-4"
             unoptimized
           />
-          <p className="text-xs italic text-white bg-[#590632] px-2 py-1 w-fit mx-full">
+          <p className="text-sm italic text-white bg-[#54032d] px-4 py-1 mt-4">
             Source: A Study<sup>[3]</sup> published on MDPI Journal
           </p>
         </div>
