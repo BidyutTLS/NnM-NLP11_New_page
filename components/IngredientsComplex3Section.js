@@ -68,9 +68,11 @@ const IngredientsComplex2Section = () => {
         <p className="mt-6">Begin your transformative journey now!</p>
 
         <div className="mt-6">
-          <button className="bg-[#590632] text-white font-inter font-bold px-6 py-3 rounded-lg">
-            Start My Order
-          </button>
+          <a href="#purchase-options">
+            <button className="bg-[#590632] text-white font-inter font-bold px-6 py-3 rounded-lg">
+              Start My Order
+            </button>
+          </a>
           <p className="text-sm mt-2">
             30-Day Money-Back Guarantee | Free-Shipping | 100% Drug-Free
           </p>
