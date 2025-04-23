@@ -21,9 +21,9 @@ const NailsBenefitsSection = () => {
         </div>
 
         <div className="text-left space-y-2 text-lg">
-          <p><span className="font-bold text-xl">2X</span> Nail Growth</p>
-          <p><span className="font-bold text-xl">30%</span> Stronger Nails</p>
-          <p><span className="font-bold text-xl">25%</span> Brighter Nails*</p>
+          <p><span className="font-bold font-inter text-2xl">2X</span>  Nail Growth</p>
+          <p><span className="font-bold font-inter text-2xl">30%</span> Stronger Nails</p>
+          <p><span className="font-bold font-inter text-2xl">25%</span> Brighter Nails*</p>
         </div>
       </div>
     </section>
