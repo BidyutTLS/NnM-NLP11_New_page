@@ -88,15 +88,15 @@ const FAQSection = () => {
   return (
     <section className="bg-[#f9f9f9] py-12 px-4">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-[#54032d] mb-10">
+        <h2 className="text-2xl md:text-3xl font-inter font-bold text-center text-[#590632] mb-10">
           Got Questions? We’ve Answers!
         </h2>
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="mb-4 border border-[#54032d]"
+            className="mb-4 border border-[#590632]"
           >
-            <div className="bg-[#54032d] text-white px-4 py-2 font-semibold">
+            <div className="bg-[#590632] text-white px-4 py-2 font-semibold">
               {index + 1} {faq.question}
             </div>
             <div className="bg-white px-4 py-3 text-[#222] text-lg">
@@ -105,7 +105,7 @@ const FAQSection = () => {
           </div>
         ))}
         <div className="text-center mt-6">
-          <button className="bg-[#54032d] text-white font-bold text-lg px-6 py-3 rounded-full">
+          <button className="bg-[#590632] text-white font-bold text-lg px-6 py-3 rounded-full">
             Bring home this 100% drug free hair solution. Buy Now
           </button>
           <p className="text-sm text-gray-600 mt-2">
