@@ -59,7 +59,7 @@ const packs = [
 
 const PurchaseOptionsSection = () => {
   return (
-    <section id="purchase-options" className="bg-[#54032d] text-center text-black font-inter py-10 px-4">
+    <section id="purchase-options" className="bg-[#54032d] text-center text-black font-inter py-16 px-4">
       <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
         {packs.map((pack, index) => (
           <div key={index} className="bg-white rounded shadow-md overflow-hidden">
