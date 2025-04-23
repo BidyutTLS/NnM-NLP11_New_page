@@ -118,7 +118,7 @@ const PurchaseOptionsSection = () => {
                 <p className="text-green-600 font-bold mt-2">
                   Buy Today & Get {pack.discount}!
                 </p>
-              )}
+              )  || <span className="invisible">placeholder</span> }
 
               <div className="mt-3">
                 {pack.originalPrice && (
