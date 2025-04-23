@@ -46,7 +46,7 @@ const faqs = [
           We use a size 0 capsule for Nail n Mane. It is 0.85 inches which is just slightly longer than the US penny.
         </p>
         <img
-          src="/images/pill-vs-penny.png" 
+          src="/images/pill-vs-penny.jpg" 
           alt="Size comparison between pill and US penny"
           className="max-w-xs w-full"
         />
