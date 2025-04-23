@@ -86,10 +86,11 @@ const PurchaseOptionsSection = () => {
                     key={i}
                     src={src}
                     alt={`Thumbnail ${i + 1}`}
-                    className="h-16 w-16 object-contain"
+                    className="h-8 w-8 object-contain rounded border"
                   />
                 ))
               }
+
             >
               {pack.images.map((src, i) => (
                 <div key={i} className="bg-white">
