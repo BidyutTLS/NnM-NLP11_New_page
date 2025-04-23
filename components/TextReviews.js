@@ -48,7 +48,7 @@ const TextReviews = () => {
               {review.title}
             </h3>
             <div className="text-[#590632] text-4xl absolute left-2 top-2">“</div>
-            <p className="text-gray-800 text-base italic leading-relaxed">
+            <p className="text-gray-800 text-lg italic leading-relaxed">
               {review.content}
             </p>
             <div className="text-[#590632] text-4xl absolute right-2 bottom-2">”</div>
