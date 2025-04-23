@@ -107,7 +107,7 @@ const PurchaseOptionsSection = () => {
 
             {/* Info */}
             <div className="py-4 text-[#54032d]">
-              <p className="whitespace-pre-line font-medium">{pack.packLabel}</p>
+              <p className="whitespace-pre-line py-4 font-medium">{pack.packLabel}</p>
               <p className="text-3xl font-bold mt-2">{pack.price}</p>
               <p className="text-lg font-semibold">Per month</p>
               <p className="text-sm text-gray-700 mt-2">
