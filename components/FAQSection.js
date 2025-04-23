@@ -41,15 +41,17 @@ const faqs = [
   {
     question: "What is the size of the pill?",
     answer: (
-      <div className="flex flex-col items-center gap-4 md:gap-6">
+      <div className="flex flex-col gap-4 md:gap-6">
         <p className="text-left text-lg">
           We use a size 0 capsule for Nail n Mane. It is 0.85 inches which is just slightly longer than the US penny.
         </p>
+      <div className="items-center">
         <img
           src="/images/pill-vs-penny.jpg" 
           alt="Size comparison between pill and US penny"
           className="max-w-xs w-full"
         />
+      </div>
       </div>
     )
   },
