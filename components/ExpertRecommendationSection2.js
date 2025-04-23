@@ -8,7 +8,7 @@ const ExpertRecommendationSection2 = () => {
 
   return (
     <section className="bg-[#f9f9f9] py-12 px-4 text-lg text-center">
-      <h2 className="text-2xl md:text-2xl font-inter font-bold text-[#590632] max-w-4xl mx-auto">
+      <h2 className="text-2xl md:text-3xl font-inter font-bold text-[#590632] max-w-4xl mx-auto">
         Ayurvedic Healthcare Practitioner Jennifer Maklan{" "}
         <span className="inline-block bg-gold italic font-serif text-xl md:text-2xl px-2 mx-2">
           Recommends
