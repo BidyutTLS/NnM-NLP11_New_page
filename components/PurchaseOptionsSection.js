@@ -142,7 +142,7 @@ const PurchaseOptionsSection = () => {
               </div>
 
               {/* CTA Button */}
-                <button className="bg-green-600 text-white font-bold font-inter py-3 px-6 rounded-lg">
+                <button className="bg-green-600 text-white font-bold font-inter py-3 px-6 mt-4 rounded-lg">
                   Add to Cart
                 </button>
 
