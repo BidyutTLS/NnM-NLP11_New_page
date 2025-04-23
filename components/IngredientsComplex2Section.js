@@ -19,7 +19,7 @@ const IngredientsComplex2Section = () => {
           className="mx-auto"
           unoptimized
         />
-        <h3 className="text-xl md:text-2xl font-bold text-[#54032d] mt-4">
+        <h3 className="text-xl md:text-2xl font-inter font-bold text-[#54032d] mt-4">
           Flaxseeds (Linseed)
         </h3>
         <p className="max-w-3xl mx-auto mt-2 text-base md:text-lg text-gray-800">
@@ -65,7 +65,7 @@ const IngredientsComplex2Section = () => {
 
       {/* Vitamin C */}
       <div className="mt-10">
-        <h3 className="text-xl md:text-2xl font-bold text-[#54032d]">Vitamin C</h3>
+        <h3 className="text-xl md:text-2xl font-inter font-bold text-[#54032d]">Vitamin C</h3>
         <p className="max-w-3xl mx-auto mt-2 text-base md:text-lg text-gray-800">
           Vitamin C is a vital source of <span className="font-bold">collagen</span>— a key protein
           that supports the <span className="font-bold">structure of your hair and nails</span>. It
@@ -76,7 +76,7 @@ const IngredientsComplex2Section = () => {
 
       {/* Vitamin D */}
       <div className="mt-10">
-        <h3 className="text-xl md:text-2xl font-bold text-[#54032d]">Vitamin D</h3>
+        <h3 className="text-xl md:text-2xl font-inter font-bold text-[#54032d]">Vitamin D</h3>
         <p className="max-w-3xl mx-auto mt-2 text-base md:text-lg text-gray-800">
           Vitamin D plays a crucial role in maintaining optimal calcium levels — essential for{" "}
           <span className="font-bold">strong, healthy hair</span>. Its deficiency can cause hair
