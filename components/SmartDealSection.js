@@ -4,15 +4,15 @@ import Image from "next/image";
 const SmartDealSection = () => {
   return (
     <section className="bg-[#fcfcfc] text-[#1a1a1a] py-10 px-4 text-center">
-      <h2 className="text-2xl md:text-4xl font-bold max-w-4xl mx-auto leading-snug">
-        Why you’ve got to be Smart and grab this Clinically Tested supplement <span className="text-[#54032d]">NOW:</span>
+      <h2 className="text-2xl md:text-3xl text-[#590632}font-inter font-bold max-w-4xl mx-auto leading-snug">
+        Why you’ve got to be Smart and grab this Clinically Tested supplement NOW:
       </h2>
       <div className="mt-6 max-w-4xl mx-auto space-y-4 text-lg">
         <p>
           When you have a product this effective, demand often exceeds supply. That’s exactly what’s happening here.
         </p>
         <p>
-          We’re all for producing more...but sourcing the rare ingredients of the <span className="bg-[#590632] font-inter font-semibold px-1">highest quality often limits our production.</span>
+          We’re all for producing more...but sourcing the rare ingredients of the <span className="bg-gold text-[#590632] font-inter font-semibold px-1">highest quality often limits our production.</span>
         </p>
         <p className="font-semibold">The truth is...</p>
         <p>
@@ -35,9 +35,9 @@ const SmartDealSection = () => {
         </div>
         <div className="text-left text-lg space-y-3 max-w-xl">
           <p>
-            With supplies running low... it makes sense to <span className="bg-[#590632] font-inter font-semibold px-1">stock up on the 3-bottle pack NOW</span> to lock in the best results for your hair! Don’t wait or you may see the dreaded “Out of Stock” sign!
+            With supplies running low... it makes sense to <span className="bg-gold text-[#590632] font-inter font-semibold px-1">stock up on the 3-bottle pack NOW</span> to lock in the best results for your hair! Don’t wait or you may see the dreaded “Out of Stock” sign!
           </p>
-          <p className="bg-[#590632] inline-block font-inter font-bold px-2">Be smart about it!</p>
+          <p className="bg-gold text-[#590632] font-inter font-bold px-2">Be smart about it!</p>
         </div>
       </div>
       <div className="mt-6 text-lg max-w-4xl mx-auto">
@@ -52,7 +52,7 @@ const SmartDealSection = () => {
         <p className="text-base mt-1">30-Day Money-Back Guarantee | FREE Shipping</p>
       </div>
       <div className="mt-6">
-          <button className="bg-[#590632] hover:bg-[#3b0225] transition-colors text-white fon-inter font-bold py-3 px-8 rounded-LG text-lg">
+          <button className="bg-[#590632] hover:bg-[#3b0225] transition-colors text-white fon-inter font-bold py-3 px-8 rounded-lg text-lg">
           ADD TO CART
         </button>
       </div>
