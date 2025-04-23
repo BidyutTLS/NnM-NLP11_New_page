@@ -5,7 +5,7 @@ import Image from "next/image";
 const ComparisonTableSection= () => {
   return (
     <section className="text-center py-10 px-4 bg-[#f9f9f9]">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#54032d] mb-3">
+      <h2 className="text-2xl md:text-3xl font-inter font-bold text-[#590632] mb-3">
         Get More Bangs for Your Bucks!
       </h2>
       <p className="text-lg md:text-xl text-gray-800 max-w-4xl mx-auto">
@@ -14,7 +14,7 @@ const ComparisonTableSection= () => {
       </p>
       <p className="text-lg md:text-xl text-gray-800 max-w-4xl mx-auto mt-4">
         Check out the table below to see how we stack up against a leading hair product and why{" "}
-        <span className="bg-yellow-300 font-semibold">Nail n Mane is a smarter, more affordable choice</span>{" "}
+        <span className="bg-gold font-semibold">Nail n Mane is a smarter, more affordable choice</span>{" "}
         for getting that gorgeous, healthy hair that you deserve.
       </p>
 
@@ -38,7 +38,7 @@ const ComparisonTableSection= () => {
       </div>
 
       {/* Comparison Table */}
-      <div className="grid grid-cols-3 max-w-5xl mx-auto mt-6 text-left text-sm md:text-base">
+      <div className="grid grid-cols-3 max-w-5xl mx-auto mt-6 font-inter text-left text-lg md:text-base">
         <div className="font-bold py-3">Parameters</div>
         <div className="font-bold py-3 text-center">Nail n Mane</div>
         <div className="font-bold py-3 text-center">Leading Hair Product</div>
@@ -65,31 +65,31 @@ const ComparisonTableSection= () => {
         <div className="py-3 text-center">
           <Image
             src="https://cdn05.zipify.com/bCsM9s2BLly61aWkw23y6RsFi9c=/fit-in/1940x0/10a8eefc87094907b9aa56de47ad0c8e/4-capsules.png"
-            alt="5 Capsules"
-            width={100}
-            height={30}
+            alt="4 Capsules"
+            width={40}
+            height={40}
             className="inline-block"
           />
           /day
         </div>
 
         <div className="py-3">Cost of 1 Bottle</div>
-        <div className="py-3 text-center text-[#54032d]">
+        <div className="py-3 text-center text-[#590632]">
           <p className="font-bold">$25</p>
-          <p className="text-sm">3‑month supply</p>
+          <p className="text-base">3‑month supply</p>
         </div>
-        <div className="py-3 text-center text-[#54032d]">
+        <div className="py-3 text-center text-[#590632]">
           <p className="font-bold">$79</p>
-          <p className="text-sm">1‑month supply</p>
+          <p className="text-base">1‑month supply</p>
         </div>
       </div>
 
       {/* CTA */}
       <div className="mt-8">
-        <button className="bg-[#54032d] text-white font-bold px-6 py-3 rounded-full">
+        <button className="bg-[#590632] text-white font-bold px-6 py-3 rounded-lg">
           Buy Now Risk‑free
         </button>
-        <p className="text-sm text-gray-600 mt-2">
+        <p className="text-base text-gray-600 mt-2">
           30‑Day Money‑Back Guarantee | FREE Shipping
         </p>
       </div>
