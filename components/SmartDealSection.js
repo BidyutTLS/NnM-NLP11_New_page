@@ -4,7 +4,7 @@ import Image from "next/image";
 const SmartDealSection = () => {
   return (
     <section className="bg-[#fcfcfc] text-[#1a1a1a] py-10 px-4 text-center">
-      <h2 className="text-2xl md:text-3xl text-[#590632}font-inter font-bold max-w-4xl mx-auto leading-snug">
+      <h2 className="text-2xl md:text-3xl text-[#590632] font-inter font-bold max-w-4xl mx-auto leading-snug">
         Why you’ve got to be Smart and grab this Clinically Tested supplement NOW:
       </h2>
       <div className="mt-6 max-w-4xl mx-auto space-y-4 text-lg">
@@ -37,7 +37,7 @@ const SmartDealSection = () => {
           <p>
             With supplies running low... it makes sense to <span className="bg-gold text-[#590632] font-inter font-semibold px-1">stock up on the 3-bottle pack NOW</span> to lock in the best results for your hair! Don’t wait or you may see the dreaded “Out of Stock” sign!
           </p>
-          <p className="bg-gold text-[#590632] font-inter font-bold px-2">Be smart about it!</p>
+          <p className="text-[#590632] font-inter font-bold px-2"> <span className="bg-[#590632]">Be smart about it! </span> </p>
         </div>
       </div>
       <div className="mt-6 text-lg max-w-4xl mx-auto">
