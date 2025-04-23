@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const IngredientsComplex2Section = () => {
   return (
-    <section className="bg-[#f7f7f7] text-[#54032d] px-4 py-12 text-center font-merriweather">
-      <div className="bg-[#54032d] text-white font-semibold py-2 px-4 max-w-4xl mx-auto">
+    <section className="bg-[#f7f7f7] text-[#a1a1a1] text-lg px-4 py-12 text-center font-merriweather">
+      <div className="bg-[#590632] text-white font-semibold py-2 px-4 max-w-4xl mx-auto">
         Amla, Biotin and Zinc to promote growth and volume.
       </div>
 
@@ -18,14 +18,14 @@ const IngredientsComplex2Section = () => {
           unoptimized
         />
 
-        <h3 className="text-xl md:text-2xl font-bold mt-6">
+        <h3 className="text-xl md:text-2xl text-[#590632] font-inter font-bold mt-6">
           Indian Goose Berry (Amla Berry)
         </h3>
         <p className="text-base md:text-lg mt-2">
           Rich in Vitamin C, Amla <strong>boosts blood circulation in the scalp</strong>. Its pro-collagen properties <strong>support scalp health, promoting healthy hair growth</strong>.
         </p>
 
-        <div className="mt-6 border border-[#54032d] text-left p-4">
+        <div className="mt-6 border border-[#590632] text-left p-4">
           <p>
             A research study on varying concentrations of Emblica (Indian Goose Berry) extract showed <strong>significant increases in tensile strength</strong> for hair, proving Emblica nourishes the hair.
           </p>
@@ -37,21 +37,21 @@ const IngredientsComplex2Section = () => {
             className="mx-auto my-4"
             unoptimized
           />
-          <p className="text-xs italic text-white bg-[#54032d] px-2 py-1 w-fit mx-auto">
+          <p className="text-xs italic text-white bg-[#590632] px-2 py-1 w-fit mx-full">
             Source: A Study<sup>[3]</sup> published on MDPI Journal
           </p>
         </div>
       </div>
 
       <div className="max-w-3xl mx-auto mt-10">
-        <h3 className="text-xl md:text-2xl font-bold">Biotin</h3>
+        <h3 className="text-xl md:text-2xl text-[#590632] font-inter font-bold">Biotin</h3>
         <p className="text-base md:text-lg mt-2">
           High-strength biotin is known to improve keratin levels – the building blocks of hair and nails. It <strong>nourishes the hair</strong> from within and helps <strong>promote hair growth and strength</strong>.
         </p>
       </div>
 
       <div className="max-w-3xl mx-auto mt-10">
-        <h3 className="text-xl md:text-2xl font-bold">Zinc</h3>
+        <h3 className="text-xl md:text-2xl text-[#590632] font-inter font-bold">Zinc</h3>
         <p className="text-base md:text-lg mt-2">
           Zinc is a multi-benefit ingredient known to <strong>promote hair growth</strong> and <strong>follicle health</strong>. Since it’s not naturally present in your body, it is important to take it in supplement form.
         </p>
@@ -68,7 +68,7 @@ const IngredientsComplex2Section = () => {
         <p className="mt-6">Begin your transformative journey now!</p>
 
         <div className="mt-6">
-          <button className="bg-[#54032d] text-white font-bold px-6 py-3 rounded-full">
+          <button className="bg-[#590632] text-white font-bold px-6 py-3 rounded-lg">
             Start My Order
           </button>
           <p className="text-sm mt-2">
@@ -77,8 +77,8 @@ const IngredientsComplex2Section = () => {
         </div>
       </div>
 
-      <div className="border border-[#54032d] text-sm text-left p-4 mt-10 max-w-4xl mx-auto">
-        <h4 className="text-center font-bold text-[#54032d] mb-2">
+      <div className="border border-[#590632] text-sm text-left p-4 mt-10 max-w-4xl mx-auto">
+        <h4 className="text-center font-bold text-[#590632] mb-2">
           COMPLETE LIST OF INGREDIENTS:
         </h4>
         <p>
