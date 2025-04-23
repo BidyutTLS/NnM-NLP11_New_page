@@ -86,7 +86,7 @@ const ComparisonTableSection= () => {
 
       {/* CTA */}
       <div className="mt-8">
-        <button className="bg-[#590632] text-white font-bold px-6 py-3 rounded-lg">
+        <button className="bg-[#590632] text-white font-inter font-bold px-6 py-3 rounded-lg">
           Buy Now Risk‑free
         </button>
         <p className="text-base text-gray-600 mt-2">
