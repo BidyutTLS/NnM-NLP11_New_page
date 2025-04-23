@@ -59,9 +59,12 @@ export default function NailNManeProductSection() {
 
         {/* CTA Button */}
         <div className="mt-6">
-          <button className="bg-gold text-[#4b2d0d] font-bold font-inter py-3 px-6 rounded-lg">
-            Treat Yourself to Healthier Hair. Order NOW
-          </button>
+          <a href="#purchase-options">
+            <button className="bg-gold text-[#4b2d0d] font-bold font-inter py-3 px-6 rounded-lg">
+              Treat Yourself to Healthier Hair. Order NOW
+            </button>
+          </a>
+
           <p className="text-sm mt-2">30-Day Money-Back Guarantee | FREE Shipping</p>
         </div>
 
