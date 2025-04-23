@@ -20,7 +20,7 @@ const ComparisonTableSection= () => {
 
       {/* Bottles Row */}
       <div className="grid grid-cols-3 gap-4 items-end justify-center max-w-5xl mx-auto mt-10">
-        <div />{/* empty cell */}
+        <div aria-hidden="true" />{/* empty cell */}
         <Image
           src="https://cdn05.zipify.com/XfFLv7bRBjdp9B0PD4T1RNC0-LU=/fit-in/1940x0/d753e3faa45d4eeb91865ee2343d58a8/nail-n-mane-one-bottle.jpeg"
           alt="Nail n Mane Bottle"
@@ -38,7 +38,7 @@ const ComparisonTableSection= () => {
       </div>
 
       {/* Comparison Table */}
-      <div className="grid grid-cols-3 max-w-5xl mx-auto mt-6 font-inter text-left text-lg md:text-base">
+      <div className="grid grid-cols-3 max-w-5xl mx-auto mt-6 font-inter text-left text-lg">
         <div className="font-bold py-3">Parameters</div>
         <div className="font-bold py-3 text-center">Nail n Mane</div>
         <div className="font-bold py-3 text-center">Leading Hair Product</div>
