@@ -4,8 +4,8 @@ import Image from "next/image";
 const NailsBenefitsSection = () => {
   return (
     <section className="bg-[#fafafa] py-12 px-4 text-[#54032d] text-center">
-      <h2 className="text-2xl md:text-3xl font-bold mb-8">
-        Hey, wait... <span className="font-extrabold">did we mention the NAILS benefits?</span>
+      <h2 className="text-2xl md:text-3xl font-inter font-bold mb-8">
+        Hey, wait... did we mention the NAILS benefits?
       </h2>
 
       <div className="flex flex-col md:flex-row items-center justify-center gap-6 max-w-4xl mx-auto">
@@ -21,7 +21,7 @@ const NailsBenefitsSection = () => {
         </div>
 
         <div className="text-left space-y-2 text-lg">
-          <p><span className="font-bold font-inter text-2xl">2X</span>  Nail Growth</p>
+          <p><span className="font-bold font-inter text-2xl">2X </span> Nail Growth</p>
           <p><span className="font-bold font-inter text-2xl">30%</span> Stronger Nails</p>
           <p><span className="font-bold font-inter text-2xl">25%</span> Brighter Nails*</p>
         </div>
