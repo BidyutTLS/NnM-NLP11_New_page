@@ -58,7 +58,7 @@ const ComparisonTableSection= () => {
             alt="1 Capsule"
             width={40}
             height={40}
-            className="inline-block"
+            className="inline-block h-10 w-auto"
           />
           /day
         </div>
@@ -68,7 +68,7 @@ const ComparisonTableSection= () => {
             alt="4 Capsules"
             width={40}
             height={40}
-            className="inline-block"
+            className="inline-block h-10 w-auto"
           />
           /day
         </div>
