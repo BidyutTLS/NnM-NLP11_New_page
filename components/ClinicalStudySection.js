@@ -94,11 +94,11 @@ const ClinicalStudySection = () => {
         <p className="mt-4 text-base md:text-lg">
           Ready to see this kind of natural transformation in your own hair?
         </p>
-
-        <button className="bg-[#54032d] text-white font-semibold text-lg md:text-xl py-3 px-6 font-inter rounded-lg mt-6">
-          Try Nail n Mane now
-        </button>
-
+        <a href="#purchase-options">
+          <button className="bg-[#54032d] text-white font-semibold text-lg md:text-xl py-3 px-6 font-inter rounded-lg mt-6">
+            Try Nail n Mane now
+          </button>
+        </a>
         <p className="text-sm mt-4 text-gray-700">
           30‑Day Money‑Back Guarantee | FREE Shipping
         </p>
