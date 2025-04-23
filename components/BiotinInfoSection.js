@@ -6,7 +6,7 @@ export default function BiotinInfoSection() {
     <section className="bg-white px-4 py-12 text-center text-gray-800">
       <div className="max-w-4xl mx-auto">
         {/* Main Title */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#590632]">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-inter font-bold text-[#590632]">
           Understand why BIOTIN alone isn’t enough for your hair!
         </h2>
 
@@ -30,7 +30,7 @@ export default function BiotinInfoSection() {
         </p>
 
         {/* When is Biotin Beneficial */}
-        <h3 className="mt-10 text-xl font-bold text-[#590632] uppercase">
+        <h3 className="mt-10 text-xl font-inter font-bold text-[#590632] uppercase">
           WHEN IS BIOTIN TRULY BENEFICIAL?
         </h3>
         <p className="mt-2 text-lg leading-relaxed">
@@ -42,7 +42,7 @@ export default function BiotinInfoSection() {
         </p>
 
         {/* What Factors Affect Your Hair */}
-        <h3 className="mt-10 text-xl font-bold text-[#590632] uppercase">
+        <h3 className="mt-10 text-xl font-inter font-bold text-[#590632] uppercase">
           WHAT FACTORS AFFECT YOUR HAIR?
         </h3>
         <p className="mt-2 text-lg leading-relaxed">
@@ -63,7 +63,7 @@ export default function BiotinInfoSection() {
         </div>
 
         {/* Why Biotin Can't Do It Alone */}
-        <h3 className="mt-10 text-xl font-bold text-[#590632] uppercase">
+        <h3 className="mt-10 text-xl font-inter font-bold text-[#590632] uppercase">
           WHY BIOTIN CAN’T DO IT ALONE
         </h3>
         <p className="mt-2 text-lg leading-relaxed">
