@@ -30,8 +30,8 @@ const badges = [
 
 const SafetyQualitySection = () => {
   return (
-    <section className="bg-[#fafafa] text-[#1f1f1f] px-6 py-12 text-center">
-      <h2 className="text-2xl md:text-3xl font-bold text-[#54032d] mb-4">
+    <section className="bg-[#fafafa] text-[#1a1a1a] px-6 py-12 text-center">
+      <h2 className="text-2xl md:text-3xl font-inter font-bold text-[#54032d] mb-4">
         Safety and Quality Assurance
       </h2>
       <p className="max-w-4xl mx-auto text-[18px] leading-relaxed">
@@ -44,7 +44,7 @@ const SafetyQualitySection = () => {
         You can trust that you’re getting ONLY <strong>high quality</strong> and <strong>safe supplements.</strong>
       </p>
 
-      <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 justify-items-center max-w-5xl mx-auto">
+      <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-6 justify-items-center max-w-5xl mx-auto">
         {badges.map((badge, index) => (
           <Image
             key={index}
