@@ -43,7 +43,7 @@ export default function HairTypeSecretSection() {
               <img
                 src={src}
                 alt={`${name} hair follicle`}
-                className="mx-auto h-auto w-full max-w-[180px] sm:max-w-[200px] md:max-w-[220px]"
+                className="mx-auto h-auto w-full max-w-[120px] sm:max-w-[80px] md:max-w-[80px]"
               />
             </div>
           ))}
