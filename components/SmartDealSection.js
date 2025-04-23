@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const SmartDealSection = () => {
   return (
-    <section className="bg-[#fcfcfc] text-[#270122] py-10 px-4 text-center">
+    <section className="bg-[#fcfcfc] text-[#1a1a1a] py-10 px-4 text-center">
       <h2 className="text-2xl md:text-4xl font-bold max-w-4xl mx-auto leading-snug">
         Why you’ve got to be Smart and grab this Clinically Tested supplement <span className="text-[#54032d]">NOW:</span>
       </h2>
@@ -12,7 +12,7 @@ const SmartDealSection = () => {
           When you have a product this effective, demand often exceeds supply. That’s exactly what’s happening here.
         </p>
         <p>
-          We’re all for producing more...but sourcing the rare ingredients of the <span className="bg-[#e4bb45] font-semibold px-1">highest quality often limits our production.</span>
+          We’re all for producing more...but sourcing the rare ingredients of the <span className="bg-[#590632] font-inter font-semibold px-1">highest quality often limits our production.</span>
         </p>
         <p className="font-semibold">The truth is...</p>
         <p>
@@ -33,26 +33,26 @@ const SmartDealSection = () => {
             unoptimized
           />
         </div>
-        <div className="text-left text-base space-y-3 max-w-xl">
+        <div className="text-left text-lg space-y-3 max-w-xl">
           <p>
-            With supplies running low... it makes sense to <span className="bg-[#e4bb45] font-semibold px-1">stock up on the 3-bottle pack NOW</span> to lock in the best results for your hair! Don’t wait or you may see the dreaded “Out of Stock” sign!
+            With supplies running low... it makes sense to <span className="bg-[#590632] font-inter font-semibold px-1">stock up on the 3-bottle pack NOW</span> to lock in the best results for your hair! Don’t wait or you may see the dreaded “Out of Stock” sign!
           </p>
-          <p className="bg-[#e4bb45] inline-block font-bold px-2">Be smart about it!</p>
+          <p className="bg-[#590632] inline-block font-inter font-bold px-2">Be smart about it!</p>
         </div>
       </div>
       <div className="mt-6 text-lg max-w-4xl mx-auto">
         <p>
           Order your 3-bottle pack NOW! Plus, you’re getting <span className="font-bold">EXTRA benefits</span> with our <span className="font-bold">STEAL DEAL</span>: 3 bottles at a discounted price of
         </p>
-        <div className="mt-2 text-2xl font-bold">
+        <div className="mt-2 font-inter text-2xl font-bold">
           <span className="line-through text-gray-500 mr-2">$75.00</span>
-          <span className="text-[#54032d] text-3xl">$63.75</span>
+          <span className="text-[#590632] text-3xl">$63.75</span>
         </div>
         <p className="mt-2 font-bold">Deal lasts till the stock lasts!</p>
-        <p className="text-sm mt-1">30-Day Money-Back Guarantee | FREE Shipping</p>
+        <p className="text-base mt-1">30-Day Money-Back Guarantee | FREE Shipping</p>
       </div>
       <div className="mt-6">
-        <button className="bg-[#54032d] hover:bg-[#3b0225] transition-colors text-white font-bold py-3 px-8 rounded-full text-lg">
+          <button className="bg-[#590632] hover:bg-[#3b0225] transition-colors text-white fon-inter font-bold py-3 px-8 rounded-LG text-lg">
           ADD TO CART
         </button>
       </div>
