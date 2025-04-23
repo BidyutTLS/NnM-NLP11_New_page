@@ -117,7 +117,7 @@ const FAQSection = () => {
           </div>
         ))}
         <div className="text-center mt-6">
-          <button className="bg-[#590632] text-white font-bold text-lg px-6 py-3 rounded-lg">
+          <button className="bg-[#590632] text-white font-inter font-bold text-lg px-6 py-3 rounded-lg">
             Bring home this 100% drug free hair solution. Buy Now
           </button>
           <p className="text-base text-gray-600 mt-2">
