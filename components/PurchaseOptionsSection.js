@@ -30,12 +30,12 @@ const packs = [
     originalPrice: "$50.00",
     duration: "for 6 months",
     images: [
-      "/popular-choice.jpg",
-      "/carousel-1.jpg",
-      "/carousel-2.jpg",
-      "/carousel-3.jpg",
-      "/carousel-4.jpg",
-      "/carousel-5.jpg"
+      "/images/popular-choice.jpg",
+      "/images/carousel-1.jpg",
+      "/images/carousel-2.jpg",
+      "/images/carousel-3.jpg",
+      "/images/carousel-4.jpg",
+      "/images/carousel-5.jpg"
     ],
   },
   {
@@ -47,12 +47,12 @@ const packs = [
     originalPrice: "",
     duration: "for 3 months",
     images: [
-      "/sampler-pack.jpg",
-      "/carousel-1.jpg",
-      "/carousel-2.jpg",
-      "/carousel-3.jpg",
-      "/carousel-4.jpg",
-      "/carousel-5.jpg"
+      "/images/sampler-pack.jpg",
+      "/images/carousel-1.jpg",
+      "/images/carousel-2.jpg",
+      "/images/carousel-3.jpg",
+      "/images/carousel-4.jpg",
+      "/images/carousel-5.jpg"
     ],
   },
 ];
