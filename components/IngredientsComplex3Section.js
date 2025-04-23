@@ -68,7 +68,7 @@ const IngredientsComplex2Section = () => {
         <p className="mt-6">Begin your transformative journey now!</p>
 
         <div className="mt-6">
-          <button className="bg-[#590632] text-white font-bold px-6 py-3 rounded-lg">
+          <button className="bg-[#590632] text-white font-inter font-bold px-6 py-3 rounded-lg">
             Start My Order
           </button>
           <p className="text-sm mt-2">
