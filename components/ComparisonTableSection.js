@@ -86,9 +86,11 @@ const ComparisonTableSection= () => {
 
       {/* CTA */}
       <div className="mt-8">
-        <button className="bg-[#590632] text-white font-inter font-bold px-6 py-3 rounded-lg">
-          Buy Now Risk‑free
-        </button>
+        <a href="#purchase-options">
+          <button className="bg-[#590632] text-white font-inter font-bold px-6 py-3 rounded-lg">
+            Buy Now Risk‑free
+          </button>
+        </a>
         <p className="text-base text-gray-600 mt-2">
           30‑Day Money‑Back Guarantee | FREE Shipping
         </p>
