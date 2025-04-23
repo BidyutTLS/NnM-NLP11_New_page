@@ -81,9 +81,11 @@ export default function TestimonialsSection() {
 
         {/* CTA Button */}
         <div className="mt-10">
-          <button className="bg-[#590632] text-white px-8 py-3 rounded-lg text-lg font-inter font-bold shadow-md hover:opacity-90">
-            Order NOW & Start Seeing results in Just 4 Weeks
-          </button>
+          <a href="#purchase-options">
+            <button className="bg-[#590632] text-white px-8 py-3 rounded-lg text-lg font-inter font-bold shadow-md hover:opacity-90">
+              Order NOW & Start Seeing results in Just 4 Weeks
+            </button>
+          </a>
           <p className="mt-2 font-inter text-sm text-gray-700">30-Day Money-Back Guarantee | FREE Shipping</p>
         </div>
       </div>
