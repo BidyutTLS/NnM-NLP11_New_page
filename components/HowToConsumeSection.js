@@ -40,7 +40,7 @@ const HowToConsumeSection = () => {
       </div>
 
       <div className="mt-10 max-w-4xl mx-auto">
-        <h3 className="text-2xl md:text-3xl font-bold text-[#590632] mb-4">
+        <h3 className="text-2xl md:text-3xl font-inter font-bold text-[#590632] mb-4">
           Here’s a quick RECAP...
         </h3>
         <p className="text-lg mb-4">
