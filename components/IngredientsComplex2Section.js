@@ -5,7 +5,7 @@ const IngredientsComplex2Section = () => {
   return (
     <section className="bg-[#f9f9f9] py-12 px-4 text-center">
       {/* Banner Text */}
-      <div className="bg-[#54032d] text-white text-base py-2 px-4 max-w-5xl mx-auto">
+      <div className="bg-[#54032d] text-white text-lg py-2 px-4 max-w-5xl mx-auto">
         Linseed, Vitamin C, and D to restore shine and strength.
       </div>
 
