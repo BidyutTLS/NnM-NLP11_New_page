@@ -70,7 +70,7 @@ const PurchaseOptionsSection = () => {
               {pack.discount}
             </div>
             <Carousel
-              showThumbs={false}
+              showThumbs={true}
               showStatus={false}
               infiniteLoop
               emulateTouch
@@ -110,7 +110,7 @@ const PurchaseOptionsSection = () => {
                 <span className="text-lg font-semibold">1</span>
                 <button className="bg-gray-200 px-3 py-1 text-lg">+</button>
               </div>
-              <button className="bg-green-600 text-white font-bold py-2 px-6 mt-4 w-full">
+              <button className="bg-green-600 text-white font-bold py-2 px-6 mt-4 w-3xl">
                 ADD TO CART
               </button>
               <div className="mt-4 text-left text-sm text-[#54032d] px-4">
