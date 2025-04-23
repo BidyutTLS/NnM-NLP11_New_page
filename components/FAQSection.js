@@ -40,8 +40,18 @@ const faqs = [
   },
   {
     question: "What is the size of the pill?",
-    answer:
-      "We use a size 0 capsule for Nail n Mane. It is 0.85 inches which is just slightly longer than the US penny."
+    answer: (
+      <div className="flex flex-col items-center gap-4 md:gap-6">
+        <p className="text-center text-lg">
+          We use a size 0 capsule for Nail n Mane. It is 0.85 inches which is just slightly longer than the US penny.
+        </p>
+        <img
+          src="/images/pill-vs-penny.png" 
+          alt="Size comparison between pill and US penny"
+          className="max-w-xs w-full"
+        />
+      </div>
+    )
   },
   {
     question: "What is the recommended usage?",
