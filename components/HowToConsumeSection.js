@@ -4,7 +4,7 @@ import Image from "next/image";
 const HowToConsumeSection = () => {
   return (
     <section className="bg-[#f9f9f9] text-[#1a1a1a] px-4 py-10 text-center">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#54032d] mb-6">
+      <h2 className="text-2xl md:text-3xl font-inter font-bold text-[#590632] mb-6">
         How to Consume?
       </h2>
       <div className="flex justify-center mb-6">
@@ -20,7 +20,7 @@ const HowToConsumeSection = () => {
       <div className="max-w-4xl mx-auto text-lg leading-relaxed">
         <p className="mb-4">
           Just take one{" "}
-          <span className="bg-[#54032d] text-white px-1 font-bold">
+          <span className="bg-[#590632] text-white px-1 font-bold">
             easy-to-swallow
           </span>{" "}
           tablet with your favorite beverage after a meal – it’s that SIMPLE!
@@ -40,7 +40,7 @@ const HowToConsumeSection = () => {
       </div>
 
       <div className="mt-10 max-w-4xl mx-auto">
-        <h3 className="text-2xl md:text-3xl font-bold text-[#54032d] mb-4">
+        <h3 className="text-2xl md:text-3xl font-bold text-[#590632] mb-4">
           Here’s a quick RECAP...
         </h3>
         <p className="text-lg mb-4">
