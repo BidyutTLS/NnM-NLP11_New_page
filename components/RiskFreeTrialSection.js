@@ -31,7 +31,7 @@ const RiskFreeTrialSection = () => {
 
       {/* CTA Button */}
       <div className="mt-8">
-        <button className="bg-[#54032d] font-inter text-white px-6 py-3 rounded-full font-semibold">
+        <button className="bg-[#54032d] font-inter text-white px-6 py-3 rounded-lg font-semibold">
           I Want to Take Advantage of this Risk-Free Trial
         </button>
       </div>
