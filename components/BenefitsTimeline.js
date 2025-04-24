@@ -5,7 +5,7 @@ const BenefitsTimeline = () => {
     <section className="bg-[#F7F7F7] font-merriweather text-[#1a1a1a]">
       <div className="max-w-screen-xl mx-auto px-4 py-16 text-center">
         {/* Heading */}
-        <h2 className="text-[2rem] md:text-[2.5rem] font-bold font-dmserif text-[#580F29] mb-6">
+        <h2 className="text-2xl md:text-2xl font-bold font-inter text-[#580F29] mb-6">
           What Benefits Can You Expect?
         </h2>
 
