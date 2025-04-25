@@ -30,7 +30,7 @@ const IngredientsComplex2Section = () => {
             A research study on varying concentrations of Emblica (Indian Goose Berry) extract showed <strong>significant increases in tensile strength</strong> for hair, proving Emblica nourishes the hair.
           </p>
           <Image
-            src="https://cdn05.zipify.com/rnTUGn0yBWlxMiHdZu7rl6P2xfw=/fit-in/1940x0/170f1655d4ce4ef295180573058aeb99/skin-sensitivity-flaxseeds.png"
+            src="https://cdn05.zipify.com/oFd0FGMCP20HYbm6ZWm8ULV_uAw=/fit-in/1940x0/2d083090416349a8bb9f3b250949bf15/emblica-solution-effect.png"
             alt="Emblica extract tensile strength graph"
             width={300}
             height={200}
