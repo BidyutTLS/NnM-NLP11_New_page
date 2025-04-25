@@ -36,7 +36,7 @@ const TextReviews = () => {
             age: "69, us",
             title: "Awesome!",
             content:
-              "Been usong for about 90 days. Great results. Hair is thicker with more texture. Not as much hair loss. I am thrilled woth results as usual with these products. I have never been disappointed.",
+              "Been using for about 90 days. Great results. Hair is thicker with more texture. Not as much hair loss. I am thrilled with results as usual with these products. I have never been disappointed.",
           },
         ].map((review, index) => (
           <div
