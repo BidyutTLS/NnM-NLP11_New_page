@@ -51,7 +51,7 @@ const BenefitsTimeline = () => {
           </p>
 
           <p className="text-base text-[#1a1a1a] italic mt-2">
-            *For a complete list of all 10+ AMAZING benefits, read our FAQ section at the end.
+            **For a complete list of all 10+ AMAZING benefits, read our FAQ section at the end.
           </p>
         </div>
       </div>
