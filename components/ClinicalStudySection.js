@@ -16,7 +16,7 @@ const ClinicalStudySection = () => {
 
       <p className="mt-6 max-w-3xl mx-auto text-lg">
         Wondering what you are looking at? A noticeable
-        <span className="font-bold text-[#54032d] ml-1">
+        <span className="font-bold text-[#54032d] font-inter ml-1">
           31% reduction in hair thinning 
         </span>
         from baseline in 12 weeks!
