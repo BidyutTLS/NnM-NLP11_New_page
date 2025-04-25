@@ -34,7 +34,7 @@ export default function BiotinInfoSection() {
           WHEN IS BIOTIN TRULY BENEFICIAL?
         </h3>
         <p className="mt-2 text-lg leading-relaxed">
-          <strong>Biotin can be effective in cases of biotin deficiency, but research shows this deficiency is RARE.</strong>
+          <strong>Biotin can be effective in cases of biotin deficiency, but research shows this deficiency is RARE.</strong> 
           Most healthy adults in the U.S. get more than enough biotin from their diet—foods like eggs, nuts, and whole grains.
         </p>
         <p className="mt-2 text-lg leading-relaxed">
