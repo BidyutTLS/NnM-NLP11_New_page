@@ -28,7 +28,7 @@ const ExpertRecommendationSection2 = () => {
           />
           <div className="mt-2 text-[#1a1a1a]">
             <p className="font-bold text-lg">Jennifer Maklan</p>
-            <p className="text-sm">Certified Ayurvedic Practitioner</p>
+            <p className="text-sm">Qualified Ayurvedic Practitioner</p>
           </div>
         </div>
       </div>
