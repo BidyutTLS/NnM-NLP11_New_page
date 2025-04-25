@@ -27,7 +27,7 @@ const TrustHighlightSection = () => {
           Our rigorous testing and commitment to quality have earned <strong>Nail n Mane</strong> a spotlight feature in the
           September 2024 issue of{' '}
           <span className="bg-[#4f002b] text-white px-1 font-inter font-medium">
-            NATIONAL PRACTITIONER MAGAZINE
+            NATURAL PRACTITIONER MAGAZINE
           </span>{' '}
           – the premier medical publication for Natural Health Practitioners across the country and{' '}
           <span className="bg-[#4f002b] text-white px-1 font-inter font-medium">
