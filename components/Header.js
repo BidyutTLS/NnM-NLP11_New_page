@@ -9,7 +9,7 @@ const Header = () => {
       {/* Top Bar */}
       <div className="flex justify-between items-center px-6 py-2 bg-gray-50 text-gray-700">
         <div className="flex flex-wrap space-x-4">
-          <Link href="#">My Account</Link>
+          <Link href="https://theayurvedaexperience.com/account/login?return_url=%2Faccount">My Account</Link>
           <Link href="#">Track Order</Link>
           <Link href="#">Help Center</Link>
           <Link href="#">Contact Us</Link>
