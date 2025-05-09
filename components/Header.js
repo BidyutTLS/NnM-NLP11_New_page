@@ -128,10 +128,25 @@ const Header = () => {
             <Link href="#" className="hover:text-gray-700">REVIEWS</Link>
           </nav>
 
-          <div className="hidden lg:flex items-center border rounded-full px-3 py-1">
-            <input type="text" placeholder="Search" className="outline-none text-sm px-2 w-32" />
-            <Search size={16} className="text-gray-500" />
-          </div>
+          <form
+  className="hidden lg:flex items-center border rounded-full px-3 py-1 snize-search-form"
+  method="get"
+  action="/search"
+  role="search"
+>
+  <input
+    type="text"
+    name="q"
+    placeholder="Search"
+    className="searchanise-input outline-none text-sm px-2 w-32"
+    autoComplete="off"
+  />
+  <button type="submit">
+    <Search size={16} className="text-gray-500" />
+  </button>
+</form>
+
+      
         </div>
       </header>
     </>
