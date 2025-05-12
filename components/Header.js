@@ -24,7 +24,7 @@ const Header = () => {
           <Link href="/login" className="flex items-center hover:underline">
             <User size={16} className="mr-1" />
             Login
-          </Link>
+          </https://theayurvedaexperience.com/account/login?return_url=%2Faccount>
           <Link href="/cart" className="relative">
             <ShoppingCart size={20} />
             <span className="absolute -top-2 -right-2 text-xs bg-green-200 text-black rounded-full px-1">0</span>
