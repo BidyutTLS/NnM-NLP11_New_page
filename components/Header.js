@@ -7,7 +7,7 @@ import { Search, User, ShoppingCart, ChevronDown } from "lucide-react";
 // from this Header component. They should be placed at the Page level
 // or in _app.js/_document.js, ideally using the next/script component
 // for better performance and integration with Next.js.
- 
+
 const Header = () => {
   return (
     <header className="w-full border-b border-gray-200 text-sm">
