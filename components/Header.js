@@ -62,7 +62,7 @@ const Header = () => {
             className="searchanise-input outline-none text-sm px-2 w-32 focus:w-48 transition-all"
             autoComplete="off"
             aria-label="Search Products"
-          />
+          >
           <button type="submit" aria-label="Submit search query">
             <Search size={16} className="text-gray-500 hover:text-gray-800" />
           </button>
