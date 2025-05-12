@@ -21,10 +21,13 @@ const Header = () => {
 
         <div className="flex items-center space-x-3">
           <span>United States (USD $)</span>
-          <Link href="/login" className="flex items-center hover:underline">
+          <a
+            href="https://theayurvedaexperience.com/account/login?return_url=%2Faccount"
+            className="flex items-center hover:underline"
+          >
             <User size={16} className="mr-1" />
             Login
-          </https://theayurvedaexperience.com/account/login?return_url=%2Faccount>
+          </a>
           <Link href="/cart" className="relative">
             <ShoppingCart size={20} />
             <span className="absolute -top-2 -right-2 text-xs bg-green-200 text-black rounded-full px-1">0</span>
