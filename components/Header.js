@@ -1,5 +1,4 @@
-// ✅ Final Header and Footer Components for The Ayurveda Experience Clone
-// Includes all updated external URLs, footer content, and removes 'Offers' from the nav
+// ✅ Final Header and Footer Components (Mobile-Optimized)
 
 import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
@@ -82,40 +81,59 @@ const Header = () => {
 };
 
 export const Footer = () => (
-  <footer className="bg-gray-50 border-t text-sm text-gray-700 px-6 py-8">
-    <div className="max-w-7xl mx-auto">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-        <div>
-          <h4 className="font-bold mb-2">My Account</h4>
-          <ul className="space-y-1">
-            <li><a href="https://theayurvedaexperience.com/account/login?return_url=%2Faccount" className="hover:underline">Login</a></li>
-            <li><a href="/track-order" className="hover:underline">Track Order</a></li>
-            <li><a href="/rewards" className="hover:underline">AyuRewards</a></li>
-            <li><a href="/referral" className="hover:underline">Refer & Earn</a></li>
-          </ul>
+  <footer className="bg-gray-50 border-t text-sm text-gray-700 px-4 py-10">
+    <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <Image src="/logo.png" alt="TAE Logo" width={120} height={40} className="mb-4" />
+        <div className="flex space-x-4">
+          <a href="mailto:care@theayurvedaexperience.com" aria-label="Email"><i className="fas fa-envelope"></i></a>
+          <a href="#" aria-label="Facebook"><i className="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Pinterest"><i className="fab fa-pinterest"></i></a>
+          <a href="#" aria-label="YouTube"><i className="fab fa-youtube"></i></a>
         </div>
-        <div>
-          <h4 className="font-bold mb-2">Support</h4>
-          <ul className="space-y-1">
-            <li><a href="https://theayurveda-experience.reamaze.com/" className="hover:underline">Help Center</a></li>
-            <li><a href="https://theayurvedaexperience.com/pages/contact-us-here" className="hover:underline">Contact Us</a></li>
-            <li><a href="/accessibility" className="hover:underline">Accessibility</a></li>
-          </ul>
+        <div className="flex mt-4 space-x-2">
+          <img src="/appstore.png" alt="App Store" width={120} />
+          <img src="/playstore.png" alt="Google Play" width={120} />
         </div>
-        <div>
-          <h4 className="font-bold mb-2">Explore</h4>
-          <ul className="space-y-1">
-            <li><a href="https://theayurvedaexperience.com/pages/about-courses" className="hover:underline">Learn Ayurveda</a></li>
-            <li><a href="https://theayurvedaexperience.com/pages/customer-reviews" className="hover:underline">Customer Reviews</a></li>
-            <li><a href="https://theayurvedaexperience.com/collections/bestsellers" className="hover:underline">Bestsellers</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="font-bold mb-2">Contact</h4>
-          <p className="mb-1">Phone: +1 (678)-498-7248</p>
-          <p>Email: <a href="mailto:support@theayurvedaexperience.com" className="hover:underline">support@theayurvedaexperience.com</a></p>
-        </div>
+        <p className="mt-4 text-xs">Need Help?<br/>Email us: <a href="mailto:care@theayurvedaexperience.com">care@theayurvedaexperience.com</a><br/>Call us: +1 (678)-498-7248</p>
       </div>
+      <div>
+        <h4 className="font-semibold mb-2">Quick Links</h4>
+        <ul className="space-y-1">
+          <li><a href="https://theayurveda-experience.reamaze.com/" className="hover:underline">Help Center</a></li>
+          <li><a href="/search" className="hover:underline">Search</a></li>
+          <li><a href="/" className="hover:underline">Home</a></li>
+          <li><a href="https://theayurvedaexperience.com/collections/all-products" className="hover:underline">All Products</a></li>
+          <li><a href="/about" className="hover:underline">About Us</a></li>
+          <li><a href="/affiliate" className="hover:underline">Become an Affiliate</a></li>
+          <li><a href="/sms" className="hover:underline">Get SMS updates</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 className="font-semibold mb-2">Policies</h4>
+        <ul className="space-y-1">
+          <li><a href="/shipping" className="hover:underline">Shipping & Delivery</a></li>
+          <li><a href="/privacy" className="hover:underline">Privacy Policy</a></li>
+          <li><a href="/returns" className="hover:underline">Exchanges & Refunds</a></li>
+          <li><a href="/terms" className="hover:underline">Terms of Use</a></li>
+          <li><a href="/accessibility" className="hover:underline">Accessibility Statement</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 className="font-semibold mb-2">Learn</h4>
+        <ul className="space-y-1">
+          <li><a href="/courses" className="hover:underline">Explore Courses</a></li>
+          <li><a href="/webinars" className="hover:underline">Webinars</a></li>
+          <li><a href="/blog" className="hover:underline">Blog</a></li>
+          <li><a href="/my-courses" className="hover:underline">My Courses</a></li>
+          <li><a href="/product-recommendation" className="hover:underline">Product Recommendation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div className="text-center text-xs text-gray-500 mt-8 border-t pt-6">
+      <p>© 2025 The Ayurveda Experience.</p>
+      <p className="mt-2">* Disclaimer: Please <a href="#" className="text-blue-500 underline">click here</a> to see the usage of cookies and medical disclaimers...</p>
     </div>
   </footer>
 );
