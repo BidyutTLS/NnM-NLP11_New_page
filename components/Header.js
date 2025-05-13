@@ -18,7 +18,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="w-full border-b border-gray-200 text-sm font-[\'Open Sans\']">
+    <header className="w-full border-b border-gray-200 text-sm font-[\'Poppins\']">
       <div className="flex flex-wrap justify-between items-center px-6 py-2 bg-gray-50 text-gray-700">
         <div className="flex flex-wrap gap-x-4 gap-y-1">
           <a href="https://theayurvedaexperience.com/account/login?return_url=%2Faccount" className="hover:underline">My Account</a>
