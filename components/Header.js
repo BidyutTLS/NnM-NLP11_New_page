@@ -7,7 +7,7 @@ import { Search, User, ShoppingCart, ChevronDown } from "lucide-react";
 
 const Header = () => {
   const [cartCount, setCartCount] = useState(0);
-
+ 
   useEffect(() => {
     fetch("/cart.js")
       .then((res) => res.json())
