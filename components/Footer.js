@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 export const Footer = () => (
-  <footer className="bg-white border-t text-sm text-gray-700 px-4 pt-10 pb-4 font-[\'Open_Sans\']">
+  <footer className="bg-white border-t text-sm text-gray-700 px-4 pt-10 pb-4 font-openSans">
     <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
       <div className="space-y-4">
         <Image src="/logo.png" alt="TAE Logo" width={150} height={40} />
