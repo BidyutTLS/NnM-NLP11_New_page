@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Search, User, ShoppingCart, ChevronDown } from "lucide-react";
-
+    
 const Header = () => {
   const [cartCount, setCartCount] = useState(0);
  
