@@ -22,7 +22,7 @@ const Header = () => {
         <div className="flex items-center space-x-3">
           <span>United States (USD $)</span>
           <a
-            href="https://theayurvedaexperience.com/account/login?return_url=%2Faccount"
+            href="https://theayurvedaexperience.com/account/login"
             className="flex items-center hover:underline"
           >
             <User size={16} className="mr-1" />
@@ -99,7 +99,9 @@ const MegaMenu = ({ label }) => (
       <span>{label}</span>
       <ChevronDown size={14} />
     </div>
-    <div className="absolute hidden group-hover:flex flex-row bg-white shadow-xl p-6 -left-6 mt-2 z-50 w-[700px] border rounded-md">
+
+    {/* Hover-friendly panel */}
+    <div className="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 group-hover:translate-y-1 transition-all duration-200 flex flex-row bg-white shadow-xl p-6 -left-6 mt-2 z-50 w-[700px] border rounded-md pointer-events-auto">
       <div className="mr-10 w-1/2">
         <h3 className="font-bold text-sm mb-3 uppercase tracking-wider">Shop by Category</h3>
         <ul className="space-y-1 text-sm">
@@ -121,6 +123,7 @@ const MegaMenu = ({ label }) => (
           ))}
         </ul>
       </div>
+
       <div className="w-1/2">
         <h3 className="font-bold text-sm mb-3 uppercase tracking-wider">Shop by Brand</h3>
         <ul className="space-y-1 text-sm">
@@ -142,5 +145,6 @@ const MegaMenu = ({ label }) => (
     </div>
   </div>
 );
+
 
 export default Header;
