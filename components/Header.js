@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Search, User, ShoppingCart, ChevronDown } from "lucide-react";
+import { useState, useRef, useEffect } from 'react';
 
 const Header = () => {
   return (
@@ -93,58 +94,109 @@ const NavItem = ({ label, badge, links = [] }) => (
   </div>
 );
 
-const MegaMenu = ({ label }) => (
-  <div className="relative group cursor-pointer">
-    <div className="flex items-center space-x-1 hover:text-gray-700">
-      <span>{label}</span>
-      <ChevronDown size={14} />
-    </div>
+const MegaMenu = ({ label }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const triggerRef = useRef(null);
+  const menuRef = useRef(null);
 
-    {/* Hover-friendly panel */}
-    <div className="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 group-hover:translate-y-1 transition-all duration-200 flex flex-row bg-white shadow-xl p-6 -left-6 mt-2 z-50 w-[700px] border rounded-md pointer-events-auto">
-      <div className="mr-10 w-1/2">
-        <h3 className="font-bold text-sm mb-3 uppercase tracking-wider">Shop by Category</h3>
-        <ul className="space-y-1 text-sm">
-          {[
-            { name: "Face Oils", href: "/collections/face-oils" },
-            { name: "Eye Care", href: "/collections/eye-care" },
-            { name: "Cleansers", href: "/collections/cleansers" },
-            { name: "Creams & Concentrates", href: "/collections/creams-concentrates" },
-            { name: "Lip Care", href: "/collections/lip-care" },
-            { name: "Body Care", href: "/collections/body-care" },
-            { name: "Hair Care", href: "/collections/hair-care" },
-            { name: "Massage Tools", href: "/collections/massage-tools" },
-            { name: "Vegan", href: "/collections/vegan" },
-            { name: "Dietary Supplements", href: "/collections/supplements" }
-          ].map((item) => (
-            <li key={item.name}>
-              <Link href={item.href} className="hover:underline block py-1">{item.name}</Link>
-            </li>
-          ))}
-        </ul>
-      </div>
+  // Close on click outside
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(e.target) &&
+        triggerRef.current &&
+        !triggerRef.current.contains(e.target)
+      ) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
-      <div className="w-1/2">
-        <h3 className="font-bold text-sm mb-3 uppercase tracking-wider">Shop by Brand</h3>
-        <ul className="space-y-1 text-sm">
-          {[
-            { name: "iYURA", desc: "Authentic Ayurvedic Skincare", href: "/brands/iyura" },
-            { name: "Ajara", desc: "Inspired Daily Skin Care", href: "/brands/ajara" },
-            { name: "A Modernica", desc: "Ancient + Modern Science", href: "/brands/modernica" },
-            { name: "Ayuttva", desc: "Supplements & Foods", href: "/brands/ayuttva" },
-            { name: "The Ayurveda Experience", desc: "Learn Ayurveda", href: "/collections/tae-learn" }
-          ].map((brand) => (
-            <li key={brand.name}>
-              <Link href={brand.href} className="hover:underline block py-1">
-                {brand.name} | <span className="text-gray-600">{brand.desc}</span>
-              </Link>
-            </li>
-          ))}
-        </ul>
+  // Keyboard toggle handler
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ' || e.key === 'ArrowDown') {
+      e.preventDefault();
+      setIsOpen((prev) => !prev);
+    } else if (e.key === 'Escape') {
+      setIsOpen(false);
+    }
+  };
+
+  return (
+    <div
+      className="relative group cursor-pointer"
+      onMouseEnter={() => setIsOpen(true)}
+      onMouseLeave={() => setIsOpen(false)}
+    >
+      <button
+        ref={triggerRef}
+        className="flex items-center space-x-1 hover:text-gray-700 focus:outline-none"
+        onKeyDown={handleKeyDown}
+        aria-haspopup="true"
+        aria-expanded={isOpen}
+      >
+        <span>{label}</span>
+        <ChevronDown size={14} />
+      </button>
+
+      <div
+        ref={menuRef}
+        className={`absolute z-50 w-[700px] border rounded-md bg-white shadow-xl p-6 mt-2 left-0 transition-all duration-200 ease-in-out ${
+          isOpen ? 'opacity-100 translate-y-0 pointer-events-auto visible' : 'opacity-0 -translate-y-2 pointer-events-none invisible'
+        }`}
+        role="menu"
+        aria-label={`${label} Mega Menu`}
+      >
+        <div className="flex">
+          <div className="mr-10 w-1/2">
+            <h3 className="font-bold text-sm mb-3 uppercase tracking-wider">Shop by Category</h3>
+            <ul className="space-y-1 text-sm">
+              {[
+                { name: "Face Oils", href: "/collections/face-oils" },
+                { name: "Eye Care", href: "/collections/eye-care" },
+                { name: "Cleansers", href: "/collections/cleansers" },
+                { name: "Creams & Concentrates", href: "/collections/creams-concentrates" },
+                { name: "Lip Care", href: "/collections/lip-care" },
+                { name: "Body Care", href: "/collections/body-care" },
+                { name: "Hair Care", href: "/collections/hair-care" },
+                { name: "Massage Tools", href: "/collections/massage-tools" },
+                { name: "Vegan", href: "/collections/vegan" },
+                { name: "Dietary Supplements", href: "/collections/supplements" },
+              ].map((item) => (
+                <li key={item.name}>
+                  <Link href={item.href} className="block py-1 hover:underline">
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="w-1/2">
+            <h3 className="font-bold text-sm mb-3 uppercase tracking-wider">Shop by Brand</h3>
+            <ul className="space-y-1 text-sm">
+              {[
+                { name: "iYURA", desc: "Authentic Ayurvedic Skincare", href: "/brands/iyura" },
+                { name: "Ajara", desc: "Inspired Daily Skin Care", href: "/brands/ajara" },
+                { name: "A Modernica", desc: "Ancient + Modern Science", href: "/brands/modernica" },
+                { name: "Ayuttva", desc: "Supplements & Foods", href: "/brands/ayuttva" },
+                { name: "The Ayurveda Experience", desc: "Learn Ayurveda", href: "/collections/tae-learn" },
+              ].map((brand) => (
+                <li key={brand.name}>
+                  <Link href={brand.href} className="block py-1 hover:underline">
+                    {brand.name} <span className="text-gray-600">| {brand.desc}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 
 export default Header;
