@@ -10,7 +10,7 @@ module.exports = {
         dmserif: ["var(--font-dm-serif)"],
         merriweather: ["var(--font-merriweather)"],
         inter: ["var(--font-inter)"],
-        poppins: ["Open Sans", "sans-serif"],
+        openSans: ["Open Sans", "sans-serif"],
       },
       colors: {
         primary: "#54032d",
