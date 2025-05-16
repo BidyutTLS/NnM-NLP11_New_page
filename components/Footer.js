@@ -36,8 +36,8 @@ export const Footer = () => (
           <a href="#" aria-label="YouTube"><i className="fab fa-youtube"></i></a>
         </div>
         <div className="flex gap-2">
-          <Image src="/payments/appstore.png" alt="App Store" width={120} height={40} />
-          <Image src="/payments/playstore.png" alt="Google Play" width={120} height={40} />
+          <Image src="/payments/Appstore(2).png" alt="App Store" width={120} height={40} />
+          <Image src="/payments/playstore(2).png" alt="Google Play" width={120} height={40} />
         </div>
         <div className="text-xs">
           <p><strong>Need Help?</strong></p>
