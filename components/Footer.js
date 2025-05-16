@@ -82,12 +82,12 @@ export const Footer = () => (
     <div className="flex flex-wrap justify-center items-center gap-3 mt-10">
       <Image src="/payments/amex.svg" alt="Amex" width={40} height={25} />
       <Image src="/payments/applepay.png" alt="Apple Pay" width={40} height={25} />
-      <Image src="/payments/dinersclub.jpg" alt="Diners Club" width={40} height={25} />
+      <Image src="/payments/dinersclub.png" alt="Diners Club" width={40} height={25} />
       <Image src="/payments/discover.jpg" alt="Discover" width={40} height={25} />
       <Image src="/payments/gpay.png" alt="Google Pay" width={40} height={25} />
       <Image src="/payments/paypal.png" alt="Paypal" width={40} height={25} />
       <Image src="/payments/shoppay.avif" alt="Shop Pay" width={40} height={25} />
-      <Image src="/payments/Mastercard.jpg" alt="Mastercard" width={40} height={25} />
+      <Image src="/payments/mastercard.png" alt="Mastercard" width={40} height={25} />
       <Image src="/payments/Visa.jpg" alt="Visa" width={40} height={25} />
       <Image src="/payments/venmo.png" alt="Venmo" width={40} height={25} />
     </div>
