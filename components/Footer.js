@@ -1,4 +1,33 @@
-// ... (imports remain same)
+import { useState } from "react";
+import Image from "next/image";
+import {
+  ChevronDown,
+  ChevronUp,
+  Mail,
+  Facebook,
+  Instagram,
+  Youtube,
+} from "lucide-react";
+
+const CollapsibleSection = ({ title, children }) => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="border-t border-gray-200 pt-4 lg:border-none">
+      <button
+        className="w-full text-left font-semibold mb-2 flex justify-between items-center lg:cursor-default"
+        onClick={() => setOpen(!open)}
+      >
+        {title}
+        <span className="lg:hidden">
+          {open ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+        </span>
+      </button>
+      <div className={`space-y-1 ${open ? "block" : "hidden"} lg:block`}>
+        {children}
+      </div>
+    </div>
+  );
+};
 
 const Footer = () => (
   <footer className="bg-white border-t text-sm text-gray-700 px-4 pt-10 pb-4 font-['Open_Sans']">
@@ -26,16 +55,16 @@ const Footer = () => (
 
       {/* Social Icons */}
       <div className="flex justify-center space-x-5 text-xl mt-4">
-        <a href="mailto:care@theayurvedaexperience.com"><Mail size={18} /></a>
-        <a href="https://www.facebook.com/theayurvedaexperience"><Facebook size={18} /></a>
-        <a href="https://www.instagram.com/theayurvedaexperience"><Instagram size={18} /></a>
-        <a href="https://www.youtube.com/channel/UCv51NcFKkxcl_L8aQgzK3hQ"><Youtube size={18} /></a>
+        <a href="mailto:care@theayurvedaexperience.com" aria-label="Email"><Mail size={18} /></a>
+        <a href="https://www.facebook.com/theayurvedaexperience" target="_blank"><Facebook size={18} /></a>
+        <a href="https://www.instagram.com/theayurvedaexperience" target="_blank"><Instagram size={18} /></a>
+        <a href="https://www.youtube.com/channel/UCv51NcFKkxcl_L8aQgzK3hQ" target="_blank"><Youtube size={18} /></a>
       </div>
     </div>
 
-    {/* Footer Grid - Updated Layout */}
+    {/* Footer Grid */}
     <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
-      {/* Column 1: Quick Links */}
+      {/* Quick Links */}
       <CollapsibleSection title="Quick Links">
         <ul className="text-blue-600 space-y-1">
           <li><a href="/search">Search</a></li>
@@ -47,7 +76,7 @@ const Footer = () => (
         </ul>
       </CollapsibleSection>
 
-      {/* Column 2: Learn (before Policies on mobile) */}
+      {/* Learn */}
       <CollapsibleSection title="Learn">
         <ul className="text-blue-600 space-y-1">
           <li><a href="/collections/educational-courses">Courses</a></li>
@@ -56,7 +85,7 @@ const Footer = () => (
         </ul>
       </CollapsibleSection>
 
-      {/* Column 3: Policies */}
+      {/* Policies */}
       <CollapsibleSection title="Policies">
         <ul className="text-blue-600 space-y-1">
           <li><a href="/pages/shipping-policy">Shipping & Delivery</a></li>
