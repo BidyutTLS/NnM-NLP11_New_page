@@ -6,8 +6,7 @@ import {
   Mail,
   Facebook,
   Instagram,
-  Pinterest,
-  Youtube
+  Youtube,
 } from "lucide-react";
 
 const CollapsibleSection = ({ title, children }) => {
@@ -59,7 +58,6 @@ const Footer = () => (
         <a href="mailto:care@theayurvedaexperience.com" aria-label="Email"><Mail size={18} /></a>
         <a href="https://www.facebook.com/theayurvedaexperience" target="_blank" rel="noopener noreferrer"><Facebook size={18} /></a>
         <a href="https://www.instagram.com/theayurvedaexperience" target="_blank" rel="noopener noreferrer"><Instagram size={18} /></a>
-        <a href="https://in.pinterest.com/ayurvedaexp" target="_blank" rel="noopener noreferrer"><Pinterest size={18} /></a>
         <a href="https://www.youtube.com/channel/UCv51NcFKkxcl_L8aQgzK3hQ" target="_blank" rel="noopener noreferrer"><Youtube size={18} /></a>
       </div>
     </div>
