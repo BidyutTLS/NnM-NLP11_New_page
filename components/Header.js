@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import { Search, ShoppingCart, Menu, User } from "lucide-react";
+import { Search, ShoppingCart, Menu } from "lucide-react";
 
 const Header = () => {
   const [cartCount, setCartCount] = useState(0);
@@ -28,23 +28,23 @@ const Header = () => {
 
       <header className="w-full border-b border-gray-200 text-sm font-openSans relative">
         {/* Top Bar */}
-        <div className="bg-gray-50 text-gray-700 flex justify-between items-center px-4 py-2">
-          {/* Hamburger / Close */}
+        <div className="bg-gray-50 text-gray-700 flex items-center justify-between px-4 py-2 lg:hidden relative">
+          {/* Toggle Button */}
           <button
-            onClick={() => setMenuOpen(!menuOpen)}
+            onClick={() => setMenuOpen((prev) => !prev)}
             aria-label="Toggle Menu"
-            className="lg:hidden text-xl"
+            className="z-50"
           >
             {menuOpen ? "✕" : <Menu size={24} />}
           </button>
 
-          {/* Logo Centered (mobile only) */}
-          <div className="lg:hidden absolute left-1/2 transform -translate-x-1/2">
-            <Image src="/logo.png" alt="The Ayurveda Experience" width={140} height={40} />
+          {/* Centered Logo */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 top-2">
+            <Image src="/logo.png" alt="The Ayurveda Experience Logo" width={140} height={40} />
           </div>
 
-          {/* Icons Right */}
-          <div className="flex items-center space-x-4">
+          {/* Right Icons */}
+          <div className="flex items-center space-x-4 z-50">
             <a href="/search" aria-label="Search"><Search size={20} /></a>
             <a href="/cart" className="relative" aria-label="View Cart">
               <ShoppingCart size={20} />
@@ -57,32 +57,11 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile Fullscreen Menu */}
+        {/* Fullscreen Mobile Menu */}
         {menuOpen && (
-          <div className="fixed inset-0 z-50 bg-white px-6 py-4 text-black font-semibold flex flex-col overflow-y-auto">
-            <div className="flex justify-between items-center mb-6">
-              {/* Close button */}
-              <button onClick={() => setMenuOpen(false)} aria-label="Close Menu" className="text-xl">
-                ✕
-              </button>
-
-              {/* Centered logo */}
-              <div className="flex-grow text-center -ml-6">
-                <Image src="/logo.png" alt="The Ayurveda Experience Logo" width={170} height={40} />
-              </div>
-
-              {/* Right icons */}
-              <div className="flex items-center space-x-3">
-                <a href="/search"><Search size={20} /></a>
-                <a href="/cart" className="relative">
-                  <ShoppingCart size={20} />
-                  {cartCount > 0 && (
-                    <span className="absolute -top-2 -right-2 text-xs bg-green-200 text-black rounded-full px-1">
-                      {cartCount}
-                    </span>
-                  )}
-                </a>
-              </div>
+          <div className="fixed inset-0 z-40 bg-white px-6 py-4 text-black font-semibold flex flex-col overflow-y-auto">
+            <div className="flex justify-center mb-6 mt-2">
+              <Image src="/logo.png" alt="Centered Logo" width={170} height={40} />
             </div>
 
             <nav className="flex flex-col gap-4 text-base">
@@ -107,10 +86,10 @@ const Header = () => {
           </div>
         )}
 
-        {/* Desktop Nav */}
+        {/* Desktop View */}
         <div className="hidden lg:flex justify-between items-center px-6 py-4 bg-white">
           <a href="/" className="shrink-0">
-            <Image src="/logo.png" alt="Logo" width={180} height={50} priority />
+            <Image src="/logo.png" alt="The Ayurveda Experience Logo" width={180} height={50} priority />
           </a>
           <nav className="flex flex-wrap gap-5 font-semibold text-black text-sm">
             <a href="/collections/all-products">ALL PRODUCTS</a>
