@@ -1,3 +1,4 @@
+// components/Header.tsx
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
@@ -23,136 +24,89 @@ const Header = () => {
   return (
     <>
       <Head>
-        <script
-          async
-          src="https://cdn.userway.org/widget.js"
-          data-account="MZr0xGKhRf"
-        ></script>
+        <script async src="https://cdn.userway.org/widget.js" data-account="MZr0xGKhRf" />
       </Head>
 
       <header className="w-full border-b border-gray-200 text-sm font-openSans relative">
-        {/* Top Bar */}
         <div className="bg-gray-50 text-gray-700 flex justify-between items-center px-4 py-2">
-          <div className="flex items-center lg:hidden">
-            <button onClick={() => setMenuOpen(true)} aria-label="Open Menu">
-              <Menu size={24} />
-            </button>
-          </div>
-
+          <button onClick={() => setMenuOpen(true)} className="lg:hidden">
+            <Menu size={24} />
+          </button>
           <nav className="hidden lg:flex space-x-5">
-            <a href="https://theayurvedaexperience.com/account/login?return_url=%2Faccount" className="hover:underline">My Account</a>
-            <a href="https://track.theayurvedaexperience.com/" className="hover:underline">Track Order</a>
-            <a href="https://theayurveda-experience.reamaze.com/" className="hover:underline">Help Center</a>
-            <a href="https://theayurvedaexperience.com/pages/contact-us-here" className="hover:underline">Contact Us</a>
-            <a href="https://theayurvedaexperience.com/pages/ayurewards-n" className="hover:underline">AyuRewards</a>
-            <a href="tel:+16784987248" className="hover:underline font-semibold">+1 (678)-498-7248</a>
-            <a href="https://theayurvedaexperience.com/pages/accessibility-statement" className="hover:underline">Accessibility</a>
+            <a href="https://theayurvedaexperience.com/account/login?return_url=%2Faccount">My Account</a>
+            <a href="https://track.theayurvedaexperience.com/">Track Order</a>
+            <a href="https://theayurveda-experience.reamaze.com/">Help Center</a>
+            <a href="https://theayurvedaexperience.com/pages/contact-us-here">Contact Us</a>
+            <a href="https://theayurvedaexperience.com/pages/ayurewards-n">AyuRewards</a>
+            <a href="tel:+16784987248" className="font-semibold">+1 (678)-498-7248</a>
+            <a href="https://theayurvedaexperience.com/pages/accessibility-statement">Accessibility</a>
           </nav>
-
-          {/* Icons */}
           <div className="flex items-center space-x-4">
-            <a href="https://theayurvedaexperience.com/account/login?return_url=%2Faccount" aria-label="User Login">
-              <User size={20} />
-            </a>
-            <a href="https://theayurvedaexperience.com/cart" className="relative" aria-label="View Cart">
+            <a href="/account"><User size={20} /></a>
+            <a href="/cart" className="relative">
               <ShoppingCart size={20} />
-              <span className="absolute -top-2 -right-2 text-xs bg-green-200 text-black rounded-full px-1">
-                {cartCount}
-              </span>
+              <span className="absolute -top-2 -right-2 bg-green-200 text-black text-xs rounded-full px-1">{cartCount}</span>
             </a>
           </div>
         </div>
 
-        {/* Mobile Fullscreen Menu */}
         {menuOpen && (
-          <div className="fixed inset-0 z-50 bg-white text-black overflow-y-auto px-6 py-4 flex flex-col font-semibold text-sm">
-            {/* Top Row: Close | Logo | Icons */}
+          <div className="fixed inset-0 z-50 bg-white px-6 py-4 text-black font-semibold flex flex-col">
             <div className="flex justify-between items-center mb-6">
-              {/* Close button */}
-              <button onClick={() => setMenuOpen(false)} aria-label="Close Menu" className="text-xl">
-                ✕
-              </button>
-
-              {/* Centered Logo */}
+              <button onClick={() => setMenuOpen(false)}>✕</button>
               <div className="flex-grow text-center -ml-6">
-                <Image src="/logo.png" alt="The Ayurveda Experience Logo" width={170} height={50} />
+                <Image src="/logo.png" alt="Logo" width={170} height={40} />
               </div>
-
-              {/* Search + Cart Icons */}
-              <div className="flex space-x-3 items-center">
-                <a href="/search">
-                  <Search size={20} />
-                </a>
-                <a href="/cart" className="relative">
-                  <ShoppingCart size={20} />
-                  <span className="absolute -top-2 -right-2 text-xs bg-green-200 text-black rounded-full px-1">
-                    {cartCount}
-                  </span>
-                </a>
+              <div className="flex space-x-3">
+                <a href="/search"><Search size={20} /></a>
+                <a href="/cart"><ShoppingCart size={20} /></a>
               </div>
             </div>
-
-            {/* Nav List */}
-            <nav className="flex flex-col gap-4 text-base tracking-wide">
-              <a href="https://theayurvedaexperience.com/collections/all-products">ALL PRODUCTS</a>
-              <a href="https://theayurvedaexperience.com/collections/ayurvedic-skin-care-collection">FACE</a>
-              <a href="https://theayurvedaexperience.com/collections/body-care">BODY</a>
-              <a href="https://theayurvedaexperience.com/collections/hair-care">HAIR</a>
-              <a href="https://theayurvedaexperience.com/collections/bestsellers">BESTSELLERS</a>
-              <a href="https://theayurvedaexperience.com/collections/offers">
-                <div className="flex items-center gap-2">
-                  OFFERS
-                  <span className="bg-blue-600 text-white text-xs px-2 py-0.5 rounded">NEW</span>
-                </div>
-              </a>
-              <a href="https://theayurvedaexperience.com/collections/new-in-store">NEW IN STORE</a>
-              <a href="https://theayurvedaexperience.com/pages/about-courses">LEARN</a>
-              <a href="https://theayurvedaexperience.com/pages/customer-reviews">REVIEWS</a>
-              <a href="#">United States (USD $)</a>
-              <a href="https://theayurvedaexperience.com/pages/ayurewards-n">AyuRewards</a>
-              <a href="https://theayurvedaexperience.com/account/login?return_url=%2Faccount">Login</a>
-              <a href="https://theayurvedaexperience.com/pages/refer-get-discounts">Refer & Get Discounts</a>
+            <nav className="flex flex-col gap-4 text-base">
+              <a href="/collections/all-products">ALL PRODUCTS</a>
+              <a href="/collections/ayurvedic-skin-care-collection">FACE</a>
+              <a href="/collections/body-care">BODY</a>
+              <a href="/collections/hair-care">HAIR</a>
+              <a href="/collections/bestsellers">BESTSELLERS</a>
+              <a href="/collections/offers">OFFERS</a>
+              <a href="/collections/new-in-store">NEW IN STORE</a>
+              <a href="/pages/about-courses">LEARN</a>
+              <a href="/pages/customer-reviews">REVIEWS</a>
+              <a href="/pages/ayurewards-n">AyuRewards</a>
+              <a href="/account/login">Login</a>
+              <a href="/pages/refer-get-discounts">Refer & Get Discounts</a>
               <a href="https://track.theayurvedaexperience.com/">Track Order</a>
               <a href="https://theayurveda-experience.reamaze.com/">Help Center</a>
-              <a href="https://theayurvedaexperience.com/pages/contact-us-here">Contact Us</a>
-              <a href="tel:+16784987248" className="font-semibold">+1(678)-498-7248</a>
-              <a href="https://theayurvedaexperience.com/pages/accessibility-statement">Accessibility</a>
+              <a href="/pages/contact-us-here">Contact Us</a>
+              <a href="tel:+16784987248">+1 (678)-498-7248</a>
+              <a href="/pages/accessibility-statement">Accessibility</a>
             </nav>
           </div>
         )}
 
-        {/* Desktop Nav + Logo + Search */}
-        <div className="flex flex-col lg:flex-row items-center justify-between px-6 py-4 bg-white gap-4 lg:gap-0">
+        <div className="flex flex-col lg:flex-row items-center justify-between px-6 py-4 bg-white gap-4">
           <a href="/" className="shrink-0">
-            <Image src="/logo.png" alt="The Ayurveda Experience Logo" width={180} height={50} priority />
+            <Image src="/logo.png" alt="Logo" width={180} height={50} priority />
           </a>
-
-          <nav className="hidden lg:flex flex-wrap justify-center gap-4 font-semibold text-black text-sm">
-            <a href="https://theayurvedaexperience.com/collections/all-products" className="hover:text-gray-700">ALL PRODUCTS</a>
-            <a href="https://theayurvedaexperience.com/collections/ayurvedic-skin-care-collection" className="hover:text-gray-700">FACE</a>
-            <a href="https://theayurvedaexperience.com/collections/body-care" className="hover:text-gray-700">BODY</a>
-            <a href="https://theayurvedaexperience.com/collections/hair-care" className="hover:text-gray-700">HAIR</a>
-            <a href="https://theayurvedaexperience.com/collections/bestsellers" className="hover:text-gray-700">BESTSELLERS</a>
-            <a href="https://theayurvedaexperience.com/collections/new-in-store" className="hover:text-gray-700">NEW IN STORE</a>
-            <a href="https://theayurvedaexperience.com/pages/about-courses" className="hover:text-gray-700">LEARN</a>
-            <a href="https://theayurvedaexperience.com/pages/customer-reviews" className="hover:text-gray-700">REVIEWS</a>
+          <nav className="hidden lg:flex flex-wrap justify-center gap-4 text-black text-sm font-semibold">
+            <a href="/collections/all-products">ALL PRODUCTS</a>
+            <a href="/collections/ayurvedic-skin-care-collection">FACE</a>
+            <a href="/collections/body-care">BODY</a>
+            <a href="/collections/hair-care">HAIR</a>
+            <a href="/collections/bestsellers">BESTSELLERS</a>
+            <a href="/collections/new-in-store">NEW IN STORE</a>
+            <a href="/pages/about-courses">LEARN</a>
+            <a href="/pages/customer-reviews">REVIEWS</a>
           </nav>
-
-          <form
-            method="get"
-            action="/search"
-            className="snize-search-form hidden xl:flex items-center border rounded-full px-3 py-1"
-            role="search"
-          >
+          <form action="/search" className="hidden xl:flex items-center border rounded-full px-3 py-1">
             <input
-              type="text"
               name="q"
+              type="text"
               placeholder="Search"
-              className="searchanise-input snize-input-style outline-none text-sm px-2 w-32 focus:w-48 transition-all"
-              autoComplete="off"
+              className="outline-none text-sm px-2 w-32 focus:w-48 transition-all"
               aria-label="Search Products"
             />
-            <button type="submit" aria-label="Submit search query">
+            <button type="submit" aria-label="Search">
               <Search size={16} className="text-gray-500 hover:text-gray-800" />
             </button>
           </form>
