@@ -39,7 +39,6 @@ const Header = () => {
             </button>
           </div>
 
-          {/* Desktop Top Nav */}
           <nav className="hidden lg:flex space-x-5">
             <a href="https://theayurvedaexperience.com/account/login?return_url=%2Faccount" className="hover:underline">My Account</a>
             <a href="https://track.theayurvedaexperience.com/" className="hover:underline">Track Order</a>
@@ -66,26 +65,46 @@ const Header = () => {
 
         {/* Mobile Fullscreen Menu */}
         {menuOpen && (
-          <div className="fixed inset-0 z-50 bg-white text-black overflow-y-auto px-6 py-6 flex flex-col font-semibold text-sm">
-            {/* Top Row: Close & Logo */}
-            <div className="flex items-center justify-between mb-6">
+          <div className="fixed inset-0 z-50 bg-white text-black overflow-y-auto px-6 py-4 flex flex-col font-semibold text-sm">
+            {/* Top Row: Close | Logo | Icons */}
+            <div className="flex justify-between items-center mb-6">
+              {/* Close button */}
               <button onClick={() => setMenuOpen(false)} aria-label="Close Menu" className="text-xl">
                 ✕
               </button>
+
+              {/* Centered Logo */}
               <div className="flex-grow text-center -ml-6">
-                <Image src="/logo.png" alt="The Ayurveda Experience Logo" width={160} height={40} />
+                <Image src="/logo.png" alt="The Ayurveda Experience Logo" width={170} height={50} />
               </div>
-              <div className="w-6" /> {/* spacing placeholder to center logo */}
+
+              {/* Search + Cart Icons */}
+              <div className="flex space-x-3 items-center">
+                <a href="/search">
+                  <Search size={20} />
+                </a>
+                <a href="/cart" className="relative">
+                  <ShoppingCart size={20} />
+                  <span className="absolute -top-2 -right-2 text-xs bg-green-200 text-black rounded-full px-1">
+                    {cartCount}
+                  </span>
+                </a>
+              </div>
             </div>
 
-            {/* Main Vertical Nav */}
-            <nav className="flex flex-col gap-4">
+            {/* Nav List */}
+            <nav className="flex flex-col gap-4 text-base tracking-wide">
               <a href="https://theayurvedaexperience.com/collections/all-products">ALL PRODUCTS</a>
               <a href="https://theayurvedaexperience.com/collections/ayurvedic-skin-care-collection">FACE</a>
               <a href="https://theayurvedaexperience.com/collections/body-care">BODY</a>
               <a href="https://theayurvedaexperience.com/collections/hair-care">HAIR</a>
               <a href="https://theayurvedaexperience.com/collections/bestsellers">BESTSELLERS</a>
-              <a href="https://theayurvedaexperience.com/collections/offers">OFFERS</a>
+              <a href="https://theayurvedaexperience.com/collections/offers">
+                <div className="flex items-center gap-2">
+                  OFFERS
+                  <span className="bg-blue-600 text-white text-xs px-2 py-0.5 rounded">NEW</span>
+                </div>
+              </a>
               <a href="https://theayurvedaexperience.com/collections/new-in-store">NEW IN STORE</a>
               <a href="https://theayurvedaexperience.com/pages/about-courses">LEARN</a>
               <a href="https://theayurvedaexperience.com/pages/customer-reviews">REVIEWS</a>
@@ -102,9 +121,9 @@ const Header = () => {
           </div>
         )}
 
-        {/* Desktop Main Nav */}
+        {/* Desktop Nav + Logo + Search */}
         <div className="flex flex-col lg:flex-row items-center justify-between px-6 py-4 bg-white gap-4 lg:gap-0">
-          <a href="https://theayurvedaexperience.com/" className="shrink-0">
+          <a href="/" className="shrink-0">
             <Image src="/logo.png" alt="The Ayurveda Experience Logo" width={180} height={50} priority />
           </a>
 
