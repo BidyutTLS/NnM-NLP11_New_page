@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
 import { Search, User, ShoppingCart, Menu } from "lucide-react";
 
 const Header = () => {
@@ -17,7 +16,6 @@ const Header = () => {
       });
   }, []);
 
-  // Prevent background scroll when menu is open
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "auto";
   }, [menuOpen]);
@@ -118,3 +116,33 @@ const Header = () => {
             <a href="https://theayurvedaexperience.com/collections/body-care" className="hover:text-gray-700">BODY</a>
             <a href="https://theayurvedaexperience.com/collections/hair-care" className="hover:text-gray-700">HAIR</a>
             <a href="https://theayurvedaexperience.com/collections/bestsellers" className="hover:text-gray-700">BESTSELLERS</a>
+            <a href="https://theayurvedaexperience.com/collections/new-in-store" className="hover:text-gray-700">NEW IN STORE</a>
+            <a href="https://theayurvedaexperience.com/pages/about-courses" className="hover:text-gray-700">LEARN</a>
+            <a href="https://theayurvedaexperience.com/pages/customer-reviews" className="hover:text-gray-700">REVIEWS</a>
+          </nav>
+
+          <form
+            method="get"
+            action="/search"
+            className="snize-search-form hidden xl:flex items-center border rounded-full px-3 py-1"
+            role="search"
+          >
+            <input
+              type="text"
+              name="q"
+              placeholder="Search"
+              className="searchanise-input snize-input-style outline-none text-sm px-2 w-32 focus:w-48 transition-all"
+              autoComplete="off"
+              aria-label="Search Products"
+            />
+            <button type="submit" aria-label="Submit search query">
+              <Search size={16} className="text-gray-500 hover:text-gray-800" />
+            </button>
+          </form>
+        </div>
+      </header>
+    </>
+  );
+};
+
+export default Header;
