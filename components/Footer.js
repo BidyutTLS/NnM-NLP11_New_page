@@ -1,8 +1,14 @@
-// components/Footer.tsx
 import { useState } from "react";
 import Image from "next/image";
-import { ChevronDown, ChevronUp, Mail } from "lucide-react";
-import { FaFacebookF, FaInstagram, FaPinterest, FaYoutube } from "react-icons/fa";
+import {
+  ChevronDown,
+  ChevronUp,
+  Mail,
+  Facebook,
+  Instagram,
+  Pinterest,
+  Youtube
+} from "lucide-react";
 
 const CollapsibleSection = ({ title, children }) => {
   const [open, setOpen] = useState(false);
@@ -13,7 +19,9 @@ const CollapsibleSection = ({ title, children }) => {
         onClick={() => setOpen(!open)}
       >
         {title}
-        <span className="lg:hidden">{open ? <ChevronUp size={18} /> : <ChevronDown size={18} />}</span>
+        <span className="lg:hidden">
+          {open ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+        </span>
       </button>
       <div className={`space-y-1 ${open ? "block" : "hidden"} lg:block`}>
         {children}
@@ -49,10 +57,10 @@ const Footer = () => (
       {/* Social Icons */}
       <div className="flex justify-center space-x-5 text-xl mt-4">
         <a href="mailto:care@theayurvedaexperience.com" aria-label="Email"><Mail size={18} /></a>
-        <a href="https://www.facebook.com/theayurvedaexperience" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
-        <a href="https://www.instagram.com/theayurvedaexperience" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-        <a href="https://in.pinterest.com/ayurvedaexp" target="_blank" rel="noopener noreferrer"><FaPinterest /></a>
-        <a href="https://www.youtube.com/channel/UCv51NcFKkxcl_L8aQgzK3hQ" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+        <a href="https://www.facebook.com/theayurvedaexperience" target="_blank" rel="noopener noreferrer"><Facebook size={18} /></a>
+        <a href="https://www.instagram.com/theayurvedaexperience" target="_blank" rel="noopener noreferrer"><Instagram size={18} /></a>
+        <a href="https://in.pinterest.com/ayurvedaexp" target="_blank" rel="noopener noreferrer"><Pinterest size={18} /></a>
+        <a href="https://www.youtube.com/channel/UCv51NcFKkxcl_L8aQgzK3hQ" target="_blank" rel="noopener noreferrer"><Youtube size={18} /></a>
       </div>
     </div>
 
@@ -105,8 +113,7 @@ const Footer = () => (
     <div className="text-center text-xs text-gray-500 mt-6 border-t pt-6 px-2">
       <p>© 2025 The Ayurveda Experience.</p>
       <p className="mt-2">
-        * <strong>Disclaimer</strong>: Please <a href="#" className="text-blue-600 underline">click here</a> to see the usage of cookies. Packaging may vary from images shown on the website. Results may vary from person to person. In compliance with FTC rulings, we cannot guarantee that these results are typical. The user experiences displayed on this page, if any, are a small sample of the thousands of accounts sent to us by people who have used products and materials developed by Transformative Learning Pte. Ltd. Nothing on this website may be viewed as the diagnosis or treatment of any medical disease whatsoever. If you have a health condition or may be allergic to herbs, please check with your physician before using the products. Please read the list of ingredients carefully and identify any ingredients that you may be allergic to. Patch test products before use. The contents of the educational video courses on this website are the opinions of the authors based on their learning and experiences. The Ayurveda Experience is not liable or responsible for the suggestions made herein, as this content is meant only for educational purposes. Please consult your primary care physician before implementing any change in your diet or lifestyle. For any further information please contact{" "}
-        <a href="mailto:care@theayurvedaexperience.com" className="text-blue-600">care@theayurvedaexperience.com</a>.
+        * <strong>Disclaimer</strong>: Please <a href="#" className="text-blue-600 underline">click here</a> to see the usage of cookies. Packaging may vary from images shown on the website. Results may vary from person to person. In compliance with FTC rulings, we cannot guarantee that these results are typical. The user experiences displayed on this page, if any, are a small sample of the thousands of accounts sent to us by people who have used products and materials developed by Transformative Learning Pte. Ltd. Nothing on this website may be viewed as the diagnosis or treatment of any medical disease whatsoever. If you have a health condition or may be allergic to herbs, please check with your physician before using the products. Please read the list of ingredients carefully and identify any ingredients that you may be allergic to. Patch test products before use. The contents of the educational video courses on this website are the opinions of the authors based on their learning and experiences. The Ayurveda Experience is not liable or responsible for the suggestions made herein, as this content is meant only for educational purposes. Please consult your primary care physician before implementing any change in your diet or lifestyle. For any further information please contact <a href="mailto:care@theayurvedaexperience.com" className="text-blue-600">care@theayurvedaexperience.com</a>.
       </p>
     </div>
   </footer>
