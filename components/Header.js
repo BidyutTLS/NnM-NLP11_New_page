@@ -31,9 +31,8 @@ const Header = () => {
       </Head>
 
       <header className="w-full border-b border-gray-200 text-sm font-openSans relative">
-        {/* Top Bar Section */}
+        {/* Top Bar */}
         <div className="bg-gray-50 text-gray-700 flex justify-between items-center px-4 py-2">
-          {/* Hamburger - only visible on mobile */}
           <div className="flex items-center lg:hidden">
             <button onClick={() => setMenuOpen(true)} aria-label="Open Menu">
               <Menu size={24} />
@@ -67,44 +66,43 @@ const Header = () => {
 
         {/* Mobile Fullscreen Menu */}
         {menuOpen && (
-          <div className="fixed inset-0 z-50 bg-white text-black overflow-y-auto flex flex-col px-6 py-8 space-y-6 font-semibold text-lg">
-            {/* Close + Logo */}
-            <div className="flex justify-between items-center">
-              <Image src="/logo.png" alt="The Ayurveda Experience Logo" width={160} height={40} />
-              <button onClick={() => setMenuOpen(false)} aria-label="Close Menu">
+          <div className="fixed inset-0 z-50 bg-white text-black overflow-y-auto px-6 py-6 flex flex-col font-semibold text-sm">
+            {/* Top Row: Close & Logo */}
+            <div className="flex items-center justify-between mb-6">
+              <button onClick={() => setMenuOpen(false)} aria-label="Close Menu" className="text-xl">
                 ✕
               </button>
+              <div className="flex-grow text-center -ml-6">
+                <Image src="/logo.png" alt="The Ayurveda Experience Logo" width={160} height={40} />
+              </div>
+              <div className="w-6" /> {/* spacing placeholder to center logo */}
             </div>
 
-            {/* Primary Nav */}
-            <div className="space-y-4">
+            {/* Main Vertical Nav */}
+            <nav className="flex flex-col gap-4">
               <a href="https://theayurvedaexperience.com/collections/all-products">ALL PRODUCTS</a>
               <a href="https://theayurvedaexperience.com/collections/ayurvedic-skin-care-collection">FACE</a>
               <a href="https://theayurvedaexperience.com/collections/body-care">BODY</a>
               <a href="https://theayurvedaexperience.com/collections/hair-care">HAIR</a>
               <a href="https://theayurvedaexperience.com/collections/bestsellers">BESTSELLERS</a>
+              <a href="https://theayurvedaexperience.com/collections/offers">OFFERS</a>
               <a href="https://theayurvedaexperience.com/collections/new-in-store">NEW IN STORE</a>
               <a href="https://theayurvedaexperience.com/pages/about-courses">LEARN</a>
               <a href="https://theayurvedaexperience.com/pages/customer-reviews">REVIEWS</a>
-            </div>
-
-            <hr className="border-gray-300" />
-
-            {/* Secondary Nav */}
-            <div className="space-y-3 text-sm font-normal">
+              <a href="#">United States (USD $)</a>
               <a href="https://theayurvedaexperience.com/pages/ayurewards-n">AyuRewards</a>
               <a href="https://theayurvedaexperience.com/account/login?return_url=%2Faccount">Login</a>
               <a href="https://theayurvedaexperience.com/pages/refer-get-discounts">Refer & Get Discounts</a>
               <a href="https://track.theayurvedaexperience.com/">Track Order</a>
               <a href="https://theayurveda-experience.reamaze.com/">Help Center</a>
               <a href="https://theayurvedaexperience.com/pages/contact-us-here">Contact Us</a>
-              <a href="tel:+16784987248" className="font-semibold">+1 (678)-498-7248</a>
+              <a href="tel:+16784987248" className="font-semibold">+1(678)-498-7248</a>
               <a href="https://theayurvedaexperience.com/pages/accessibility-statement">Accessibility</a>
-            </div>
+            </nav>
           </div>
         )}
 
-        {/* Logo, Main Nav, Search */}
+        {/* Desktop Main Nav */}
         <div className="flex flex-col lg:flex-row items-center justify-between px-6 py-4 bg-white gap-4 lg:gap-0">
           <a href="https://theayurvedaexperience.com/" className="shrink-0">
             <Image src="/logo.png" alt="The Ayurveda Experience Logo" width={180} height={50} priority />
