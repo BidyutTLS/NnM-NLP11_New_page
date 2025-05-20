@@ -28,40 +28,44 @@ const Header = () => {
       </Head>
 
       <header className="w-full border-b border-gray-200 text-sm font-openSans relative">
+        {/* Top Bar */}
         <div className="bg-gray-50 text-gray-700 flex justify-between items-center px-4 py-2">
-          <button onClick={() => setMenuOpen(true)} className="lg:hidden">
-            <Menu size={24} />
+          {/* Hamburger or Close icon */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle Menu"
+            className="lg:hidden text-xl"
+          >
+            {menuOpen ? "✕" : <Menu size={24} />}
           </button>
-          <nav className="hidden lg:flex space-x-5">
-            <a href="https://theayurvedaexperience.com/account/login?return_url=%2Faccount">My Account</a>
-            <a href="https://track.theayurvedaexperience.com/">Track Order</a>
-            <a href="https://theayurveda-experience.reamaze.com/">Help Center</a>
-            <a href="https://theayurvedaexperience.com/pages/contact-us-here">Contact Us</a>
-            <a href="https://theayurvedaexperience.com/pages/ayurewards-n">AyuRewards</a>
-            <a href="tel:+16784987248" className="font-semibold">+1 (678)-498-7248</a>
-            <a href="https://theayurvedaexperience.com/pages/accessibility-statement">Accessibility</a>
-          </nav>
+
+          {/* Logo centered (hidden in desktop because it's in the nav below) */}
+          <div className="lg:hidden absolute left-1/2 transform -translate-x-1/2">
+            <Image src="/logo.png" alt="The Ayurveda Experience Logo" width={140} height={40} />
+          </div>
+
+          {/* Right Icons */}
           <div className="flex items-center space-x-4">
-            <a href="/account"><User size={20} /></a>
-            <a href="/cart" className="relative">
+            <a href="/search" aria-label="Search"><Search size={20} /></a>
+            <a href="/cart" className="relative" aria-label="View Cart">
               <ShoppingCart size={20} />
-              <span className="absolute -top-2 -right-2 bg-green-200 text-black text-xs rounded-full px-1">{cartCount}</span>
+              {cartCount > 0 && (
+                <span className="absolute -top-2 -right-2 text-xs bg-green-200 text-black rounded-full px-1">
+                  {cartCount}
+                </span>
+              )}
             </a>
           </div>
         </div>
 
+        {/* Mobile Fullscreen Menu */}
         {menuOpen && (
-          <div className="fixed inset-0 z-50 bg-white px-6 py-4 text-black font-semibold flex flex-col">
-            <div className="flex justify-between items-center mb-6">
-              <button onClick={() => setMenuOpen(false)}>✕</button>
-              <div className="flex-grow text-center -ml-6">
-                <Image src="/logo.png" alt="Logo" width={170} height={40} />
-              </div>
-              <div className="flex space-x-3">
-                <a href="/search"><Search size={20} /></a>
-                <a href="/cart"><ShoppingCart size={20} /></a>
-              </div>
+          <div className="fixed inset-0 z-50 bg-white px-6 py-4 text-black font-semibold flex flex-col space-y-5 overflow-y-auto">
+            {/* Logo centered again inside the menu */}
+            <div className="flex justify-center mb-4">
+              <Image src="/logo.png" alt="The Ayurveda Experience Logo" width={170} height={40} />
             </div>
+
             <nav className="flex flex-col gap-4 text-base">
               <a href="/collections/all-products">ALL PRODUCTS</a>
               <a href="/collections/ayurvedic-skin-care-collection">FACE</a>
@@ -84,11 +88,12 @@ const Header = () => {
           </div>
         )}
 
-        <div className="flex flex-col lg:flex-row items-center justify-between px-6 py-4 bg-white gap-4">
+        {/* Desktop Nav */}
+        <div className="hidden lg:flex justify-between items-center px-6 py-4 bg-white">
           <a href="/" className="shrink-0">
-            <Image src="/logo.png" alt="Logo" width={180} height={50} priority />
+            <Image src="/logo.png" alt="The Ayurveda Experience Logo" width={180} height={50} priority />
           </a>
-          <nav className="hidden lg:flex flex-wrap justify-center gap-4 text-black text-sm font-semibold">
+          <nav className="flex flex-wrap gap-5 font-semibold text-black text-sm">
             <a href="/collections/all-products">ALL PRODUCTS</a>
             <a href="/collections/ayurvedic-skin-care-collection">FACE</a>
             <a href="/collections/body-care">BODY</a>
@@ -98,12 +103,13 @@ const Header = () => {
             <a href="/pages/about-courses">LEARN</a>
             <a href="/pages/customer-reviews">REVIEWS</a>
           </nav>
-          <form action="/search" className="hidden xl:flex items-center border rounded-full px-3 py-1">
+          <form method="get" action="/search" className="hidden xl:flex items-center border rounded-full px-3 py-1">
             <input
-              name="q"
               type="text"
+              name="q"
               placeholder="Search"
               className="outline-none text-sm px-2 w-32 focus:w-48 transition-all"
+              autoComplete="off"
               aria-label="Search Products"
             />
             <button type="submit" aria-label="Search">
