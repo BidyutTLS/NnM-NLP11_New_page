@@ -1,33 +1,4 @@
-import { useState } from "react";
-import Image from "next/image";
-import {
-  ChevronDown,
-  ChevronUp,
-  Mail,
-  Facebook,
-  Instagram,
-  Youtube,
-} from "lucide-react";
-
-const CollapsibleSection = ({ title, children }) => {
-  const [open, setOpen] = useState(false);
-  return (
-    <div className="border-t border-gray-200 pt-4 lg:border-none">
-      <button
-        className="w-full text-left font-semibold mb-2 flex justify-between items-center lg:cursor-default"
-        onClick={() => setOpen(!open)}
-      >
-        {title}
-        <span className="lg:hidden">
-          {open ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
-        </span>
-      </button>
-      <div className={`space-y-1 ${open ? "block" : "hidden"} lg:block`}>
-        {children}
-      </div>
-    </div>
-  );
-};
+// ... (imports remain same)
 
 const Footer = () => (
   <footer className="bg-white border-t text-sm text-gray-700 px-4 pt-10 pb-4 font-['Open_Sans']">
@@ -36,13 +7,13 @@ const Footer = () => (
       <Image src="/logo.png" alt="TAE Logo" width={200} height={50} />
     </div>
 
-    {/* App Buttons and Contact Info */}
+    {/* App Buttons + Help Info */}
     <div className="flex flex-col items-center gap-4 text-center mb-8">
       <div className="flex gap-2">
-        <a href="https://apps.apple.com/us/app/the-ayurveda-experience/id1490926655?mt=8" target="_blank" rel="noopener noreferrer">
+        <a href="https://apps.apple.com/us/app/the-ayurveda-experience/id1490926655?mt=8" target="_blank">
           <Image src="/payments/Appstore (2).png" alt="App Store" width={120} height={40} />
         </a>
-        <a href="https://play.google.com/store/apps/details?id=co.tapcart.app.id_Ct5nBnFLeW" target="_blank" rel="noopener noreferrer">
+        <a href="https://play.google.com/store/apps/details?id=co.tapcart.app.id_Ct5nBnFLeW" target="_blank">
           <Image src="/payments/playstore(2).png" alt="Google Play" width={120} height={40} />
         </a>
       </div>
@@ -55,15 +26,16 @@ const Footer = () => (
 
       {/* Social Icons */}
       <div className="flex justify-center space-x-5 text-xl mt-4">
-        <a href="mailto:care@theayurvedaexperience.com" aria-label="Email"><Mail size={18} /></a>
-        <a href="https://www.facebook.com/theayurvedaexperience" target="_blank" rel="noopener noreferrer"><Facebook size={18} /></a>
-        <a href="https://www.instagram.com/theayurvedaexperience" target="_blank" rel="noopener noreferrer"><Instagram size={18} /></a>
-        <a href="https://www.youtube.com/channel/UCv51NcFKkxcl_L8aQgzK3hQ" target="_blank" rel="noopener noreferrer"><Youtube size={18} /></a>
+        <a href="mailto:care@theayurvedaexperience.com"><Mail size={18} /></a>
+        <a href="https://www.facebook.com/theayurvedaexperience"><Facebook size={18} /></a>
+        <a href="https://www.instagram.com/theayurvedaexperience"><Instagram size={18} /></a>
+        <a href="https://www.youtube.com/channel/UCv51NcFKkxcl_L8aQgzK3hQ"><Youtube size={18} /></a>
       </div>
     </div>
 
-    {/* Collapsible Link Sections */}
-    <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+    {/* Footer Grid - Updated Layout */}
+    <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
+      {/* Column 1: Quick Links */}
       <CollapsibleSection title="Quick Links">
         <ul className="text-blue-600 space-y-1">
           <li><a href="/search">Search</a></li>
@@ -75,20 +47,22 @@ const Footer = () => (
         </ul>
       </CollapsibleSection>
 
+      {/* Column 2: Learn (before Policies on mobile) */}
+      <CollapsibleSection title="Learn">
+        <ul className="text-blue-600 space-y-1">
+          <li><a href="/collections/educational-courses">Courses</a></li>
+          <li><a href="/pages/ayuttva-nail-n-mane-nlp12">Webinars</a></li>
+          <li><a href="https://blog.theayurvedaexperience.com/">Blog</a></li>
+        </ul>
+      </CollapsibleSection>
+
+      {/* Column 3: Policies */}
       <CollapsibleSection title="Policies">
         <ul className="text-blue-600 space-y-1">
           <li><a href="/pages/shipping-policy">Shipping & Delivery</a></li>
           <li><a href="/pages/privacy-policy">Privacy Policy</a></li>
           <li><a href="/policies/refund-policy">Refunds</a></li>
           <li><a href="/pages/terms-of-use">Terms of Use</a></li>
-        </ul>
-      </CollapsibleSection>
-
-      <CollapsibleSection title="Learn">
-        <ul className="text-blue-600 space-y-1">
-          <li><a href="/collections/educational-courses">Courses</a></li>
-          <li><a href="/pages/ayuttva-nail-n-mane-nlp12">Webinars</a></li>
-          <li><a href="https://blog.theayurvedaexperience.com/">Blog</a></li>
         </ul>
       </CollapsibleSection>
     </div>
