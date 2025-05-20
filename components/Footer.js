@@ -102,7 +102,7 @@ const Footer = () => (
       <Image src="/payments/applepay.png" alt="Apple Pay" width={40} height={25} />
       <Image src="/payments/dinersclub.png" alt="Diners Club" width={40} height={25} />
       <Image src="/payments/discover.webp" alt="Discover" width={40} height={25} />
-      <Image src="/payments/gpay.jpg" alt="Google Pay" width={40} height={25} />
+      <Image src="/payments/gpay.png" alt="Google Pay" width={40} height={25} />
       <Image src="/payments/paypal.png" alt="Paypal" width={40} height={25} />
       <Image src="/payments/shoppay.png" alt="Shop Pay" width={40} height={25} />
       <Image src="/payments/mastercard.png" alt="Mastercard" width={40} height={25} />
