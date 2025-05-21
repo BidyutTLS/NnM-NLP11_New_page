@@ -62,38 +62,40 @@ const Footer = () => (
       </div>
     </div>
 
-    {/* Footer Grid */}
-    <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
-      {/* Quick Links */}
-      <CollapsibleSection title="Quick Links">
-        <ul className="text-blue-600 space-y-1">
-          <li><a href="/search">Search</a></li>
-          <li><a href="/">Home</a></li>
-          <li><a href="/collections/all-products">All Products</a></li>
-          <li><a href="/pages/about-us">About Us</a></li>
-          <li><a href="/pages/ayurveda-affiliate">Affiliate</a></li>
-          <li><a href="https://ayurveda.attn.tv/p/PJC/landing-page">SMS Updates</a></li>
-        </ul>
-      </CollapsibleSection>
+    {/* Footer Grid Centered */}
+    <div className="w-full flex justify-center">
+      <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
+        {/* Quick Links */}
+        <CollapsibleSection title="Quick Links">
+          <ul className="text-blue-600 space-y-1">
+            <li><a href="/search">Search</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/collections/all-products">All Products</a></li>
+            <li><a href="/pages/about-us">About Us</a></li>
+            <li><a href="/pages/ayurveda-affiliate">Affiliate</a></li>
+            <li><a href="https://ayurveda.attn.tv/p/PJC/landing-page">SMS Updates</a></li>
+          </ul>
+        </CollapsibleSection>
 
-      {/* Learn */}
-      <CollapsibleSection title="Learn">
-        <ul className="text-blue-600 space-y-1">
-          <li><a href="/collections/educational-courses">Courses</a></li>
-          <li><a href="/pages/ayuttva-nail-n-mane-nlp12">Webinars</a></li>
-          <li><a href="https://blog.theayurvedaexperience.com/">Blog</a></li>
-        </ul>
-      </CollapsibleSection>
+        {/* Learn */}
+        <CollapsibleSection title="Learn">
+          <ul className="text-blue-600 space-y-1">
+            <li><a href="/collections/educational-courses">Courses</a></li>
+            <li><a href="/pages/ayuttva-nail-n-mane-nlp12">Webinars</a></li>
+            <li><a href="https://blog.theayurvedaexperience.com/">Blog</a></li>
+          </ul>
+        </CollapsibleSection>
 
-      {/* Policies */}
-      <CollapsibleSection title="Policies">
-        <ul className="text-blue-600 space-y-1">
-          <li><a href="/pages/shipping-policy">Shipping & Delivery</a></li>
-          <li><a href="/pages/privacy-policy">Privacy Policy</a></li>
-          <li><a href="/policies/refund-policy">Refunds</a></li>
-          <li><a href="/pages/terms-of-use">Terms of Use</a></li>
-        </ul>
-      </CollapsibleSection>
+        {/* Policies */}
+        <CollapsibleSection title="Policies">
+          <ul className="text-blue-600 space-y-1">
+            <li><a href="/pages/shipping-policy">Shipping & Delivery</a></li>
+            <li><a href="/pages/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/policies/refund-policy">Refunds</a></li>
+            <li><a href="/pages/terms-of-use">Terms of Use</a></li>
+          </ul>
+        </CollapsibleSection>
+      </div>
     </div>
 
     {/* Payment Icons */}
