@@ -62,9 +62,9 @@ const Footer = () => (
       </div>
     </div>
 
-    {/* Footer Grid Centered */}
+    {/* Footer Grid */}
     <div className="w-full flex justify-center">
-      <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
+      <div className="w-full max-w-[900px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left justify-items-center md:justify-items-start">
         {/* Quick Links */}
         <CollapsibleSection title="Quick Links">
           <ul className="text-blue-600 space-y-1">
