@@ -23,13 +23,42 @@ const Header = () => {
   return (
     <>
       <Head>
-        <script async src="https://cdn.userway.org/widget.js" data-account="MZr0xGKhRf" />
+        <script
+          async
+          src="https://cdn.userway.org/widget.js"
+          data-account="MZr0xGKhRf"
+        />
       </Head>
 
       <header className="w-full border-b border-gray-200 text-sm font-openSans relative">
-        {/* Top Bar */}
+        {/* Top Links - Desktop Only */}
+        <div className="hidden lg:flex justify-between px-6 py-2 text-xs text-black bg-gray-50">
+          <div className="flex space-x-4">
+            <a href="/account" className="hover:underline">My Account</a>
+            <a href="https://track.theayurvedaexperience.com/" className="hover:underline">Track Order</a>
+            <a href="https://theayurveda-experience.reamaze.com/" className="hover:underline">Help Center</a>
+            <a href="/pages/contact-us-here" className="hover:underline">Contact Us</a>
+            <a href="/pages/ayurewards-n" className="hover:underline">AyuRewards</a>
+            <a href="/pages/refer-get-discounts" className="hover:underline">Refer & Get Discounts</a>
+            <a href="tel:+16784987248" className="hover:underline">+1 (678)-498-7248</a>
+            <a href="/pages/accessibility-statement" className="hover:underline">Accessibility</a>
+          </div>
+          <div className="flex space-x-4 items-center">
+            <span>United States (USD $)</span>
+            <a href="/account/login" className="flex items-center space-x-1 hover:underline">Login</a>
+            <a href="/cart" className="relative">
+              <ShoppingCart size={18} />
+              {cartCount > 0 && (
+                <span className="absolute -top-2 -right-2 text-xs bg-green-200 text-black rounded-full px-1">
+                  {cartCount}
+                </span>
+              )}
+            </a>
+          </div>
+        </div>
+
+        {/* Mobile Header */}
         <div className="bg-gray-50 text-gray-700 flex items-center justify-between px-4 py-2 lg:hidden relative">
-          {/* Toggle Button */}
           <button
             onClick={() => setMenuOpen((prev) => !prev)}
             aria-label="Toggle Menu"
@@ -38,12 +67,12 @@ const Header = () => {
             {menuOpen ? "✕" : <Menu size={24} />}
           </button>
 
-          {/* Centered Logo */}
           <div className="absolute left-1/2 transform -translate-x-1/2 top-2">
-            <Image src="/logo.png" alt="The Ayurveda Experience Logo" width={140} height={40} />
+            <a href="/">
+              <Image src="/logo.png" alt="The Ayurveda Experience Logo" width={140} height={40} />
+            </a>
           </div>
 
-          {/* Right Icons */}
           <div className="flex items-center space-x-4 z-50">
             <a href="/search" aria-label="Search"><Search size={20} /></a>
             <a href="/cart" className="relative" aria-label="View Cart">
@@ -57,13 +86,14 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Fullscreen Mobile Menu */}
+        {/* Mobile Menu */}
         {menuOpen && (
           <div className="fixed inset-0 z-40 bg-white px-6 py-4 text-black font-semibold flex flex-col overflow-y-auto">
             <div className="flex justify-center mb-6 mt-2">
-              <Image src="/logo.png" alt="Centered Logo" width={170} height={40} />
+              <a href="/">
+                <Image src="/logo.png" alt="Centered Logo" width={170} height={40} />
+              </a>
             </div>
-
             <nav className="flex flex-col gap-4 text-base">
               <a href="/collections/all-products">ALL PRODUCTS</a>
               <a href="/collections/ayurvedic-skin-care-collection">FACE</a>
@@ -86,7 +116,7 @@ const Header = () => {
           </div>
         )}
 
-        {/* Desktop View */}
+        {/* Desktop Nav */}
         <div className="hidden lg:flex justify-between items-center px-6 py-4 bg-white">
           <a href="/" className="shrink-0">
             <Image src="/logo.png" alt="The Ayurveda Experience Logo" width={180} height={50} priority />
@@ -97,6 +127,7 @@ const Header = () => {
             <a href="/collections/body-care">BODY</a>
             <a href="/collections/hair-care">HAIR</a>
             <a href="/collections/bestsellers">BESTSELLERS</a>
+            <a href="/collections/offers">OFFERS</a>
             <a href="/collections/new-in-store">NEW IN STORE</a>
             <a href="/pages/about-courses">LEARN</a>
             <a href="/pages/customer-reviews">REVIEWS</a>
@@ -114,6 +145,14 @@ const Header = () => {
               <Search size={16} className="text-gray-500 hover:text-gray-800" />
             </button>
           </form>
+          <a href="/cart" className="relative ml-4" aria-label="Cart">
+            <ShoppingCart size={22} />
+            {cartCount > 0 && (
+              <span className="absolute -top-2 -right-2 text-xs bg-green-200 text-black rounded-full px-1">
+                {cartCount}
+              </span>
+            )}
+          </a>
         </div>
       </header>
     </>
