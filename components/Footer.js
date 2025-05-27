@@ -6,13 +6,14 @@ import {
   Mail,
   Facebook,
   Instagram,
+  Pinterest,
   Youtube,
 } from "lucide-react";
 
 const CollapsibleSection = ({ title, children }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="border-t border-gray-200 pt-4 lg:border-none">
+    <div className="lg:pt-0 border-t lg:border-none pt-4">
       <button
         className="w-full text-left font-semibold mb-2 flex justify-between items-center lg:cursor-default"
         onClick={() => setOpen(!open)}
@@ -31,97 +32,86 @@ const CollapsibleSection = ({ title, children }) => {
 
 const Footer = () => (
   <footer className="bg-white border-t text-sm text-gray-700 px-4 pt-10 pb-4 font-['Open_Sans']">
-    {/* Logo */}
-    <div className="flex justify-center mb-6">
-      <Image src="/logo.png" alt="TAE Logo" width={200} height={50} />
-    </div>
+    <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8 text-center lg:text-left">
 
-    {/* App download + Help + Social */}
-    <div className="flex flex-col items-center gap-4 text-center mb-8">
-      <div className="flex gap-2">
-        <a href="https://apps.apple.com/us/app/the-ayurveda-experience/id1490926655?mt=8" target="_blank">
-          <Image src="/payments/Appstore (2).png" alt="App Store" width={120} height={40} />
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=co.tapcart.app.id_Ct5nBnFLeW" target="_blank">
-          <Image src="/payments/playstore(2).png" alt="Google Play" width={120} height={40} />
-        </a>
-      </div>
-      <div className="text-xs">
-        <p><strong>Need Help?</strong></p>
-        <p>Email: <a href="mailto:care@theayurvedaexperience.com" className="text-blue-600">care@theayurvedaexperience.com</a></p>
-        <p>Call: <a href="tel:+16784987248" className="text-blue-600">+1 (678)-498-7248</a></p>
-      </div>
-      <div className="flex justify-center space-x-5 text-xl mt-4">
-        <a href="mailto:care@theayurvedaexperience.com" aria-label="Email"><Mail size={18} /></a>
-        <a href="https://www.facebook.com/theayurvedaexperience" target="_blank" rel="noopener noreferrer"><Facebook size={18} /></a>
-        <a href="https://www.instagram.com/theayurvedaexperience" target="_blank" rel="noopener noreferrer"><Instagram size={18} /></a>
-        <a href="https://www.pinterest.com/theayurvedaexperience" target="_blank" rel="noopener noreferrer">
-          <Image src="/icons/pinterest.svg" alt="Pinterest" width={18} height={18} />
-        </a>
-        <a href="https://www.youtube.com/channel/UCv51NcFKkxcl_L8aQgzK3hQ" target="_blank" rel="noopener noreferrer"><Youtube size={18} /></a>
-      </div>
-    </div>
-
-    {/* Footer Links */}
-    <div className="w-full flex justify-center">
-      <div className="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 text-center md:text-left justify-items-center md:justify-items-start">
-        {/* Column 1 - Quick Links */}
-        <CollapsibleSection title="Quick Links">
-          <ul className="text-blue-600 space-y-1">
-            <li><a href="/pages/help-center">Help Center</a></li>
-            <li><a href="/search">Search</a></li>
-            <li><a href="/">Home</a></li>
-            <li><a href="/collections/all-products">All Products</a></li>
-            <li><a href="/pages/about-us">About Us</a></li>
-            <li><a href="/pages/ayurveda-affiliate">Become an Affiliate</a></li>
-            <li><a href="https://ayurveda.attn.tv/p/PJC/landing-page">Get SMS updates</a></li>
-          </ul>
-        </CollapsibleSection>
-
-        {/* Column 2 - Policies */}
-        <CollapsibleSection title="Policies">
-          <ul className="text-blue-600 space-y-1">
-            <li><a href="/pages/shipping-policy">Shipping & Delivery</a></li>
-            <li><a href="/pages/privacy-policy">Privacy Policy</a></li>
-            <li><a href="/policies/refund-policy">Exchanges & Refunds</a></li>
-            <li><a href="/pages/terms-of-use">Terms of Use</a></li>
-            <li><a href="/pages/accessibility-statement">Accessibility Statement</a></li>
-          </ul>
-        </CollapsibleSection>
-
-        {/* Column 3 - Learn */}
-        <CollapsibleSection title="Learn">
-          <ul className="text-blue-600 space-y-1">
-            <li><a href="/collections/educational-courses">Explore Courses</a></li>
-            <li><a href="/pages/ayuttva-nail-n-mane-nlp12">Webinars</a></li>
-            <li><a href="https://blog.theayurvedaexperience.com/">Blog</a></li>
-            <li><a href="/pages/my-courses">My Courses</a></li>
-            <li><a href="/pages/product-recommendation">Product Recommendation</a></li>
-          </ul>
-        </CollapsibleSection>
-
-        {/* Column 4 - Payment icons */}
-        <div className="flex flex-wrap justify-center md:justify-start items-center gap-3 mt-4">
-          <Image src="/payments/amex.svg" alt="Amex" width={40} height={25} />
-          <Image src="/payments/applepay.png" alt="Apple Pay" width={40} height={25} />
-          <Image src="/payments/dinersclub.png" alt="Diners Club" width={40} height={25} />
-          <Image src="/payments/discover.webp" alt="Discover" width={40} height={25} />
-          <Image src="/payments/gpay.png" alt="Google Pay" width={40} height={25} />
-          <Image src="/payments/mastercard.png" alt="Mastercard" width={40} height={25} />
-          <Image src="/payments/paypal.png" alt="Paypal" width={40} height={25} />
-          <Image src="/payments/shoppay.png" alt="Shop Pay" width={40} height={25} />
-          <Image src="/payments/Visa.jpg" alt="Visa" width={40} height={25} />
-          <Image src="/payments/venmo.png" alt="Venmo" width={40} height={25} />
+      {/* Column 1: Logo, App Links, Help Info, Social */}
+      <div className="space-y-4 flex flex-col items-center lg:items-start">
+        <Image src="/logo.png" alt="TAE Logo" width={200} height={50} />
+        <div className="flex gap-2">
+          <a href="https://apps.apple.com/us/app/the-ayurveda-experience/id1490926655?mt=8" target="_blank">
+            <Image src="/payments/Appstore (2).png" alt="App Store" width={120} height={40} />
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=co.tapcart.app.id_Ct5nBnFLeW" target="_blank">
+            <Image src="/payments/playstore(2).png" alt="Google Play" width={120} height={40} />
+          </a>
+        </div>
+        <div className="text-xs text-left">
+          <p><strong>Need Help?</strong></p>
+          <p>Email: <a href="mailto:care@theayurvedaexperience.com" className="text-blue-600">care@theayurvedaexperience.com</a></p>
+          <p>Call: <a href="tel:+16784987248" className="text-blue-600">+1 (678)-498-7248</a></p>
+        </div>
+        <div className="flex space-x-4 text-xl mt-2">
+          <a href="mailto:care@theayurvedaexperience.com" aria-label="Email"><Mail size={18} /></a>
+          <a href="https://www.facebook.com/theayurvedaexperience" target="_blank"><Facebook size={18} /></a>
+          <a href="https://www.instagram.com/theayurvedaexperience" target="_blank"><Instagram size={18} /></a>
+          <a href="https://www.pinterest.com/theayurvedaexperience" target="_blank"><Pinterest size={18} /></a>
+          <a href="https://www.youtube.com/channel/UCv51NcFKkxcl_L8aQgzK3hQ" target="_blank"><Youtube size={18} /></a>
         </div>
       </div>
+
+      {/* Column 2: Quick Links */}
+      <CollapsibleSection title="Quick Links">
+        <ul className="text-blue-600 space-y-1">
+          <li><a href="/pages/help-center">Help Center</a></li>
+          <li><a href="/search">Search</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/collections/all-products">All Products</a></li>
+          <li><a href="/pages/about-us">About Us</a></li>
+          <li><a href="/pages/ayurveda-affiliate">Become an Affiliate</a></li>
+          <li><a href="https://ayurveda.attn.tv/p/PJC/landing-page">Get SMS updates</a></li>
+        </ul>
+      </CollapsibleSection>
+
+      {/* Column 3: Policies */}
+      <CollapsibleSection title="Policies">
+        <ul className="text-blue-600 space-y-1">
+          <li><a href="/pages/shipping-policy">Shipping & Delivery</a></li>
+          <li><a href="/pages/privacy-policy">Privacy Policy</a></li>
+          <li><a href="/policies/refund-policy">Exchanges & Refunds</a></li>
+          <li><a href="/pages/terms-of-use">Terms of Use</a></li>
+          <li><a href="/pages/accessibility-statement">Accessibility Statement</a></li>
+        </ul>
+      </CollapsibleSection>
+
+      {/* Column 4: Learn */}
+      <CollapsibleSection title="Learn">
+        <ul className="text-blue-600 space-y-1">
+          <li><a href="/collections/educational-courses">Explore Courses</a></li>
+          <li><a href="/pages/ayuttva-nail-n-mane-nlp12">Webinars</a></li>
+          <li><a href="https://blog.theayurvedaexperience.com/">Blog</a></li>
+          <li><a href="/pages/my-courses">My Courses</a></li>
+          <li><a href="/pages/product-recommendation">Product Recommendation</a></li>
+        </ul>
+      </CollapsibleSection>
     </div>
 
-    {/* Disclaimer */}
-    <div className="text-center text-xs text-gray-500 mt-6 border-t pt-6 px-2">
+    {/* Payment Icons */}
+    <div className="flex flex-wrap justify-center items-center gap-3 mt-10 border-t pt-6">
+      <Image src="/payments/amex.svg" alt="Amex" width={40} height={25} />
+      <Image src="/payments/applepay.png" alt="Apple Pay" width={40} height={25} />
+      <Image src="/payments/dinersclub.png" alt="Diners Club" width={40} height={25} />
+      <Image src="/payments/discover.webp" alt="Discover" width={40} height={25} />
+      <Image src="/payments/gpay.png" alt="Google Pay" width={40} height={25} />
+      <Image src="/payments/mastercard.png" alt="Mastercard" width={40} height={25} />
+      <Image src="/payments/paypal.png" alt="Paypal" width={40} height={25} />
+      <Image src="/payments/shoppay.png" alt="Shop Pay" width={40} height={25} />
+      <Image src="/payments/Visa.jpg" alt="Visa" width={40} height={25} />
+      <Image src="/payments/venmo.png" alt="Venmo" width={40} height={25} />
+    </div>
+
+    {/* Copyright */}
+    <div className="text-center text-xs text-gray-500 mt-6">
       <p>© 2025 The Ayurveda Experience.</p>
-      <p className="mt-2">
-        * <strong>Disclaimer</strong>: Please <a href="#" className="text-blue-600 underline">click here</a> to see the usage of cookies. Packaging may vary from images shown on the website. Results may vary from person to person. In compliance with FTC rulings, we cannot guarantee that these results are typical. The user experiences displayed on this page, if any, are a small sample of the thousands of accounts sent to us by people who have used products and materials developed by Transformative Learning Pte. Ltd. Nothing on this website may be viewed as the diagnosis or treatment of any medical disease whatsoever. If you have a health condition or may be allergic to herbs, please check with your physician before using the products. Please read the list of ingredients carefully and identify any ingredients that you may be allergic to. Patch test products before use. The contents of the educational video courses on this website are the opinions of the authors based on their learning and experiences. The Ayurveda Experience is not liable or responsible for the suggestions made herein, as this content is meant only for educational purposes. Please consult your primary care physician before implementing any change in your diet or lifestyle. For any further information please contact <a href="mailto:care@theayurvedaexperience.com" className="text-blue-600">care@theayurvedaexperience.com</a>.
-      </p>
     </div>
   </footer>
 );
