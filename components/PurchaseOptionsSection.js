@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -12,6 +12,7 @@ const packs = [
     total: "$63.75",
     originalPrice: "$75.00",
     duration: "for 9 months",
+    variantId: "44141537099953",
     images: [
       "/images/super-saver.jpg",
       "/images/carousel-1.jpg",
@@ -29,6 +30,7 @@ const packs = [
     total: "$45.00",
     originalPrice: "$50.00",
     duration: "for 6 months",
+    variantId: "44141537067185",
     images: [
       "/images/popular-choice.jpg",
       "/images/carousel-1.jpg",
@@ -46,6 +48,7 @@ const packs = [
     total: "$25.00",
     originalPrice: "",
     duration: "for 3 months",
+    variantId: "44141537034417",
     images: [
       "/images/sampler-pack.jpg",
       "/images/carousel-1.jpg",
@@ -58,22 +61,25 @@ const packs = [
 ];
 
 const PurchaseOptionsSection = () => {
+  const handleAddToCart = (variantId, quantity = 1) => {
+    const shopifyStoreUrl = "https://theayurvedaexperience.com";
+    const cartUrl = `${shopifyStoreUrl}/cart/add?id=${variantId}&quantity=${quantity}`;
+    window.location.href = cartUrl;
+  };
+
   return (
     <section id="purchase-options" className="bg-[#54032d] text-center text-black font-inter py-16 px-4">
       <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
         {packs.map((pack, index) => (
           <div key={index} className="bg-white rounded shadow-md overflow-hidden">
-            {/* Header */}
             <div className="bg-[#3b5998] text-white py-3 text-xl font-bold">
               {pack.name}
             </div>
 
-            {/* Discount Strip */}
             <div className="bg-[#e4bb45] text-[#54032d] font-bold text-lg py-1 h-[40px] flex items-center justify-center">
               {pack.discount || <span className="invisible">placeholder</span>}
             </div>
 
-            {/* Image Carousel */}
             <Carousel
               showThumbs={true}
               showStatus={false}
@@ -90,7 +96,6 @@ const PurchaseOptionsSection = () => {
                   />
                 ))
               }
-
             >
               {pack.images.map((src, i) => (
                 <div key={i} className="bg-white">
@@ -105,7 +110,6 @@ const PurchaseOptionsSection = () => {
               ))}
             </Carousel>
 
-            {/* Info */}
             <div className="py-4 text-[#54032d]">
               <p className="whitespace-pre-line py-4 font-medium">{pack.packLabel}</p>
               <p className="text-3xl font-bold mt-2">{pack.price}</p>
@@ -114,11 +118,13 @@ const PurchaseOptionsSection = () => {
                 This is a one-time purchase only<br />(not a subscription).
               </p>
 
-              {pack.discount && (
+              {pack.discount ? (
                 <p className="text-green-600 font-bold mt-2">
                   Buy Today & Get {pack.discount}!
                 </p>
-              )  || <span className="invisible">placeholder</span> }
+              ) : (
+                <span className="invisible">placeholder</span>
+              )}
 
               <div className="mt-3">
                 {pack.originalPrice && (
@@ -130,24 +136,13 @@ const PurchaseOptionsSection = () => {
                 <p className="text-sm text-gray-600">{pack.duration}</p>
               </div>
 
-              {/* Quantity Selector */}
-              <div className="flex items-center justify-center space-x-2 mt-3">
-                <button aria-label="Decrease quantity" className="bg-gray-200 px-3 py-1 text-lg">
-                  −
-                </button>
-                <span className="text-lg font-semibold">1</span>
-                <button aria-label="Increase quantity" className="bg-gray-200 px-3 py-1 text-lg">
-                  +
-                </button>
-              </div>
+              <button
+                className="bg-green-600 text-white font-bold font-inter py-3 px-6 mt-4 rounded-lg"
+                onClick={() => handleAddToCart(pack.variantId)}
+              >
+                Add to Cart
+              </button>
 
-              {/* CTA Button */}
-                <button className="bg-green-600 text-white font-bold font-inter py-3 px-6 mt-4 rounded-lg">
-                  Add to Cart
-                </button>
-
-
-              {/* Trust Badges */}
               <div className="mt-4 text-left text-sm text-black px-4">
                 <p>✅ 100% SATISFACTION</p>
                 <p>🔄 30 DAYS MONEY BACK GUARANTEE</p>
