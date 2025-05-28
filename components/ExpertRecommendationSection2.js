@@ -45,7 +45,7 @@ const ExpertRecommendationSection2 = () => {
 
       <div className="mt-8">
         <a href="#purchase-options">
-          <button className="bg-[#590632] font-inter text-white px-6 py-3 rounded-lg font-semibold">
+          <button className="bg-[#590632] hover:bg-[#e91e63] transition-colors font-inter text-white px-6 py-3 rounded-lg font-semibold">
             I’m Eager to Try This Ayurvedic Practitioner Recommended Solution
           </button>
         </a>

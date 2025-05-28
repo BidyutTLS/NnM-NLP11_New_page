@@ -52,7 +52,7 @@ const SmartDealSection = () => {
         <p className="text-base mt-1">30-Day Money-Back Guarantee | FREE Shipping</p>
       </div>
       <div className="mt-6">
-          <button className="bg-[#590632] hover:bg-[#3b0225] transition-colors text-white font-inter font-bold py-3 px-8 rounded-lg text-lg">
+          <button className="bg-[#590632] hover:bg-[#e91e63] transition-colors text-white font-inter font-bold py-3 px-8 rounded-lg text-lg">
           ADD TO CART
         </button>
       </div>

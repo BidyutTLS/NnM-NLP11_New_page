@@ -69,7 +69,7 @@ const IngredientsComplex2Section = () => {
 
         <div className="mt-6">
           <a href="#purchase-options">
-            <button className="bg-[#590632] text-white font-inter font-bold px-6 py-3 rounded-lg">
+            <button className="bg-[#590632] hover:bg-[#e91e63] transition-colors text-white font-inter font-bold px-6 py-3 rounded-lg">
               Start My Order
             </button>
           </a>
