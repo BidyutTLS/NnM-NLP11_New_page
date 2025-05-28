@@ -61,7 +61,7 @@ const Footer = () => (
         {/* Column 2 */}
         <div className="w-full lg:w-1/4">
           <CollapsibleSection title="Quick Links">
-            <ul className="text-blue-600 space-y-1">
+            <ul className="text-blue-600 space-y-1 text-left"> {/* text-left added */}
               <li><a href="https://theayurveda-experience.reamaze.com/">Help Center</a></li>
               <li><a href="https://theayurvedaexperience.com/search">Search</a></li>
               <li><a href="https://theayurvedaexperience.com/">Home</a></li>
@@ -76,7 +76,7 @@ const Footer = () => (
         {/* Column 3 */}
         <div className="w-full lg:w-1/4">
           <CollapsibleSection title="Policies">
-            <ul className="text-blue-600 space-y-1">
+            <ul className="text-blue-600 space-y-1 text-left"> {/* text-left added */}
               <li><a href="https://theayurvedaexperience.com/pages/shipping-policy">Shipping & Delivery</a></li>
               <li><a href="https://theayurvedaexperience.com/pages/privacy-policy">Privacy Policy</a></li>
               <li><a href="https://theayurvedaexperience.com/policies/refund-policy">Exchanges & Refunds</a></li>
@@ -89,7 +89,7 @@ const Footer = () => (
         {/* Column 4 */}
         <div className="w-full lg:w-1/4">
           <CollapsibleSection title="Learn">
-            <ul className="text-blue-600 space-y-1">
+            <ul className="text-blue-600 space-y-1 text-left"> {/* text-left added */}
               <li><a href="https://theayurvedaexperience.com/collections/educational-courses">Explore Courses</a></li>
               <li><a href="https://theayurvedaexperience.com/pages/ayurveda-life-weekly-webinar-series">Webinars</a></li>
               <li><a href="https://blog.theayurvedaexperience.com/?_gl=1*5z4v0x*_gcl_au*...">Blog</a></li>
