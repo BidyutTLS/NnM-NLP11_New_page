@@ -95,7 +95,7 @@ const ClinicalStudySection = () => {
           Ready to see this kind of natural transformation in your own hair?
         </p>
         <a href="#purchase-options">
-          <button className="bg-[#54032d] text-white font-semibold text-lg md:text-xl py-3 px-6 font-inter rounded-lg mt-6">
+          <button className="bg-[#54032d] hover:bg-[#933660] transition-colors text-white font-semibold text-lg md:text-xl py-3 px-6 font-inter rounded-lg mt-6">
             Try Nail n Mane now
           </button>
         </a>
