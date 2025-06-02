@@ -66,7 +66,11 @@ const Header = () => {
           </div>
 
           <div className="flex items-center space-x-4 z-50">
-            <a href="https://theayurvedaexperience.com/search" aria-label="Search">
+            <a
+              href="https://theayurvedaexperience.com/search"
+              aria-label="Search"
+              className="flex items-center border rounded-full px-2 py-1 text-sm text-gray-500"
+            >
               <Search size={20} />
             </a>
             <a href="https://theayurvedaexperience.com/cart" className="relative" aria-label="View Cart">
@@ -125,19 +129,18 @@ const Header = () => {
             <a href="https://theayurvedaexperience.com/pages/about-courses">LEARN</a>
             <a href="https://theayurvedaexperience.com/pages/customer-reviews">REVIEWS</a>
           </nav>
-          <form method="get" action="https://theayurvedaexperience.com/search" className="hidden xl:flex items-center border rounded-full px-3 py-1">
-            <input
-              type="text"
-              name="q"
-              placeholder="Search"
-              className="outline-none text-sm px-2 w-32 focus:w-48 transition-all"
-              autoComplete="off"
+
+          {/* Search box as a link */}
+          <div className="hidden xl:flex">
+            <a
+              href="https://theayurvedaexperience.com/search"
+              className="flex items-center border rounded-full px-3 py-1 text-sm text-gray-500 w-32 hover:w-48 transition-all cursor-pointer"
               aria-label="Search Products"
-            />
-            <button type="submit" aria-label="Search">
+            >
+              <span className="px-2 whitespace-nowrap overflow-hidden overflow-ellipsis">Search</span>
               <Search size={16} className="text-gray-500 hover:text-gray-800" />
-            </button>
-          </form>
+            </a>
+          </div>
         </div>
       </header>
     </>
