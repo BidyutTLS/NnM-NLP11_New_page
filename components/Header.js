@@ -42,7 +42,7 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <a href="#">United States (USD $)</a>
             <a href="https://theayurvedaexperience.com/account/login?return_url=%2Faccount">Login</a>
-            <a href="/cart" className="relative" aria-label="View Cart">
+            <a href="https://theayurvedaexperience.com/cart" className="relative" aria-label="View Cart">
               <ShoppingCart size={16} />
               {cartCount > 0 && (
                 <span className="absolute -top-2 -right-2 text-xs bg-green-200 text-black rounded-full px-1">
@@ -66,10 +66,10 @@ const Header = () => {
           </div>
 
           <div className="flex items-center space-x-4 z-50">
-            <a href="/search" aria-label="Search">
+            <a href="https://theayurvedaexperience.com/search" aria-label="Search">
               <Search size={20} />
             </a>
-            <a href="/cart" className="relative" aria-label="View Cart">
+            <a href="https://theayurvedaexperience.com/cart" className="relative" aria-label="View Cart">
               <ShoppingCart size={20} />
               {cartCount > 0 && (
                 <span className="absolute -top-2 -right-2 text-xs bg-green-200 text-black rounded-full px-1">
@@ -125,7 +125,7 @@ const Header = () => {
             <a href="https://theayurvedaexperience.com/pages/about-courses">LEARN</a>
             <a href="https://theayurvedaexperience.com/pages/customer-reviews">REVIEWS</a>
           </nav>
-          <form method="get" action="/search" className="hidden xl:flex items-center border rounded-full px-3 py-1">
+          <form method="get" action="https://theayurvedaexperience.com/search" className="hidden xl:flex items-center border rounded-full px-3 py-1">
             <input
               type="text"
               name="q"
