@@ -4,6 +4,7 @@ import Image from "next/image";
 
 const SmartDealSection = () => {
   const variantId = "43804989456561"; // PO3 variant ID
+
   const handleAddToCart = () => {
     const quantity = 1;
     const cartUrl = `https://theayurvedaexperience.com/cart/add?id=${variantId}&quantity=${quantity}`;
@@ -15,6 +16,7 @@ const SmartDealSection = () => {
       <h2 className="text-2xl md:text-3xl text-[#590632] font-inter font-bold max-w-4xl mx-auto leading-snug">
         Why you’ve got to be Smart and grab this Clinically Tested supplement NOW:
       </h2>
+
       <div className="mt-6 max-w-4xl mx-auto space-y-4 text-lg">
         <p>
           When you have a product this effective, demand often exceeds supply. That’s exactly what’s happening here.
@@ -51,15 +53,14 @@ const SmartDealSection = () => {
         </div>
         <div className="text-left text-lg space-y-3 max-w-xl">
           <p>
-            With supplies running low... it makes sense to{" "}
+            With supplies running low... it makes sense to
             <span className="bg-gold text-[#590632] font-inter font-semibold px-1">
-              stock up on the 3-bottle pack NOW
+              {" "}stock up on the 3-bottle pack NOW
             </span>{" "}
-            to lock in the best results for your hair! Don’t wait or you may see the dreaded
-            “Out of Stock” sign!
+            to lock in the best results for your hair! Don’t wait or you may see the dreaded “Out of Stock” sign!
           </p>
-          <p className="text-[#590632] font-inter font-bold px-2">
-            <span className="bg-gold">Be smart about it! </span>
+          <p className="text-[#590632] font-inter font-bold text-lg">
+            <span className="bg-gold px-1">Be smart about it!</span>
           </p>
         </div>
       </div>
