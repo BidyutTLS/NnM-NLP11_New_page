@@ -42,7 +42,7 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <a href="#">United States (USD $)</a>
             <a href="https://theayurvedaexperience.com/account/login?return_url=%2Faccount">Login</a>
-            <a href="https://theayurvedaexperience.com/cart" className="relative" aria-label="View Cart">
+            <a href="https://theayurvedaexperience.com/pages/variant-official" className="relative" aria-label="View Cart">
               <ShoppingCart size={16} />
               {cartCount > 0 && (
                 <span className="absolute -top-2 -right-2 text-xs bg-green-200 text-black rounded-full px-1">
@@ -73,7 +73,7 @@ const Header = () => {
             >
               <Search size={20} />
             </a>
-            <a href="https://theayurvedaexperience.com/cart" className="relative" aria-label="View Cart">
+            <a href="https://theayurvedaexperience.com/pages/variant-official" className="relative" aria-label="View Cart">
               <ShoppingCart size={20} />
               {cartCount > 0 && (
                 <span className="absolute -top-2 -right-2 text-xs bg-green-200 text-black rounded-full px-1">
@@ -90,7 +90,6 @@ const Header = () => {
             <div className="flex justify-center mb-6 mt-2">
               <Image src="/logo.png" alt="Centered Logo" width={170} height={40} />
             </div>
-
             <nav className="flex flex-col gap-4 text-base">
               <a href="https://theayurvedaexperience.com/collections/all-products">ALL PRODUCTS</a>
               <a href="https://theayurvedaexperience.com/collections/ayurvedic-skin-care-collection">FACE</a>
@@ -129,7 +128,6 @@ const Header = () => {
             <a href="https://theayurvedaexperience.com/pages/about-courses">LEARN</a>
             <a href="https://theayurvedaexperience.com/pages/customer-reviews">REVIEWS</a>
           </nav>
-
           {/* Search box as a link */}
           <div className="hidden xl:flex">
             <a
